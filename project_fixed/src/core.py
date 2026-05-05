@@ -17,7 +17,7 @@ def extenso_mes(data_str):
         return data_str
 
 def gerar_timestamp(data_str, hora_str, offset=0):
-    """Gera timestamp Unix ajustado para fuso -3h (Brasília) com delay de 40s por curso."""
+    """Gera timestamp Unix ajustado para fuso -3h (Brasília) com delay por curso."""
     try:
         data_completa = f"{data_str}/2026 {hora_str}"
         dt = datetime.strptime(data_completa, "%d/%m/%Y %H:%M")
@@ -45,19 +45,19 @@ def calcular_delay_retomada(total_cursos):
     """
     Retorna o delay em segundos por curso baseado no total de cursos do fluxo de RETOMADA.
     Tabela:
-      até 20 cursos  → 120s (2 min)
-      21 a 30 cursos →  60s (1 min)
-      31 a 50 cursos →  45s
-      51+ cursos     →  40s
+      até 20 cursos  → 180s (3 min)
+      21 a 30 cursos → 120s (2 min)
+      31 a 50 cursos → 120s (2 min)
+      51+ cursos     →  60s (1 min)
     """
     if total_cursos <= 20:
-        return 120
+        return 180
     elif total_cursos <= 30:
-        return 60
+        return 120
     elif total_cursos <= 50:
-        return 45
+        return 120
     else:
-        return 40
+        return 60
 
 def processar_curso(linha, data_ancora, path_template, index_curso, tipo_fluxo="SC1", data_disparo=None, ano_retomada=None, total_cursos=None):
     # --- 1. LÓGICA DE DEFINIÇÃO DA DATA DE DISPARO ---
@@ -81,7 +81,6 @@ def processar_curso(linha, data_ancora, path_template, index_curso, tipo_fluxo="
     data_envio_ds = calcular_data_especifica(data_envio_base, 1)
 
     # --- 2. MAPEAMENTO GERAL DA PLANILHA ---
-    # Mapeamento auditado contra a planilha real (Cursos 2026)
     nome_curso       = limpar_para_json(linha[0])   # A  - Nome do curso
     webhook_link     = linha[4]                     # E  - WEBHOOK Unnichat
     cd_curso_abert   = limpar_para_json(linha[9])   # J  - Código curso + abertura
@@ -97,8 +96,6 @@ def processar_curso(linha, data_ancora, path_template, index_curso, tipo_fluxo="
     tag_inicio_f7    = limpar_para_json(linha[20])  # U  - Tag "Fluxo 7"
     tag_inicio_f8    = limpar_para_json(linha[21])  # V  - Tag "Fluxo 8"
     tag_presente_f8  = limpar_para_json(linha[22])  # W  - Tag "Presente"
-    # CORREÇÃO: coluna X (23) = Tag Certificado Digital (ex: "4º CBFORENSE - Certificado Digital")
-    # Estava sendo mapeada errado; cursos sem certificado têm essa coluna vazia — isso é esperado.
     tag_cert         = limpar_para_json(linha[23])  # X  - Tag Certificado Digital
     tag_insc_geral   = limpar_para_json(linha[24])  # Y  - Tag "Inscritos DD/MM"
     vol_pdf_2        = limpar_para_json(linha[27])  # AB - Volume 2 do PDF
@@ -110,12 +107,7 @@ def processar_curso(linha, data_ancora, path_template, index_curso, tipo_fluxo="
     cd_aulas         = limpar_para_json(linha[35])  # AJ - Código aulas
     cd_pdf           = limpar_para_json(linha[36])  # AK - Código PDF
 
-    # COLUNAS SC — tags fabricadas pelo sistema
-    # CORREÇÃO: AM(38)=Clicou SC1, AN(39)=Cancelar SC1, AO(40)=Clicou SC2, AP(41)=Cancelar SC2
-    # AQ(42)=Clicou SC3, AR(43)=Cancelar SC3
-    # O código anterior usava AQ/AR para o modo Retroativo, o que estava certo para SC3,
-    # mas para SC1/SC2 precisaria das colunas AM/AN e AO/AP.
-    # Como o tipo_fluxo já controla qual SC está rodando, usamos as colunas certas por tipo:
+    # COLUNAS SC
     if tipo_fluxo == "SC1":
         tag_clicou_retro   = limpar_para_json(linha[38]) if len(linha) > 38 else ""  # AM
         tag_cancelar_retro = limpar_para_json(linha[39]) if len(linha) > 39 else ""  # AN
@@ -123,11 +115,10 @@ def processar_curso(linha, data_ancora, path_template, index_curso, tipo_fluxo="
         tag_clicou_retro   = limpar_para_json(linha[40]) if len(linha) > 40 else ""  # AO
         tag_cancelar_retro = limpar_para_json(linha[41]) if len(linha) > 41 else ""  # AP
     else:
-        # SC3 e Retroativo
         tag_clicou_retro   = limpar_para_json(linha[42]) if len(linha) > 42 else ""  # AQ
         tag_cancelar_retro = limpar_para_json(linha[43]) if len(linha) > 43 else ""  # AR
 
-    # COLUNAS RETOMADA: AS (44) = Clicou, AT (45) = Cancelar — confirmado na planilha real
+    # COLUNAS RETOMADA: AS (44) = Clicou, AT (45) = Cancelar
     tag_clicou_ret_plan   = limpar_para_json(linha[44]) if len(linha) > 44 else ""  # AS
     tag_cancelar_ret_plan = limpar_para_json(linha[45]) if len(linha) > 45 else ""  # AT
 
@@ -152,10 +143,7 @@ def processar_curso(linha, data_ancora, path_template, index_curso, tipo_fluxo="
     tag_sem2 = f"Inscritos {calcular_data_especifica(segunda_referencia_tags, 7)}"
     tag_sem3 = f"Inscritos {calcular_data_especifica(segunda_referencia_tags, 14)}"
 
-    # --- 4. TRATAMENTO DE LINKS E DELAY ---
-    # --- LÓGICA DE DELAY DINÂMICO ---
-    # Para RETOMADA: delay calculado com base no total de cursos da semana.
-    # Para todos os outros fluxos: mantém 120s (2min) fixo.
+    # --- 4. DELAY: dinâmico para RETOMADA, fixo 2min para os demais ---
     if tipo_fluxo == "RETOMADA" and total_cursos is not None:
         delay_por_curso = calcular_delay_retomada(total_cursos)
     else:
@@ -218,7 +206,6 @@ def processar_curso(linha, data_ancora, path_template, index_curso, tipo_fluxo="
         "{{LINK_HOTMART_F4_M1_CURSO}}":     fix_link_padrao("apiq8c"),
         "{{LINK_HOTMART_F5_M1_CURSO}}":     fix_link_padrao("apiq12c"),
         "{{LINK_HOTMART_F6_M1_CURSO}}":     fix_link_padrao("apiq18c"),
-        # CORREÇÃO: F7 tinha M2, M3 e M4 faltando no código anterior
         "{{LINK_HOTMART_F7_M1_CURSO}}":     fix_link_padrao("apiq20c"),
         "{{LINK_HOTMART_F7_M2_CURSO}}":     fix_link_padrao("apiq21c"),
         "{{LINK_HOTMART_F7_M3_CURSO}}":     fix_link_padrao("apiq20t"),
@@ -234,12 +221,12 @@ def processar_curso(linha, data_ancora, path_template, index_curso, tipo_fluxo="
         "{{DT_VARIA_22_F7}}":               str(gerar_timestamp(data_prazo_cert, "22:00", offset_atual)),
         "{{DT_ANTES_INIC_CURSO}}":          str(gerar_timestamp(data_ancora, "08:00", 0)),
         "{{DT_ANTES_FIM_CERT}}":            str(gerar_timestamp(data_prazo_cert, "10:00", 0)),
-        # Tags SC — ambos os formatos de chaves ({{}} e {}) que existem nos templates
+        # Tags SC
         "{{TAG_CLICOU_SC}}":                tag_clicou_sc_final,
         "{TAG_CLICOU_SC}":                  tag_clicou_sc_final,
         "{{TAG_CANCELAR_ENVIOS_SC}}":       tag_cancelar_sc_final,
         "{TAG_CANCELAR_ENVIOS_SC}":         tag_cancelar_sc_final,
-        # Tags semana (formato chave simples)
+        # Tags semana
         "{TAG_INSC_SEMANA1}":               tag_sem1,
         "{TAG_INSC_SEMANA2}":               tag_sem2,
         "{TAG_INSC_SEMANA3}":               tag_sem3,
@@ -274,9 +261,9 @@ def processar_curso(linha, data_ancora, path_template, index_curso, tipo_fluxo="
         # UTMs
         "{{UTM_SC_LOJA}}":                  f"utm_source={tipo_fluxo}",
         "{{LINK_HOTMART_SC2.1}}":           fix_link_padrao("novat"),
-        # Timestamp principal do fluxo de Retomada (atraso inteligente, com offset por curso)
+        # Retomada — timestamp principal (08h + offset por curso)
         "{{DT_RETOMADA_INICIO_VARIA}}":     str(gerar_timestamp(data_envio_base, "08:00", offset_atual)),
-        # Retomada — AS(44)=Clicou, AT(45)=Cancelar, confirmado na planilha real
+        # Retomada — tags e links
         "{{TAG_CLICOU_RETOMADA}}":          tag_clicou_ret_plan,
         "{{TAG_CANCELAR_ENVIOS_RETOMADA}}": tag_cancelar_ret_plan,
         "{{LINK_HOTMART_RETOMADA_M1}}":     fix_link_retomada("M1"),
