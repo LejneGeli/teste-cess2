@@ -3,31 +3,38 @@ import json
 import io
 import zipfile
 import re
+import os
 from src.drive_sync import conectar_planilha
 from src.core import processar_curso
 
 # Configuração da Interface
 st.set_page_config(page_title="CESS Automation Web", page_icon="🚀", layout="centered")
 
+# Diretório base sempre relativo ao próprio app.py (resolve problema de cwd)
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+def template_path(nome_arquivo):
+    return os.path.join(BASE_DIR, "templates", nome_arquivo)
+
 # Mapeamento Global dos Fluxos
 TEMPLATES = {
-    "1": {"nome": "Inscrição", "path": "templates/esqueleto_fluxo_insc.json", "subpasta": "Fluxo_insc"},
-    "2": {"nome": "Pré-Inscrição", "path": "templates/esqueleto_fluxo_pre_insc.json", "subpasta": "Fluxo_pre_insc"},
-    "3": {"nome": "Fluxo 1", "path": "templates/esqueleto_fluxo_1.json", "subpasta": "Fluxo_1"},
-    "4": {"nome": "Fluxo 2", "path": "templates/esqueleto_fluxo_2.json", "subpasta": "Fluxo_2"},
-    "15": {"nome": "F2.1", "path": "templates/esqueleto_fluxo_2.1.json", "subpasta": "Fluxo_F2_1"}, # INSERIDO F2.1 ENTRE F2 E F3
-    "5": {"nome": "Fluxo 3", "path": "templates/esqueleto_fluxo_3.json", "subpasta": "Fluxo_3"},
-    "6": {"nome": "Fluxo 4", "path": "templates/esqueleto_fluxo_4.json", "subpasta": "Fluxo_4"},
-    "7": {"nome": "Fluxo 5", "path": "templates/esqueleto_fluxo_5.json", "subpasta": "Fluxo_5"},
-    "17": {"nome": "F5.1", "path": "templates/esqueleto_fluxo_5.1.json", "subpasta": "Fluxo_F5_1"}, # INSERIDO F5.1 ENTRE F5 E F6
-    "8": {"nome": "Fluxo 6", "path": "templates/esqueleto_fluxo_6.json", "subpasta": "Fluxo_6"},
-    "9": {"nome": "Fluxo 7", "path": "templates/esqueleto_fluxo_7.json", "subpasta": "Fluxo_7"},
-    "10": {"nome": "Fluxo 8", "path": "templates/esqueleto_fluxo_8.json", "subpasta": "Fluxo_8"},
-    "11": {"nome": "SC1", "path": "templates/esqueleto_fluxo_sc1.json", "subpasta": "Fluxo_SC1"},
-    "12": {"nome": "SC2", "path": "templates/esqueleto_fluxo_sc2.json", "subpasta": "Fluxo_SC2"},
-    "13": {"nome": "SC3", "path": "templates/esqueleto_fluxo_sc3.json", "subpasta": "Fluxo_SC3"},
-    "16": {"nome": "RETOMADA", "path": "templates/esqueleto_retomada.json", "subpasta": "Fluxo_Retomada"},
-    "14": {"nome": "Docs", "path": "templates/esqueleto_docs.json", "subpasta": "Fluxo_Docs"}
+    "1":  {"nome": "Inscrição",     "path": template_path("esqueleto_fluxo_insc.json"),    "subpasta": "Fluxo_insc"},
+    "2":  {"nome": "Pré-Inscrição", "path": template_path("esqueleto_fluxo_pre_insc.json"),"subpasta": "Fluxo_pre_insc"},
+    "3":  {"nome": "Fluxo 1",       "path": template_path("esqueleto_fluxo_1.json"),        "subpasta": "Fluxo_1"},
+    "4":  {"nome": "Fluxo 2",       "path": template_path("esqueleto_fluxo_2.json"),        "subpasta": "Fluxo_2"},
+    "15": {"nome": "F2.1",          "path": template_path("esqueleto_fluxo_2.1.json"),      "subpasta": "Fluxo_F2_1"},
+    "5":  {"nome": "Fluxo 3",       "path": template_path("esqueleto_fluxo_3.json"),        "subpasta": "Fluxo_3"},
+    "6":  {"nome": "Fluxo 4",       "path": template_path("esqueleto_fluxo_4.json"),        "subpasta": "Fluxo_4"},
+    "7":  {"nome": "Fluxo 5",       "path": template_path("esqueleto_fluxo_5.json"),        "subpasta": "Fluxo_5"},
+    "17": {"nome": "F5.1",          "path": template_path("esqueleto_fluxo_5.1.json"),      "subpasta": "Fluxo_F5_1"},
+    "8":  {"nome": "Fluxo 6",       "path": template_path("esqueleto_fluxo_6.json"),        "subpasta": "Fluxo_6"},
+    "9":  {"nome": "Fluxo 7",       "path": template_path("esqueleto_fluxo_7.json"),        "subpasta": "Fluxo_7"},
+    "10": {"nome": "Fluxo 8",       "path": template_path("esqueleto_fluxo_8.json"),        "subpasta": "Fluxo_8"},
+    "11": {"nome": "SC1",           "path": template_path("esqueleto_fluxo_sc1.json"),      "subpasta": "Fluxo_SC1"},
+    "12": {"nome": "SC2",           "path": template_path("esqueleto_fluxo_sc2.json"),      "subpasta": "Fluxo_SC2"},
+    "13": {"nome": "SC3",           "path": template_path("esqueleto_fluxo_sc3.json"),      "subpasta": "Fluxo_SC3"},
+    "16": {"nome": "RETOMADA",      "path": template_path("esqueleto_retomada.json"),       "subpasta": "Fluxo_Retomada"},
+    "14": {"nome": "Docs",          "path": template_path("esqueleto_docs.json"),           "subpasta": "Fluxo_Docs"}
 }
 
 st.title("🚀 Gerador de Fluxos CESS")
@@ -115,7 +122,6 @@ if 'cursos' in st.session_state:
         st.session_state['cursos']
     )
 
-    # Bloqueio visual para o Docs
     if id_fluxo == "14":
         st.warning("🔒 O fluxo de **Docs** ainda está em desenvolvimento e o template não foi carregado.")
         btn_disabled = True
@@ -136,8 +142,7 @@ if 'cursos' in st.session_state:
                 contador_delay = 0
                 nome_fluxo_ativo = config['nome'] if any(x in config['nome'] for x in ["SC", "Docs", "F2.1", "F5.1", "RETOMADA"]) else "F1"
 
-                # Para RETOMADA: calcula o total de cursos da semana ANTES do loop;
-                # para determinar o delay correto por curso (tabela dinâmica).
+                # Para RETOMADA: calcula o total de cursos da semana ANTES do loop
                 total_cursos_semana = None
                 if nome_fluxo_ativo == "RETOMADA":
                     total_cursos_semana = 0
@@ -154,8 +159,6 @@ if 'cursos' in st.session_state:
                     
                     nome_curso = linha[0].strip()
                     if curso_filtro and nome_curso not in curso_filtro:
-                        # Cursos pulados pelo filtro NAO incrementam o delay.
-                        # Baixar por blocos (por conta) reseta a soma automaticamente.
                         continue
                     
                     try:
