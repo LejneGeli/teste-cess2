@@ -1,0 +1,1388 @@
+{
+  "name": "Fluxo 2 - {{DT_INICIO_CURSO_FORMAT}} {{NOME_CURSO}}",
+  "category": "automation",
+  "status": "idle",
+  "connectionType": "whatsapp",
+  "folderId": "88x7Ifpod2AeGHcYOqy2",
+  "node": {
+    "triggers": [
+      {
+        "caseSentive": false,
+        "interaction": "add-tag",
+        "tag": "{{TAG_INIC_F2_CURSO}}",
+        "postSegment": "all"
+      }
+    ],
+    "pos": "{\"x\":-740.5965787970625,\"y\":-513.0314627450723}",
+    "lastEditedBy": "carolinelejnecess7@gmail.com",
+    "sonId": "a6A4cizTjPqJZVPTAFCB",
+    "id": "HYSh74UoqFhhpYdFchFQ",
+    "type": {
+      "id": "LF28pQABllyAmZM0jb5L",
+      "icon": "init",
+      "color": "transparent",
+      "tag": "init"
+    },
+    "nodes": [
+      {
+        "note": {
+          "color": "#f5d0fe",
+          "text": "",
+          "size": [
+            321,
+            377
+          ]
+        },
+        "id": "0MQcduKutL9MZtyQ2RfW",
+        "type": {
+          "icon": "",
+          "tag": "note",
+          "id": "note",
+          "color": "transparent"
+        },
+        "pos": "{\"x\":3523.5499201366288,\"y\":-615.3481413999775}"
+      },
+      {
+        "id": "1TA4uGRqPlhqrlUQozme",
+        "sonId": "tYDaMMNOJP6QnUfC68fr",
+        "type": {
+          "icon": "",
+          "tag": "delay",
+          "id": "delay",
+          "color": "transparent"
+        },
+        "lastEditedBy": "gjulioti@gmail.com",
+        "delay": {
+          "time": 30,
+          "sendMessagesIntervalRangeType": "minutes",
+          "isComercialInterval": false,
+          "type": "seconds",
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ]
+        },
+        "pos": "{\"x\":2789.7796724462146,\"y\":-688.8866674835108}"
+      },
+      {
+        "id": "2W8d6807ddFgYVUPSF6a",
+        "pos": "{\"x\":1152.0757228169302,\"y\":-1127.1749190531823}",
+        "type": {
+          "tag": "message",
+          "id": "message",
+          "icon": "",
+          "color": "transparent"
+        },
+        "message": {
+          "buttonsBodyText": "Solicite seu certificado pelo botão abaixo 👇",
+          "messageType": "interactive-message",
+          "interactiveType": "cta-url",
+          "type": "send_message",
+          "ctaUrl": {
+            "parameters": {
+              "url": "https://cessetembro.com.br/{{CD_CURSO_CERT}}?utm_source=apit7c",
+              "display_text": "Clique aqui"
+            },
+            "campaignId": "N3FisA9DjcFloLN5NOtR",
+            "sonId": "oBckvqZkX2c3FzyElfyV"
+          }
+        },
+        "lastEditedBy": "carolinelejnecess7@gmail.com"
+      },
+      {
+        "type": {
+          "tag": "message",
+          "id": "message",
+          "icon": "",
+          "color": "transparent"
+        },
+        "message": {
+          "message": "Combinado! Mais tarde eu te lembro.\nAté logo!",
+          "type": "send_message",
+          "messageType": "message-text"
+        },
+        "lastEditedBy": "cessetembro@gmail.com",
+        "pos": "{\"x\":1733.9991684037923,\"y\":1423.9459970150472}",
+        "id": "3FClmtTrvxU7KsgDQWED"
+      },
+      {
+        "pos": "{\"x\":1533.7398315758624,\"y\":-887.448402568501}",
+        "lastEditedBy": "cessetembro@gmail.com",
+        "delay": {
+          "time": 1,
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "isComercialInterval": false,
+          "type": "seconds",
+          "sendMessagesIntervalRangeType": "minutes"
+        },
+        "id": "4jj4ScwU2GUgnR6d60OL",
+        "type": {
+          "icon": "",
+          "color": "transparent",
+          "id": "delay",
+          "tag": "delay"
+        }
+      },
+      {
+        "sonId": "BK5BCb1SRJqye3Ho5DHY",
+        "lastEditedBy": "gjulioti@gmail.com",
+        "type": {
+          "tag": "delay",
+          "icon": "",
+          "color": "transparent",
+          "id": "delay"
+        },
+        "pos": "{\"x\":985.0892178860239,\"y\":1511.6423972663847}",
+        "delay": {
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "isComercialInterval": false,
+          "time": 30,
+          "type": "seconds",
+          "sendMessagesIntervalRangeType": "minutes"
+        },
+        "id": "88ObiTQ0szFwvRQ9rMyd"
+      },
+      {
+        "delay": {
+          "time": 15,
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "isComercialInterval": false,
+          "sendMessagesIntervalRangeType": "minutes",
+          "type": "seconds"
+        },
+        "sonId": "tYDaMMNOJP6QnUfC68fr",
+        "id": "9PfWuDAL91Ocfx2e6RCI",
+        "pos": "{\"x\":2788.381488812,\"y\":-1007.3197915467208}",
+        "type": {
+          "icon": "",
+          "id": "delay",
+          "tag": "delay",
+          "color": "transparent"
+        },
+        "lastEditedBy": "gjulioti@gmail.com"
+      },
+      {
+        "pos": "{\"x\":1124.508437879992,\"y\":-674.4025615220288}",
+        "note": {
+          "size": [
+            339,
+            394
+          ],
+          "color": "#f5d0fe",
+          "text": ""
+        },
+        "type": {
+          "id": "note",
+          "tag": "note",
+          "icon": "",
+          "color": "transparent"
+        },
+        "id": "A6NolksmrbAwM5Gl3xlc"
+      },
+      {
+        "sonId": "d3YAWJWsawaVY1NScqwO",
+        "type": {
+          "tag": "delay",
+          "icon": "",
+          "id": "delay",
+          "color": "transparent"
+        },
+        "pos": "{\"x\":2206.1273171674006,\"y\":936.2688899872867}",
+        "delay": {
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "type": "seconds",
+          "sendMessagesIntervalRangeType": "minutes",
+          "time": 15,
+          "isComercialInterval": false
+        },
+        "id": "B62UdyQ9wxRr6U5fquoE",
+        "lastEditedBy": "cessetembro@gmail.com"
+      },
+      {
+        "type": {
+          "icon": "",
+          "color": "transparent",
+          "tag": "message",
+          "id": "message"
+        },
+        "lastEditedBy": "carolinelejnecess7@gmail.com",
+        "pos": "{\"x\":1360.8647785779688,\"y\":811.7987982825257}",
+        "message": {
+          "templateDataJson": "{\"name\":\"sevddd\",\"parameter_format\":\"POSITIONAL\",\"components\":[{\"type\":\"BODY\",\"text\":\"ℹ️ Olá aluno(a). Identificamos uma etapa pendente na sua vaga do curso de {{1}}, que iniciou ontem.\\n\\nSua inscrição foi confirmada. Portanto:\\n\\nPara manter sua inscrição e o andamento das aulas, toque no botão abaixo.👇\",\"example\":{\"body_text\":[[\"Anatomia\"]]}},{\"type\":\"FOOTER\",\"text\":\"Centro Educacional Sete de Setembro\"},{\"type\":\"BUTTONS\",\"buttons\":[{\"type\":\"QUICK_REPLY\",\"text\":\"Acessar Aulas e Materiais\"},{\"type\":\"QUICK_REPLY\",\"text\":\"Me lembre mais tarde\"},{\"type\":\"QUICK_REPLY\",\"text\":\"Cancelar inscrição\"}]}],\"language\":\"pt_BR\",\"status\":\"APPROVED\",\"category\":\"UTILITY\",\"sub_category\":\"CUSTOM\",\"correct_category\":\"UTILITY\",\"id\":\"795037883245441\"}",
+          "templateButtons": [
+            {
+              "type": "QUICK_REPLY",
+              "text": "Acessar Aulas e Materiais",
+              "id": "syqi6zjY8gYJHKgSFvQH",
+              "sonId": "pgKNpGnPNrWHmuMAIkJg"
+            },
+            {
+              "type": "QUICK_REPLY",
+              "text": "Me lembre mais tarde",
+              "sonId": "3FClmtTrvxU7KsgDQWED",
+              "id": "lOyj5Jixer0JOL7LKzVt"
+            },
+            {
+              "sonId": "k2o6At9UyFHgNUsGRNBj",
+              "text": "Cancelar inscrição",
+              "type": "QUICK_REPLY",
+              "id": "gOW57l3pxh4I5qLhWXkv"
+            }
+          ],
+          "templateDataExpiresOn": 1767103310086,
+          "template": {
+            "status": "APPROVED",
+            "components": [
+              {
+                "text": "ℹ️ Olá aluno(a). Identificamos uma etapa pendente na sua vaga do curso de {{1}}, que iniciou ontem.\n\nSua inscrição foi confirmada. Portanto:\n\nPara manter sua inscrição e o andamento das aulas, toque no botão abaixo.👇",
+                "example": {
+                  "body_text": [
+                    "Anatomia"
+                  ]
+                },
+                "type": "BODY"
+              },
+              {
+                "text": "Centro Educacional Sete de Setembro",
+                "type": "FOOTER"
+              },
+              {
+                "type": "BUTTONS",
+                "buttons": [
+                  {
+                    "id": "syqi6zjY8gYJHKgSFvQH",
+                    "text": "Acessar Aulas e Materiais",
+                    "type": "QUICK_REPLY"
+                  },
+                  {
+                    "type": "QUICK_REPLY",
+                    "id": "lOyj5Jixer0JOL7LKzVt",
+                    "text": "Me lembre mais tarde"
+                  },
+                  {
+                    "id": "gOW57l3pxh4I5qLhWXkv",
+                    "text": "Cancelar inscrição",
+                    "type": "QUICK_REPLY"
+                  }
+                ]
+              }
+            ],
+            "id": "795037883245441",
+            "connectionId": "ouLDZiM3pEddrZuTGJVw",
+            "category": "UTILITY",
+            "language": "pt_BR",
+            "name": "sevddd",
+            "updatedAt": {
+              "seconds": 1760920266,
+              "nanoseconds": 244000000
+            },
+            "userId": "3jNt3SinWzW08N7iqGhu473b7M53",
+            "wabaId": "551316877339100",
+            "createdAt": {
+              "seconds": 1760920145,
+              "nanoseconds": 848000000
+            }
+          },
+          "templateId": "795037883245441",
+          "bodyParameters": [
+            {
+              "text": "{{NOME_CURSO}}",
+              "type": "text"
+            }
+          ],
+          "type": "send_template"
+        },
+        "id": "BK5BCb1SRJqye3Ho5DHY"
+      },
+      {
+        "type": {
+          "tag": "note",
+          "icon": "",
+          "id": "note",
+          "color": "transparent"
+        },
+        "note": {
+          "color": "#f5d0fe",
+          "text": "",
+          "size": [
+            329,
+            858
+          ]
+        },
+        "id": "CSQd9mVnJYwEiz3W8G3f",
+        "pos": "{\"x\":3135.3493015336558,\"y\":-709.7024584215334}"
+      },
+      {
+        "id": "Df5sa86wwAiMzMAcFbUV",
+        "note": {
+          "color": "#f5d0fe",
+          "size": [
+            321,
+            377
+          ],
+          "text": ""
+        },
+        "pos": "{\"x\":3520.8540825074406,\"y\":-1049.3779996991343}",
+        "type": {
+          "id": "note",
+          "color": "transparent",
+          "tag": "note",
+          "icon": ""
+        }
+      },
+      {
+        "id": "DvLnwuApKw8H4uuvombG",
+        "note": {
+          "size": [
+            321,
+            377
+          ],
+          "text": "",
+          "color": "#f5d0fe"
+        },
+        "pos": "{\"x\":1522.9843915595748,\"y\":163.4949257150854}",
+        "type": {
+          "id": "note",
+          "color": "transparent",
+          "icon": "",
+          "tag": "note"
+        }
+      },
+      {
+        "type": {
+          "tag": "delay",
+          "color": "transparent",
+          "id": "delay",
+          "icon": ""
+        },
+        "pos": "{\"x\":384.3648365222873,\"y\":-1225.3739234337474}",
+        "lastEditedBy": "cessetembro@gmail.com",
+        "sonId": "GZZwnD5662gPQtzf2lSj",
+        "id": "EOqop4zlSR0blWlFFd0P",
+        "delay": {
+          "isComercialInterval": false,
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "time": 1,
+          "sendMessagesIntervalRangeType": "minutes",
+          "type": "seconds"
+        }
+      },
+      {
+        "type": {
+          "icon": "",
+          "id": "note",
+          "tag": "note",
+          "color": "transparent"
+        },
+        "pos": "{\"x\":1339.159417334699,\"y\":777.637889729653}",
+        "id": "FI56M7JTqCmVXJfhTB9Z",
+        "note": {
+          "text": "",
+          "size": [
+            311,
+            668
+          ],
+          "color": "#f5d0fe"
+        }
+      },
+      {
+        "lastEditedBy": "carolinelejnecess7@gmail.com",
+        "pos": "{\"x\":3544.747186960834,\"y\":-1010.394363553393}",
+        "message": {
+          "interactiveType": "cta-url",
+          "messageType": "interactive-message",
+          "ctaUrl": {
+            "sonId": "ZauLZmHFdvOznl9fC5S7",
+            "campaignId": "DJsHmtY9hbTwgK6WpGS0",
+            "parameters": {
+              "display_text": "Assistir Aulas",
+              "url": "https://cessetembro.com.br/{{CD_CURSO_AULAS}}?utm_source=apit10a"
+            }
+          },
+          "buttonsBodyText": "Acesse as aulas liberadas pelo botão abaixo 👇",
+          "type": "send_message"
+        },
+        "id": "G92NWc5EC1zvdfUPbQ33",
+        "type": {
+          "tag": "message",
+          "color": "transparent",
+          "id": "message",
+          "icon": ""
+        }
+      },
+      {
+        "lastEditedBy": "carolinelejnecess7@gmail.com",
+        "action": {
+          "forceAttribution": false,
+          "unniiaAtributionOnly": false,
+          "userResourceGroupSendRandomic": false,
+          "keepChatActive": false,
+          "type": "remove_tag",
+          "tags": [
+            "{{TAG_CANCEL_CURSO}}"
+          ]
+        },
+        "sonId": "sdps3ddnlBt9hBCMdXY3",
+        "pos": "{\"x\":1542.986722266071,\"y\":204.35370592800967}",
+        "type": {
+          "id": "action",
+          "color": "transparent",
+          "tag": "action",
+          "icon": ""
+        },
+        "id": "GD4HDIHxRKd1iZRL7pbu"
+      },
+      {
+        "message": {
+          "buttons": [
+            {
+              "sonId": "2W8d6807ddFgYVUPSF6a",
+              "reply": {
+                "id": "QjOJokdj9gZXtksPRDiv",
+                "title": "Solicitar Certific."
+              },
+              "type": "reply"
+            },
+            {
+              "reply": {
+                "id": "bDpkMquDShkmVsfSLULg",
+                "title": "Acessar Aula 1"
+              },
+              "type": "reply",
+              "sonId": "W29LvFKj2xgPyQ75Ejfd"
+            },
+            {
+              "type": "reply",
+              "sonId": "k2o6At9UyFHgNUsGRNBj",
+              "reply": {
+                "id": "iKwXlxKuTgrwYwX5heRr",
+                "title": "Cancelar inscrição"
+              }
+            }
+          ],
+          "buttonsBodyText": "*Amanhã é o último dia!* ⚡\n\nPor favor, não perca o prazo.\nSolicite o seu certificado vitalício. \n\nÀs 11:00 a gente envia por aqui a segunda aula gratuita pra você.\n({{NOME_CURSO}})",
+          "type": "send_message",
+          "messageType": "interactive-message",
+          "interactiveType": "reply-button"
+        },
+        "type": {
+          "id": "message",
+          "icon": "",
+          "tag": "message",
+          "color": "transparent"
+        },
+        "lastEditedBy": "carolinelejnecess7@gmail.com",
+        "sonId": "vAIM1ig2b6QxWcMNWUZa",
+        "pos": "{\"x\":759.3155208582416,\"y\":-981.3936450386689}",
+        "id": "GZZwnD5662gPQtzf2lSj"
+      },
+      {
+        "note": {
+          "size": [
+            302,
+            645
+          ],
+          "color": "#f5d0fe",
+          "text": ""
+        },
+        "id": "JrjTE2tGJ6JDXzy0A95X",
+        "pos": "{\"x\":187.78274195164806,\"y\":904.088250581387}",
+        "type": {
+          "tag": "note",
+          "id": "note",
+          "icon": "",
+          "color": "transparent"
+        }
+      },
+      {
+        "note": {
+          "size": [
+            328,
+            506
+          ],
+          "color": "#f5d0fe",
+          "text": ""
+        },
+        "id": "KEwMZm58E3NQjdCE9D1t",
+        "pos": "{\"x\":1749.1807446912399,\"y\":761.7168716745986}",
+        "type": {
+          "id": "note",
+          "tag": "note",
+          "icon": "",
+          "color": "transparent"
+        }
+      },
+      {
+        "conditionalV2": {
+          "groupConditions": [
+            {
+              "sonId": "aWdmZGEpceGi4bUP0Exm",
+              "name": "",
+              "conditionType": "or",
+              "conditions": [
+                {
+                  "type": "not-contains-some-tag",
+                  "tags": [
+                    "{{TAG_CERT_CURSO}}",
+                    "{{TAG_CANCEL_CURSO}}"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "lastEditedBy": "carolinelejnecess7@gmail.com",
+        "pos": "{\"x\":203.08641851118932,\"y\":943.4994948308961}",
+        "type": {
+          "icon": "",
+          "id": "conditionalV2",
+          "color": "transparent",
+          "tag": "conditionalV2"
+        },
+        "id": "LrQw49j940netyr1FVve"
+      },
+      {
+        "pos": "{\"x\":736.3078192770195,\"y\":-995.2072393953187}",
+        "id": "MZVSwvCvRRGCljmY2pJU",
+        "type": {
+          "color": "transparent",
+          "icon": "",
+          "id": "note",
+          "tag": "note"
+        },
+        "note": {
+          "color": "#f5d0fe",
+          "text": "",
+          "size": [
+            327,
+            584
+          ]
+        }
+      },
+      {
+        "sonId": "tYDaMMNOJP6QnUfC68fr",
+        "id": "NMlPxPNp3ZUVJhjP6e1L",
+        "type": {
+          "icon": "",
+          "color": "transparent",
+          "id": "delay",
+          "tag": "delay"
+        },
+        "pos": "{\"x\":2800.5846592480007,\"y\":-296.76691860765914}",
+        "lastEditedBy": "gjulioti@gmail.com",
+        "delay": {
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "type": "seconds",
+          "sendMessagesIntervalRangeType": "minutes",
+          "isComercialInterval": false,
+          "time": 45
+        }
+      },
+      {
+        "delay": {
+          "type": "minutes",
+          "isComercialInterval": false,
+          "time": 180,
+          "sendMessagesIntervalRangeType": "minutes",
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ]
+        },
+        "id": "P48XH7ZM2OA0XWj4mDqC",
+        "pos": "{\"x\":-142.15851365603464,\"y\":923.1013550584834}",
+        "type": {
+          "icon": "",
+          "id": "delay",
+          "color": "transparent",
+          "tag": "delay"
+        },
+        "sonId": "LrQw49j940netyr1FVve"
+      },
+      {
+        "pos": "{\"x\":1957.972088461516,\"y\":-456.1556760550338}",
+        "conditionalV2": {
+          "groupConditions": [
+            {
+              "sonId": "sndm3723lyVnaorXcS48",
+              "conditions": [
+                {
+                  "tags": [],
+                  "type": "conversation-window"
+                }
+              ],
+              "conditionType": "and"
+            }
+          ],
+          "falseId": "BK5BCb1SRJqye3Ho5DHY"
+        },
+        "type": {
+          "color": "transparent",
+          "tag": "conditionalV2",
+          "id": "conditionalV2",
+          "icon": ""
+        },
+        "lastEditedBy": "cessetembro@gmail.com",
+        "id": "QgtChKq5UogkOZpqdhwi"
+      },
+      {
+        "lastEditedBy": "gjulioti@gmail.com",
+        "type": {
+          "icon": "",
+          "id": "delay",
+          "tag": "delay",
+          "color": "transparent"
+        },
+        "delay": {
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "sendMessagesIntervalRangeType": "minutes",
+          "type": "seconds",
+          "isComercialInterval": false,
+          "time": 15
+        },
+        "pos": "{\"x\":983.6910342518091,\"y\":1193.2092732031747}",
+        "id": "TiapMR5u0XB5bPmgxobe",
+        "sonId": "BK5BCb1SRJqye3Ho5DHY"
+      },
+      {
+        "lastEditedBy": "carolinelejnecess7@gmail.com",
+        "type": {
+          "tag": "message",
+          "color": "transparent",
+          "id": "message",
+          "icon": ""
+        },
+        "id": "W29LvFKj2xgPyQ75Ejfd",
+        "pos": "{\"x\":1154.2727536844357,\"y\":-618.6979131091059}",
+        "message": {
+          "interactiveType": "cta-url",
+          "ctaUrl": {
+            "parameters": {
+              "display_text": "Clique aqui",
+              "url": "https://cessetembro.com.br/{{CD_CURSO_AULAS}}?utm_source=apit7a"
+            },
+            "campaignId": "s9ULYLzHJFgJRMnaht0Z",
+            "sonId": "4jj4ScwU2GUgnR6d60OL"
+          },
+          "type": "send_message",
+          "buttonsBodyText": "Assista a aula 1 pelo botão abaixo 👇",
+          "messageType": "interactive-message"
+        }
+      },
+      {
+        "type": {
+          "tag": "note",
+          "icon": "",
+          "color": "transparent",
+          "id": "note"
+        },
+        "note": {
+          "color": "#f5d0fe",
+          "text": "",
+          "size": [
+            311,
+            574
+          ]
+        },
+        "id": "ZCt6dHKmqQA21q3I56uH",
+        "pos": "{\"x\":2498.6236056053112,\"y\":589.1832634066108}"
+      },
+      {
+        "pos": "{\"x\":3879.1988287414515,\"y\":-1015.3127963205231}",
+        "id": "ZauLZmHFdvOznl9fC5S7",
+        "lastEditedBy": "cessetembro@gmail.com",
+        "type": {
+          "icon": "",
+          "tag": "delay",
+          "color": "transparent",
+          "id": "delay"
+        },
+        "delay": {
+          "sendMessagesIntervalRangeType": "minutes",
+          "time": 1,
+          "isComercialInterval": false,
+          "type": "seconds",
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ]
+        }
+      },
+      {
+        "type": {
+          "icon": "",
+          "id": "conditionalV2",
+          "color": "transparent",
+          "tag": "conditionalV2"
+        },
+        "id": "a6A4cizTjPqJZVPTAFCB",
+        "lastEditedBy": "cessetembro@gmail.com",
+        "conditionalV2": {
+          "falseId": "P48XH7ZM2OA0XWj4mDqC",
+          "groupConditions": [
+            {
+              "sonId": "kAgSH6oxH9GMZlAvx1sy",
+              "conditions": [
+                {
+                  "tags": [],
+                  "type": "conversation-window"
+                }
+              ],
+              "conditionType": "and"
+            }
+          ]
+        },
+        "pos": "{\"x\":-418.38605878581666,\"y\":-617.557247007756}"
+      },
+      {
+        "pos": "{\"x\":986.4490793230676,\"y\":1832.923705906669}",
+        "lastEditedBy": "gjulioti@gmail.com",
+        "delay": {
+          "time": 45,
+          "sendMessagesIntervalRangeType": "minutes",
+          "isComercialInterval": false,
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "type": "seconds"
+        },
+        "id": "aBaSYOPhbWZjn7e660Ky",
+        "type": {
+          "tag": "delay",
+          "icon": "",
+          "color": "transparent",
+          "id": "delay"
+        },
+        "sonId": "BK5BCb1SRJqye3Ho5DHY"
+      },
+      {
+        "randomizer": {
+          "variations": [
+            {
+              "value": 25,
+              "id": "GaMblFU1VocLaPaPHj1O",
+              "sonId": "gWB6mRjqKxN90YcmhqRk"
+            },
+            {
+              "sonId": "TiapMR5u0XB5bPmgxobe",
+              "value": 25,
+              "id": "sSXDbNSHVoeQa6GjART0"
+            },
+            {
+              "sonId": "88ObiTQ0szFwvRQ9rMyd",
+              "value": 25,
+              "id": "7KxMiK86he3feDf2ySPg"
+            },
+            {
+              "id": "D089ceyWJXlBFJf9NrTX",
+              "value": 25,
+              "sonId": "aBaSYOPhbWZjn7e660Ky"
+            }
+          ],
+          "randomPathAlways": true
+        },
+        "id": "aWdmZGEpceGi4bUP0Exm",
+        "type": {
+          "icon": "",
+          "color": "transparent",
+          "id": "randomizer",
+          "tag": "randomizer"
+        },
+        "pos": "{\"x\":532.9001573497862,\"y\":1373.4446821592096}",
+        "lastEditedBy": "cessetembro@gmail.com"
+      },
+      {
+        "delay": {
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "isComercialInterval": false,
+          "time": 45,
+          "type": "seconds",
+          "sendMessagesIntervalRangeType": "minutes"
+        },
+        "pos": "{\"x\":386.4651212072679,\"y\":-205.4630800413529}",
+        "sonId": "GZZwnD5662gPQtzf2lSj",
+        "type": {
+          "icon": "",
+          "color": "transparent",
+          "tag": "delay",
+          "id": "delay"
+        },
+        "lastEditedBy": "gjulioti@gmail.com",
+        "id": "bPEl0QpnSOZs0pZyAMfI"
+      },
+      {
+        "note": {
+          "text": "",
+          "size": [
+            346,
+            660
+          ],
+          "color": "#f5d0fe"
+        },
+        "id": "cMv2uTz8n3e7STuzWKJ2",
+        "pos": "{\"x\":1593.584185358584,\"y\":-561.1773810961619}",
+        "type": {
+          "icon": "",
+          "tag": "note",
+          "color": "transparent",
+          "id": "note"
+        }
+      },
+      {
+        "pos": "{\"x\":2516.2951240037287,\"y\":609.1777360410849}",
+        "type": {
+          "icon": "",
+          "color": "transparent",
+          "tag": "message",
+          "id": "message"
+        },
+        "id": "d3YAWJWsawaVY1NScqwO",
+        "message": {
+          "type": "send_message",
+          "interactiveType": "cta-url",
+          "buttonsBodyText": "Ah, e já aproveitando... \n\nSeu *certificado do curso* já pode ser solicitado, pelo botão abaixo. 🎖️\n\nÉ opcional, mas altamente recomendado.\nAlém de comprovar que fez o curso e melhorar o currículo, vale horas complementares (40h), acompanha o ebook do curso e muito mais!👇",
+          "ctaUrl": {
+            "parameters": {
+              "url": "https://cessetembro.com.br/{{CD_CURSO_CERT}}?utm_source=apit10c",
+              "display_text": "Solicitar Certific."
+            },
+            "sonId": "zf1adW5EVbXmlePCLsSQ",
+            "campaignId": "Q2eUayuqTt1yS7SRploB"
+          },
+          "messageType": "interactive-message"
+        },
+        "lastEditedBy": "carolinelejnecess7@gmail.com"
+      },
+      {
+        "note": {
+          "color": "#f5d0fe",
+          "size": [
+            303,
+            241
+          ],
+          "text": ""
+        },
+        "type": {
+          "tag": "note",
+          "color": "transparent",
+          "icon": "",
+          "id": "note"
+        },
+        "id": "dDuQdZ37MvtSz6VRVb4a",
+        "pos": "{\"x\":-750.6227607256053,\"y\":-543.8305640122678}"
+      },
+      {
+        "type": {
+          "id": "conditionalV2",
+          "color": "transparent",
+          "icon": "",
+          "tag": "conditionalV2"
+        },
+        "id": "eaZJgkx4PBDz1K48PE4x",
+        "pos": "{\"x\":1626.2554842254253,\"y\":-509.5684028554547}",
+        "lastEditedBy": "carolinelejnecess7@gmail.com",
+        "conditionalV2": {
+          "groupConditions": [
+            {
+              "conditionType": "or",
+              "conditions": [
+                {
+                  "type": "not-contains-some-tag",
+                  "tags": [
+                    "{{TAG_CERT_CURSO}}",
+                    "{{TAG_CANCEL_CURSO}}"
+                  ]
+                }
+              ],
+              "name": "",
+              "sonId": "QgtChKq5UogkOZpqdhwi"
+            }
+          ]
+        }
+      },
+      {
+        "pos": "{\"x\":2786.983305177785,\"y\":-1366.5157293360733}",
+        "delay": {
+          "isComercialInterval": false,
+          "time": 1,
+          "sendMessagesIntervalRangeType": "minutes",
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "type": "seconds"
+        },
+        "sonId": "tYDaMMNOJP6QnUfC68fr",
+        "id": "fz9WHIhil49eUEqzwk63",
+        "type": {
+          "tag": "delay",
+          "color": "transparent",
+          "id": "delay",
+          "icon": ""
+        },
+        "lastEditedBy": "cessetembro@gmail.com"
+      },
+      {
+        "sonId": "BK5BCb1SRJqye3Ho5DHY",
+        "lastEditedBy": "cessetembro@gmail.com",
+        "delay": {
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "type": "seconds",
+          "sendMessagesIntervalRangeType": "minutes",
+          "time": 1,
+          "isComercialInterval": false
+        },
+        "id": "gWB6mRjqKxN90YcmhqRk",
+        "pos": "{\"x\":982.2928506175941,\"y\":834.0133354138221}",
+        "type": {
+          "tag": "delay",
+          "color": "transparent",
+          "icon": "",
+          "id": "delay"
+        }
+      },
+      {
+        "lastEditedBy": "gjulioti@gmail.com",
+        "pos": "{\"x\":385.7630201565023,\"y\":-866.177985644395}",
+        "sonId": "GZZwnD5662gPQtzf2lSj",
+        "type": {
+          "icon": "",
+          "color": "transparent",
+          "tag": "delay",
+          "id": "delay"
+        },
+        "id": "jYPWdxqMBdS17oHSyIAz",
+        "delay": {
+          "isComercialInterval": false,
+          "sendMessagesIntervalRangeType": "minutes",
+          "type": "seconds",
+          "time": 15,
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ]
+        }
+      },
+      {
+        "type": {
+          "color": "transparent",
+          "tag": "action",
+          "id": "action",
+          "icon": ""
+        },
+        "id": "k2o6At9UyFHgNUsGRNBj",
+        "pos": "{\"x\":808.2478185277678,\"y\":162.64846361565375}",
+        "lastEditedBy": "carolinelejnecess7@gmail.com",
+        "sonId": "tRy1v1Pkm1tQRbDCpavW",
+        "action": {
+          "type": "add_tag",
+          "unniiaAtributionOnly": false,
+          "userResourceGroupSendRandomic": false,
+          "forceAttribution": false,
+          "keepChatActive": false,
+          "tags": [
+            "{{TAG_CANCEL_CURSO}}"
+          ]
+        }
+      },
+      {
+        "pos": "{\"x\":-65.0278567455207,\"y\":-685.9425766883601}",
+        "type": {
+          "id": "randomizer",
+          "tag": "randomizer",
+          "icon": "",
+          "color": "transparent"
+        },
+        "randomizer": {
+          "variations": [
+            {
+              "sonId": "EOqop4zlSR0blWlFFd0P",
+              "id": "Zh7LgjiAqabtSnwfBpW1",
+              "value": 25
+            },
+            {
+              "sonId": "jYPWdxqMBdS17oHSyIAz",
+              "value": 25,
+              "id": "8NMSZCwn9YaMKg81RiuH"
+            },
+            {
+              "id": "CDkZMDENNSCpW9pTRR8n",
+              "value": 25,
+              "sonId": "mzHs32WFujD8T9wQUEIX"
+            },
+            {
+              "id": "9sZdna4lBmG7zV6zhbcu",
+              "sonId": "bPEl0QpnSOZs0pZyAMfI",
+              "value": 25
+            }
+          ],
+          "randomPathAlways": true
+        },
+        "id": "kAgSH6oxH9GMZlAvx1sy",
+        "lastEditedBy": "cessetembro@gmail.com"
+      },
+      {
+        "sonId": "GZZwnD5662gPQtzf2lSj",
+        "id": "mzHs32WFujD8T9wQUEIX",
+        "type": {
+          "id": "delay",
+          "icon": "",
+          "color": "transparent",
+          "tag": "delay"
+        },
+        "lastEditedBy": "gjulioti@gmail.com",
+        "delay": {
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "time": 30,
+          "isComercialInterval": false,
+          "sendMessagesIntervalRangeType": "minutes",
+          "type": "seconds"
+        },
+        "pos": "{\"x\":387.1612037907171,\"y\":-547.744861581185}"
+      },
+      {
+        "pos": "{\"x\":1515.778365225014,\"y\":-1228.7162632346176}",
+        "id": "oBckvqZkX2c3FzyElfyV",
+        "lastEditedBy": "cessetembro@gmail.com",
+        "delay": {
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "sendMessagesIntervalRangeType": "minutes",
+          "time": 1,
+          "isComercialInterval": false,
+          "type": "seconds"
+        },
+        "type": {
+          "id": "delay",
+          "icon": "",
+          "tag": "delay",
+          "color": "transparent"
+        }
+      },
+      {
+        "message": {
+          "buttonsBodyText": "Boa! \n\nA primeira aula foi liberada ontem, e agora já tem mais uma disponível!\n\nPara acessar às aulas e materiais, clique no botão abaixo👇",
+          "type": "send_message",
+          "messageType": "interactive-message",
+          "ctaUrl": {
+            "sonId": "r2H6XcZZJXMzRWJyeWH3",
+            "parameters": {
+              "url": "https://cessetembro.com.br/{{CD_CURSO_AULAS}}?utm_source=apit10a",
+              "display_text": "Acessar Aulas e Mat."
+            },
+            "campaignId": "ryS60fjIg7tjwfaIuY9B"
+          },
+          "interactiveType": "cta-url"
+        },
+        "id": "pgKNpGnPNrWHmuMAIkJg",
+        "pos": "{\"x\":1776.0906337163924,\"y\":795.1704938083762}",
+        "lastEditedBy": "carolinelejnecess7@gmail.com",
+        "sonId": "B62UdyQ9wxRr6U5fquoE",
+        "type": {
+          "color": "transparent",
+          "tag": "message",
+          "id": "message",
+          "icon": ""
+        }
+      },
+      {
+        "type": {
+          "icon": "",
+          "color": "transparent",
+          "tag": "delay",
+          "id": "delay"
+        },
+        "pos": "{\"x\":2202.8987335216593,\"y\":614.4808100192504}",
+        "delay": {
+          "sendMessagesIntervalRangeType": "minutes",
+          "isComercialInterval": false,
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "time": 1,
+          "type": "seconds"
+        },
+        "lastEditedBy": "cessetembro@gmail.com",
+        "id": "r2H6XcZZJXMzRWJyeWH3"
+      },
+      {
+        "note": {
+          "color": "#f5d0fe",
+          "text": "",
+          "size": [
+            321,
+            377
+          ]
+        },
+        "pos": "{\"x\":787.2747265115086,\"y\":131.39888188490727}",
+        "id": "rjJQG4ADDZn42ZmdtCiA",
+        "type": {
+          "color": "transparent",
+          "tag": "note",
+          "icon": "",
+          "id": "note"
+        }
+      },
+      {
+        "note": {
+          "size": [
+            339,
+            394
+          ],
+          "text": "",
+          "color": "#f5d0fe"
+        },
+        "pos": "{\"x\":1118.8627549015478,\"y\":-1165.2990177541888}",
+        "id": "sQkBi4YR8HNoUTQcPQLf",
+        "type": {
+          "tag": "note",
+          "icon": "",
+          "color": "transparent",
+          "id": "note"
+        }
+      },
+      {
+        "pos": "{\"x\":1921.5968900145044,\"y\":230.15833694049843}",
+        "message": {
+          "messageType": "message-text",
+          "message": "Que ótimo! Sua inscrição foi renovada e você continuará recebendo as aulas e avisos importantes. Até logo",
+          "type": "send_message"
+        },
+        "type": {
+          "tag": "message",
+          "color": "transparent",
+          "icon": "",
+          "id": "message"
+        },
+        "id": "sdps3ddnlBt9hBCMdXY3"
+      },
+      {
+        "randomizer": {
+          "variations": [
+            {
+              "id": "q8Q5EclclhKwmRXCTvdi",
+              "sonId": "fz9WHIhil49eUEqzwk63",
+              "value": 25
+            },
+            {
+              "id": "3dzwzH8JCyOsmgl0mxO9",
+              "sonId": "9PfWuDAL91Ocfx2e6RCI",
+              "value": 25
+            },
+            {
+              "id": "YtB7jv3Rgu4AvZFBjlj3",
+              "sonId": "1TA4uGRqPlhqrlUQozme",
+              "value": 25
+            },
+            {
+              "id": "M1E4TCvefFzoWyrsJl4E",
+              "value": 25,
+              "sonId": "NMlPxPNp3ZUVJhjP6e1L"
+            }
+          ],
+          "randomPathAlways": true
+        },
+        "id": "sndm3723lyVnaorXcS48",
+        "lastEditedBy": "cessetembro@gmail.com",
+        "type": {
+          "icon": "",
+          "id": "randomizer",
+          "color": "transparent",
+          "tag": "randomizer"
+        },
+        "pos": "{\"x\":2337.590611909977,\"y\":-827.0843825906859}"
+      },
+      {
+        "message": {
+          "messageType": "interactive-message",
+          "type": "send_message",
+          "buttonsBodyText": "Sem problemas! Vou te desisncrever do curso e você não vai receber mais mensagens.\n\nMas vou deixar um botão aqui. Caso mude de ideia, é só clicar 👇",
+          "buttons": [
+            {
+              "reply": {
+                "id": "sNy74dcInTurnapH0Jaj",
+                "title": "Mudei de ideia!"
+              },
+              "type": "reply",
+              "sonId": "GD4HDIHxRKd1iZRL7pbu"
+            }
+          ],
+          "interactiveType": "reply-button"
+        },
+        "type": {
+          "color": "transparent",
+          "icon": "",
+          "id": "message",
+          "tag": "message"
+        },
+        "pos": "{\"x\":1204.443991951971,\"y\":191.97885318719386}",
+        "id": "tRy1v1Pkm1tQRbDCpavW"
+      },
+      {
+        "lastEditedBy": "carolinelejnecess7@gmail.com",
+        "id": "tYDaMMNOJP6QnUfC68fr",
+        "type": {
+          "id": "message",
+          "icon": "",
+          "color": "transparent",
+          "tag": "message"
+        },
+        "pos": "{\"x\":3154.687714850085,\"y\":-683.4895325611727}",
+        "message": {
+          "type": "send_message",
+          "buttonsBodyText": "*Você acabou de ganhar!* ⚡\n\nMateriais exclusivos do evento liberados para você\n\n*Aulas de hoje também liberadas*\nAqui você aprende um semestre em 5 dias — somos a melhor escola do Brasil.\n\nBaixe o Volume 1 e 2 da apostila gratuita:\n-> *Resumo e principais pontos da aula 1*\n-> *{{VOL_PDF_2}}*\n\nAh, *penúltimo dia* para solicitar o seu *certificado vitalício.*\n",
+          "messageType": "interactive-message",
+          "interactiveType": "reply-button",
+          "buttons": [
+            {
+              "type": "reply",
+              "reply": {
+                "title": "Acessar Aulas",
+                "id": "LlwKAs55qJBzztlnXkQc"
+              },
+              "sonId": "G92NWc5EC1zvdfUPbQ33"
+            },
+            {
+              "type": "reply",
+              "reply": {
+                "id": "cGvQ91YqVf60aiZesXGD",
+                "title": "Acessar Materiais"
+              },
+              "sonId": "wETJl5rbnCBCdmp7VIgQ"
+            },
+            {
+              "type": "reply",
+              "sonId": "k2o6At9UyFHgNUsGRNBj",
+              "reply": {
+                "id": "xmb33pB1qZvyTikkvlmP",
+                "title": "Cancelar Inscrição"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "vAIM1ig2b6QxWcMNWUZa",
+        "pos": "{\"x\":1269.449508512867,\"y\":-233.3419642404289}",
+        "delay": {
+          "time": 180,
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "isComercialInterval": false,
+          "type": "minutes",
+          "sendMessagesIntervalRangeType": "minutes"
+        },
+        "type": {
+          "id": "delay",
+          "icon": "",
+          "color": "transparent",
+          "tag": "delay"
+        },
+        "sonId": "eaZJgkx4PBDz1K48PE4x"
+      },
+      {
+        "pos": "{\"x\":3543.813264901554,\"y\":-570.93435501023}",
+        "id": "wETJl5rbnCBCdmp7VIgQ",
+        "type": {
+          "icon": "",
+          "color": "transparent",
+          "tag": "message",
+          "id": "message"
+        },
+        "lastEditedBy": "carolinelejnecess7@gmail.com",
+        "message": {
+          "interactiveType": "cta-url",
+          "type": "send_message",
+          "buttonsBodyText": "Acesse os materiais pelo botão abaixo 👇",
+          "messageType": "interactive-message",
+          "ctaUrl": {
+            "sonId": "xxIrl6i1GFHoJZCuNiJS",
+            "parameters": {
+              "url": "https://cessetembro.com.br/{{CD_CURSO_PDF}}?utm_source=apit10c",
+              "display_text": "Acessar Materiais"
+            },
+            "campaignId": "60tYbRkHBkazdGBXGqbX"
+          }
+        }
+      },
+      {
+        "lastEditedBy": "cessetembro@gmail.com",
+        "delay": {
+          "isComercialInterval": false,
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "sendMessagesIntervalRangeType": "minutes",
+          "time": 1,
+          "type": "seconds"
+        },
+        "pos": "{\"x\":3880.996464976948,\"y\":-569.7147594553194}",
+        "id": "xxIrl6i1GFHoJZCuNiJS",
+        "type": {
+          "color": "transparent",
+          "id": "delay",
+          "icon": "",
+          "tag": "delay"
+        }
+      },
+      {
+        "id": "zf1adW5EVbXmlePCLsSQ",
+        "delay": {
+          "isComercialInterval": false,
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "sendMessagesIntervalRangeType": "minutes",
+          "time": 1,
+          "type": "seconds"
+        },
+        "type": {
+          "id": "delay",
+          "icon": "",
+          "tag": "delay",
+          "color": "transparent"
+        },
+        "pos": "{\"x\":2894.2970533194575,\"y\":616.1928492899577}",
+        "lastEditedBy": "cessetembro@gmail.com"
+      }
+    ]
+  }
+}

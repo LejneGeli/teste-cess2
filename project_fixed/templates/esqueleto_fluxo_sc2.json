@@ -1,0 +1,4059 @@
+{
+  "name": "SC2 {{DT_INICIO_CURSO_FORMAT}} - {{NOME_CURSO}}",
+  "category": "automation",
+  "status": "idle",
+  "connectionType": "whatsapp",
+  "folderId": "EC9xRfhxIpq0XlT6c9Bi",
+  "node": {
+    "lastEditedBy": "cessetembro@gmail.com",
+    "type": {
+      "id": "xJWxeWydUsUzqyjc57AO",
+      "icon": "init",
+      "color": "transparent",
+      "tag": "init"
+    },
+    "pos": "{\"x\":-2177.523436831376,\"y\":157.8535260389158}",
+    "id": "xN5oH0wV6iMsYoeFhE6o",
+    "triggers": [
+      {
+        "caseSentive": false,
+        "instagramSegment": "all",
+        "interaction": "add-tag",
+        "postSegment": "all"
+      }
+    ],
+    "sonId": "SyPo7yOB0eEJWYMZm9N6",
+    "nodes": [
+      {
+        "message": {
+          "ctaUrl": {
+            "campaignId": "IA0mKvN6oFRSD2WThUwj",
+            "parameters": {
+              "url": "{{LINK_CERTIFICADO_IMG}}",
+              "display_text": "Garantir Agora!"
+            },
+            "sonId": "ya2CZrlcpuZGYYIcTjEM"
+          },
+          "messageType": "interactive-message",
+          "buttonsBodyText": "📋 O que você recebe:\n- Certificado de 40 horas reconhecido nacionalmente\n- Ebook completo do curso\n- Apostila exclusiva\n- Acesso vitalício aos materiais",
+          "type": "send_message",
+          "interactiveType": "cta-url"
+        },
+        "lastEditedBy": "cessetembro@gmail.com",
+        "id": "0Ax9kDEBAL3dt27H83x6",
+        "sonId": "3MAP5V9P8ayAWfO6Ph6H",
+        "type": {
+          "tag": "message",
+          "id": "message",
+          "icon": "",
+          "color": "transparent"
+        },
+        "pos": "{\"x\":614.1614998742916,\"y\":127.48248993750565}",
+        "sequential": true
+      },
+      {
+        "delay": {
+          "sendAt": {
+            "seconds": {{DT_SC2_1330_VARIA}},
+            "nanoseconds": 0
+          },
+          "sendMessagesIntervalRangeType": "minutes",
+          "isComercialInterval": false,
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "type": "shipping-date"
+        },
+        "lastEditedBy": "karloscess7@gmail.com",
+        "id": "0jRVElcV1PeSztfI563q",
+        "sonId": "hUriRInPk7FV2fJlczfR",
+        "type": {
+          "color": "transparent",
+          "id": "delay",
+          "icon": "",
+          "tag": "delay"
+        },
+        "pos": "{\"x\":32.33108981523219,\"y\":1039.7001544831514}"
+      },
+      {
+        "delay": {
+          "sendMessagesIntervalRangeType": "minutes",
+          "type": "seconds",
+          "time": 30,
+          "isComercialInterval": false,
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ]
+        },
+        "pos": "{\"x\":4023.9093007255133,\"y\":1350.5953908161187}",
+        "sonId": "T3zQT681E9X1XEkft1IO",
+        "type": {
+          "id": "delay",
+          "tag": "delay",
+          "color": "transparent",
+          "icon": ""
+        },
+        "lastEditedBy": "gjulioti@gmail.com",
+        "id": "19H1kWzZvcUa7jmZFQ1Q"
+      },
+      {
+        "message": {
+          "message": "Este certificado comprova o curso que você JÁ FEZ.\n\nEmita seu certificado agora!\nhttps://pay.hotmart.com/E97047375H?checkoutMode=10&sck=recm7c||5educadorsocial7||",
+          "messageType": "message-text",
+          "type": "send_message",
+          "links": [
+            {
+              "campaignId": "BPDPsLtKuv0LuprWsOa2",
+              "url": "https://gemini.google.com/app",
+              "sonId": "fiBe9Ub3m8O3w9V1AnZA"
+            },
+            {
+              "url": "https://pay.hotmart.com/C96746026T?checkoutMode=10&sck=recm7c||31antropoforense12||",
+              "sonId": "fiBe9Ub3m8O3w9V1AnZA",
+              "campaignId": "qJ7iXz4CUhqEQ4vYB4DT"
+            },
+            {
+              "sonId": "fiBe9Ub3m8O3w9V1AnZA",
+              "url": "https://pay.hotmart.com/I96746497H?checkoutMode=10&sck=recm4c||21fisiodomiciliar13||",
+              "campaignId": "fbFPPkscx7g5wIkhhQyH"
+            },
+            {
+              "url": "https://pay.hotmart.com/Q96744939H?checkoutMode=10&sck=recm7c||21neuropsicomotor11||",
+              "sonId": "fiBe9Ub3m8O3w9V1AnZA",
+              "campaignId": "hu2s6ureiynXyF9VtRzz"
+            },
+            {
+              "sonId": "fiBe9Ub3m8O3w9V1AnZA",
+              "url": "https://pay.hotmart.com/M96745617G?checkoutMode=10&sck=recm7c||71terapeutica22||",
+              "campaignId": "4CCi8BJl9URT3a4f0CLI"
+            },
+            {
+              "url": "https://pay.hotmart.com/K96744623A?checkoutMode=10&sck=recm7c||2bandagem20||",
+              "sonId": "fiBe9Ub3m8O3w9V1AnZA",
+              "campaignId": "E8q5cFJTk3pt358eAadk"
+            },
+            {
+              "url": "https://pay.hotmart.com/E97047375H?checkoutMode=10&sck=recm7c||5educadorsocial7||",
+              "campaignId": "EOKB2ED0NqwIFSxH7U7v",
+              "sonId": "fiBe9Ub3m8O3w9V1AnZA"
+            }
+          ]
+        },
+        "type": {
+          "tag": "message",
+          "id": "message",
+          "icon": "",
+          "color": "transparent"
+        },
+        "sequential": true,
+        "lastEditedBy": "alycecess7@gmail.com",
+        "id": "2bLGFK3pqTCz89ctUgCB",
+        "pos": "{\"x\":4870.037910026971,\"y\":2465.9591206037003}"
+      },
+      {
+        "sonId": "VRIGeuVuUQsSMn8Q7Plo",
+        "type": {
+          "id": "delay",
+          "color": "transparent",
+          "tag": "delay",
+          "icon": ""
+        },
+        "delay": {
+          "sendMessagesIntervalRangeType": "minutes",
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "sendAt": {
+            "seconds": {{DT_SC2_2130_VARIA}},
+            "nanoseconds": 0
+          },
+          "type": "shipping-date",
+          "isComercialInterval": false
+        },
+        "lastEditedBy": "karloscess7@gmail.com",
+        "id": "31UhPEKlWd9qOFDX5U88",
+        "pos": "{\"x\":4868.730431100208,\"y\":1070.7429711294324}"
+      },
+      {
+        "type": {
+          "id": "delay",
+          "tag": "delay",
+          "icon": "",
+          "color": "transparent"
+        },
+        "delay": {
+          "time": 5,
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "sendMessagesIntervalRangeType": "minutes",
+          "type": "minutes",
+          "isComercialInterval": false
+        },
+        "id": "3MAP5V9P8ayAWfO6Ph6H",
+        "lastEditedBy": "karloscess7@gmail.com",
+        "pos": "{\"x\":978.8461855076653,\"y\":250.5915650102639}",
+        "sonId": "4eF0YRSoEJyVAQbUXKak"
+      },
+      {
+        "type": {
+          "color": "transparent",
+          "tag": "conditionalV2",
+          "id": "conditionalV2",
+          "icon": ""
+        },
+        "conditionalV2": {
+          "falseId": "r5w1pApmgzgJ8MsbR13A",
+          "groupConditions": [
+            {
+              "sonId": "r1BzUxjsaaJBeWW34DxZ",
+              "conditions": [
+                {
+                  "type": "conversation-window",
+                  "tags": []
+                }
+              ],
+              "conditionType": "or"
+            }
+          ]
+        },
+        "id": "4D4oT4zISJzdmAVDZQWg",
+        "lastEditedBy": "karloscess7@gmail.com",
+        "pos": "{\"x\":3999.0634023920293,\"y\":2727.5193104485556}"
+      },
+      {
+        "id": "4eF0YRSoEJyVAQbUXKak",
+        "conditionalV2": {
+          "falseId": "LyF9How7BsSakdWHqSQq",
+          "groupConditions": [
+            {
+              "conditions": [
+                {
+                  "type": "contains-some-tag",
+                  "tags": [
+                    "Bloquear Envios",
+                    "{{TAG_CERT_CURSO}}",
+                    "{TAG_CANCELAR_ENVIOS_SC}"
+                  ]
+                }
+              ],
+              "name": "",
+              "conditionType": "or"
+            }
+          ]
+        },
+        "pos": "{\"x\":1311.866388319651,\"y\":15.77913161105721}",
+        "type": {
+          "icon": "",
+          "color": "transparent",
+          "tag": "conditionalV2",
+          "id": "conditionalV2"
+        },
+        "lastEditedBy": "karloscess7@gmail.com"
+      },
+      {
+        "type": {
+          "id": "message",
+          "icon": "",
+          "color": "transparent",
+          "tag": "message"
+        },
+        "pos": "{\"x\":4837.266466140532,\"y\":2711.2833679964315}",
+        "lastEditedBy": "karloscess7@gmail.com",
+        "message": {
+          "interactiveType": "cta-url",
+          "buttonsBodyText": "Show! Então a hora é agora👇",
+          "type": "send_message",
+          "messageType": "interactive-message",
+          "ctaUrl": {
+            "campaignId": "jqdZttDWAkHBL9Jzdj29",
+            "sonId": "zljsg3ZExKrkuVjrd0Fi",
+            "parameters": {
+              "display_text": "Clique aqui",
+              "url": "{{LINK_HOTMART_SC_rep2_T1}}"
+            }
+          }
+        },
+        "id": "5YMBPdIhy5WPJn5xgCob"
+      },
+      {
+        "type": {
+          "id": "delay",
+          "color": "transparent",
+          "icon": "",
+          "tag": "delay"
+        },
+        "pos": "{\"x\":8930.88228737938,\"y\":841.3560344748694}",
+        "delay": {
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "time": 15,
+          "type": "seconds",
+          "sendMessagesIntervalRangeType": "minutes",
+          "isComercialInterval": false
+        },
+        "lastEditedBy": "gjulioti@gmail.com",
+        "id": "5zJqm84qSK3S9E7MALHM",
+        "sonId": "hIb3cYc7gDtnCRd9Z7l1"
+      },
+      {
+        "pos": "{\"x\":6520.581706992634,\"y\":1014.4306213882674}",
+        "delay": {
+          "type": "seconds",
+          "isComercialInterval": false,
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "time": 15,
+          "sendMessagesIntervalRangeType": "minutes"
+        },
+        "sonId": "Qopr6YKsEukCauTXV1oz",
+        "lastEditedBy": "gjulioti@gmail.com",
+        "id": "6LAx2DtJwR9yCmzrhStP",
+        "type": {
+          "color": "transparent",
+          "tag": "delay",
+          "id": "delay",
+          "icon": ""
+        }
+      },
+      {
+        "id": "71ECyyqEifyAe02JRMow",
+        "pos": "{\"x\":7827.67465508906,\"y\":-548.3699538818365}",
+        "lastEditedBy": "cessetembro@gmail.com",
+        "type": {
+          "icon": "",
+          "tag": "message",
+          "id": "message",
+          "color": "transparent"
+        },
+        "message": {
+          "messageType": "interactive-message",
+          "buttons": [
+            {
+              "reply": {
+                "title": "Mudei de ideia!",
+                "id": "55ib162IvpBwTBq80CLN"
+              },
+              "type": "reply",
+              "sonId": "SMgPbDMUgHzpEp35H9pU"
+            },
+            {
+              "reply": {
+                "id": "wQN0JtErnrZjuTmXoIIW",
+                "title": "Ver Outros Cursos"
+              },
+              "sonId": "yqiV5rnR6OPQ16lcr4p6",
+              "type": "reply"
+            }
+          ],
+          "interactiveType": "reply-button",
+          "links": [
+            {
+              "url": "https://loja.cessetembro.com.br/shop?utm_source=m1n",
+              "campaignId": "l6XColgSwHqwKmzSZEhI",
+              "sonId": "2wJT1yxqJQZx1iMqglKa"
+            }
+          ],
+          "buttonsBodyText": "Ok! 😉  Não vou te incomodar.\n\nMas vou deixar um botão aqui. Caso mude de ideia, é só clicar 👇\n\nE se quiser ver outros cursos do CESS com certificado, use o segundo botão 👇\n\n",
+          "type": "send_message"
+        }
+      },
+      {
+        "message": {
+          "messageType": "interactive-message",
+          "interactiveType": "cta-url",
+          "type": "send_message",
+          "ctaUrl": {
+            "campaignId": "IA0mKvN6oFRSD2WThUwj",
+            "sonId": "2G4xzBEjAOPZKGOgBqpy",
+            "parameters": {
+              "url": "https://cessetembro.com.br/certificado5educadorsocial/?utm_source=recm11",
+              "display_text": "Garantir Agora!"
+            }
+          },
+          "buttonsBodyText": "📋 O que você recebe:\n- Certificado de 40 horas reconhecido nacionalmente\n- Ebook completo do curso\n- Apostila exclusiva\n- Acesso vitalício aos materiais"
+        },
+        "sequential": true,
+        "type": {
+          "tag": "message",
+          "icon": "",
+          "color": "transparent",
+          "id": "message"
+        },
+        "lastEditedBy": "karloscess7@gmail.com",
+        "pos": "{\"x\":614.1614998742916,\"y\":127.48248993750565}",
+        "id": "96eboknl0tOdKWCgmRcB"
+      },
+      {
+        "type": {
+          "id": "delay",
+          "icon": "",
+          "color": "transparent",
+          "tag": "delay"
+        },
+        "delay": {
+          "type": "seconds",
+          "isComercialInterval": false,
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "sendMessagesIntervalRangeType": "minutes",
+          "time": 45
+        },
+        "pos": "{\"x\":6517.518403848533,\"y\":1718.9255372170105}",
+        "id": "AuCX0CJNmC0xEMxAlHhW",
+        "lastEditedBy": "gjulioti@gmail.com",
+        "sonId": "Qopr6YKsEukCauTXV1oz"
+      },
+      {
+        "delay": {
+          "type": "minutes",
+          "isComercialInterval": false,
+          "sendMessagesIntervalRangeType": "minutes",
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "time": 10
+        },
+        "sonId": "ZasrYvbbgX7XOi5GSUS4",
+        "type": {
+          "tag": "delay",
+          "color": "transparent",
+          "icon": "",
+          "id": "delay"
+        },
+        "id": "DeTHVGV9TQAYvNE2A9R7",
+        "lastEditedBy": "cessetembro@gmail.com",
+        "pos": "{\"x\":2476.03135753786,\"y\":98.00821411522872}"
+      },
+      {
+        "type": {
+          "icon": "",
+          "color": "transparent",
+          "tag": "delay",
+          "id": "delay"
+        },
+        "lastEditedBy": "gjulioti@gmail.com",
+        "delay": {
+          "sendMessagesIntervalRangeType": "minutes",
+          "time": 30,
+          "isComercialInterval": false,
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "type": "seconds"
+        },
+        "sonId": "dF1LmOLyCRriXKiwku14",
+        "id": "FLZh9WYoGWnzu00lUrgf",
+        "pos": "{\"x\":1565.2411455700794,\"y\":1359.2483609086435}"
+      },
+      {
+        "delay": {
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "type": "seconds",
+          "time": 45,
+          "sendMessagesIntervalRangeType": "minutes",
+          "isComercialInterval": false
+        },
+        "pos": "{\"x\":-1231.9341808637637,\"y\":979.2697958280395}",
+        "type": {
+          "icon": "",
+          "color": "transparent",
+          "tag": "delay",
+          "id": "delay"
+        },
+        "lastEditedBy": "gjulioti@gmail.com",
+        "id": "FVUuHes1h1xSH1CYOUVZ",
+        "sonId": "U5JH7271OB2NzF4rvwgY"
+      },
+      {
+        "type": {
+          "id": "message",
+          "tag": "message",
+          "color": "transparent",
+          "icon": ""
+        },
+        "pos": "{\"x\":-211.92817057972485,\"y\":344.9937245924133}",
+        "lastEditedBy": "cessetembro@gmail.com",
+        "sonId": "0jRVElcV1PeSztfI563q",
+        "id": "FuSDV1aWvLueRPFVYL62",
+        "message": {
+          "templateId": "1428586812230621",
+          "type": "send_template",
+          "templateDataExpiresOn": 1771763777911,
+          "templateButtons": [
+            {
+              "id": "8Fu1xqogHVRx3JtwlHY4",
+              "sonId": "XWmkCqyhMbewvXQ97bKP",
+              "type": "QUICK_REPLY",
+              "text": "Baixar Resumo"
+            },
+            {
+              "sonId": "nIN5hiqPgruzKbHjNqWx",
+              "id": "2sviBcupea369PKGZKb5",
+              "type": "QUICK_REPLY",
+              "text": "Cancelar"
+            },
+            {
+              "text": "Bloquear contato",
+              "id": "SV1cCvS5uLhJJYPs1yT1",
+              "sonId": "pPw44EoNKYohxmjDMAKR",
+              "type": "QUICK_REPLY"
+            }
+          ],
+          "templateDataJson": "{\"name\":\"fpa_1quinta2\",\"parameter_format\":\"POSITIONAL\",\"components\":[{\"type\":\"BODY\",\"text\":\"Olá! Seu resumo de {{1}} está pronto. Quer baixar seu PDF agora?\",\"example\":{\"body_text\":[[\"Fisiologia\"]]}},{\"type\":\"FOOTER\",\"text\":\"Centro Educacional Sete de Setembro\"},{\"type\":\"BUTTONS\",\"buttons\":[{\"type\":\"QUICK_REPLY\",\"text\":\"Baixar Resumo\"},{\"type\":\"QUICK_REPLY\",\"text\":\"Cancelar\"},{\"type\":\"QUICK_REPLY\",\"text\":\"Bloquear contato\"}]}],\"language\":\"pt_BR\",\"status\":\"APPROVED\",\"category\":\"UTILITY\",\"sub_category\":\"CUSTOM\",\"id\":\"1428586812230621\"}",
+          "template": {
+            "createdAt": {
+              "seconds": 1768420727,
+              "nanoseconds": 865000000
+            },
+            "components": [
+              {
+                "text": "Olá! Seu resumo de {{1}} está pronto. Quer baixar seu PDF agora?",
+                "type": "BODY",
+                "example": {
+                  "body_text": [
+                    "Fisiologia"
+                  ]
+                }
+              },
+              {
+                "text": "Centro Educacional Sete de Setembro",
+                "type": "FOOTER"
+              },
+              {
+                "type": "BUTTONS",
+                "buttons": [
+                  {
+                    "text": "Baixar Resumo",
+                    "type": "QUICK_REPLY",
+                    "id": "8Fu1xqogHVRx3JtwlHY4"
+                  },
+                  {
+                    "id": "2sviBcupea369PKGZKb5",
+                    "text": "Cancelar",
+                    "type": "QUICK_REPLY"
+                  },
+                  {
+                    "type": "QUICK_REPLY",
+                    "text": "Bloquear contato",
+                    "id": "SV1cCvS5uLhJJYPs1yT1"
+                  }
+                ]
+              }
+            ],
+            "updatedAt": {
+              "seconds": 1769630485,
+              "nanoseconds": 79000000
+            },
+            "wabaId": "551316877339100",
+            "connectionId": "ouLDZiM3pEddrZuTGJVw",
+            "name": "fpa_1quinta2",
+            "language": "pt_BR",
+            "status": "APPROVED",
+            "category": "UTILITY",
+            "id": "1428586812230621",
+            "userId": "3jNt3SinWzW08N7iqGhu473b7M53"
+          },
+          "bodyParameters": [
+            {
+              "type": "text",
+              "text": "{{NOME_CURSO}}"
+            }
+          ]
+        }
+      },
+      {
+        "type": {
+          "id": "note",
+          "icon": "",
+          "tag": "note",
+          "color": "transparent"
+        },
+        "note": {
+          "size": [
+            272,
+            160
+          ],
+          "text": "",
+          "color": "#fdf1cc"
+        },
+        "id": "Fvpa2YnBGHOprloP2Q11",
+        "pos": "{\"x\":589.8048775595927,\"y\":-283.26032833862314}"
+      },
+      {
+        "sonId": "T3zQT681E9X1XEkft1IO",
+        "lastEditedBy": "gjulioti@gmail.com",
+        "delay": {
+          "time": 15,
+          "sendMessagesIntervalRangeType": "minutes",
+          "type": "seconds",
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "isComercialInterval": false
+        },
+        "id": "G3Vlvi2rJr5xDtTGt5YA",
+        "pos": "{\"x\":4034.60761165215,\"y\":995.8727830703547}",
+        "type": {
+          "icon": "",
+          "id": "delay",
+          "color": "transparent",
+          "tag": "delay"
+        }
+      },
+      {
+        "pos": "{\"x\":6184.795262283519,\"y\":1065.6101917789565}",
+        "type": {
+          "icon": "",
+          "id": "randomizer",
+          "tag": "randomizer",
+          "color": "transparent"
+        },
+        "lastEditedBy": "cessetembro@gmail.com",
+        "id": "H5FBshstPcAGccWHzqag",
+        "randomizer": {
+          "variations": [
+            {
+              "sonId": "YuAVt1EmobmZMqniX6i5",
+              "value": 25,
+              "id": "Qowb8gGdvIQvCKQxKOnE"
+            },
+            {
+              "id": "mASQgFNxFNFfckU5UgmW",
+              "sonId": "6LAx2DtJwR9yCmzrhStP",
+              "value": 25
+            },
+            {
+              "value": 25,
+              "sonId": "WJckuNwQBvRvnxcBj2R1",
+              "id": "UQ2nMYooIfqu1HQL6daG"
+            },
+            {
+              "sonId": "AuCX0CJNmC0xEMxAlHhW",
+              "id": "44KpaG4WuuqGYHUSaLEW",
+              "value": 25
+            }
+          ],
+          "randomPathAlways": true
+        }
+      },
+      {
+        "lastEditedBy": "karloscess7@gmail.com",
+        "id": "H5GJkhe1HsAMW0oc6mIJ",
+        "type": {
+          "tag": "message",
+          "color": "transparent",
+          "id": "message",
+          "icon": ""
+        },
+        "pos": "{\"x\":2052.4642209858403,\"y\":-161.96416626305944}",
+        "message": {
+          "ctaUrl": {
+            "sonId": "h79HTUySZA80m4lVlDrd",
+            "parameters": {
+              "display_text": "Emitir Certificado",
+              "url": "{{LINK_HOTMART_SC_M2_T1}}"
+            },
+            "campaignId": "d3oSHzeT5Nn7c30IGX9W"
+          },
+          "buttonsBodyText": "Ei, olha isso 👀\n\n✅ É o certificado OFICIAL de {{NOME_CURSO}}\n✅ Reconhecido em todo Brasil (pode usar em processos seletivos)\n✅ 40 horas complementares\n✅ Liberação automática\n✅ Instituição que você já confia\n\nSó pra reforçar: você NÃO precisa assistir o curso novamente para garantir o Certificado",
+          "messageType": "interactive-message",
+          "type": "send_message",
+          "interactiveType": "cta-url"
+        },
+        "sonId": "DeTHVGV9TQAYvNE2A9R7"
+      },
+      {
+        "message": {
+          "ctaUrl": {
+            "parameters": {
+              "url": "{{LINK_HOTMART_SC_M5_T1}}",
+              "display_text": "Clique Aqui"
+            },
+            "sonId": "j23wUqAN512nwV131v8L",
+            "campaignId": "z1giCSCnBdbfPcYeWlLe"
+          },
+          "messageType": "interactive-message",
+          "buttonsBodyText": "Boa! Para garantir seu certificado, clique abaixo👇",
+          "type": "send_message",
+          "links": [
+            {
+              "url": "https://gemini.google.com/app",
+              "sonId": "OXdhDeaKo5VVekdvmQO2",
+              "campaignId": "cFpP39uEz1GrQhekBYJ9"
+            },
+            {
+              "campaignId": "MSmJkLRUOZSGHHcXlFSz",
+              "sonId": "OXdhDeaKo5VVekdvmQO2",
+              "url": "https://cessetembro.com.br/certificado21fisiodomiciliar"
+            },
+            {
+              "campaignId": "5tSlWqAoW7CJRYxCNlbo",
+              "url": "https://cessetembro.com.br/certificado21fisiodomiciliar",
+              "sonId": "OXdhDeaKo5VVekdvmQO2"
+            }
+          ],
+          "interactiveType": "cta-url"
+        },
+        "lastEditedBy": "karloscess7@gmail.com",
+        "id": "Hpw6zx9xQNIE4dvHrw2i",
+        "pos": "{\"x\":2300.638229463657,\"y\":1449.1973725666703}",
+        "type": {
+          "icon": "",
+          "tag": "message",
+          "color": "transparent",
+          "id": "message"
+        }
+      },
+      {
+        "message": {
+          "buttons": [
+            {
+              "sonId": "nIN5hiqPgruzKbHjNqWx",
+              "reply": {
+                "id": "IbPhqUSGpX5jTGGaUjm1",
+                "title": "Não quero"
+              },
+              "type": "reply"
+            }
+          ],
+          "links": [
+            {
+              "url": "https://pay.hotmart.com/E97047375H?checkoutMode=10&sck=recdez25m7||5educadorsocial7||",
+              "sonId": "WAFYDUnRn4veYFMHOK4U",
+              "campaignId": "ltLxLJlIx88G0TcNW5vh"
+            },
+            {
+              "campaignId": "3tsPbSjHmWtDNDhiwcx5",
+              "sonId": "WAFYDUnRn4veYFMHOK4U",
+              "url": "https://pay.hotmart.com/A101144907W?checkoutMode=10&sck=recdez25m7||3cbps||"
+            },
+            {
+              "sonId": "WAFYDUnRn4veYFMHOK4U",
+              "url": "https://pay.hotmart.com/U101143280W?checkoutMode=10&sck=recdez25m7||a2copsico2||",
+              "campaignId": "xdUl0kkt13EI3B8SCwrg"
+            },
+            {
+              "sonId": "WAFYDUnRn4veYFMHOK4U",
+              "campaignId": "cGr0Hm3p78nX9ZwFQWEK",
+              "url": "https://pay.hotmart.com/Y98839842N?checkoutMode=10&sck=recdez25m7||a2cotea2||"
+            },
+            {
+              "sonId": "WAFYDUnRn4veYFMHOK4U",
+              "url": "https://pay.hotmart.com/T99750758V?checkoutMode=10&sck=recdez25m7||31cbforense3||",
+              "campaignId": "XjfYqL0TuDYs5ZxYlyr2"
+            },
+            {
+              "sonId": "WAFYDUnRn4veYFMHOK4U",
+              "url": "https://pay.hotmart.com/G98839790Q?checkoutMode=10&sck=recdez25m7||6conutri3||",
+              "campaignId": "NHFym4fOyDb7rI9spHDL"
+            },
+            {
+              "campaignId": "Q7OOu0mgUiROiwhFmOp0",
+              "sonId": "WAFYDUnRn4veYFMHOK4U",
+              "url": "https://pay.hotmart.com/Q98942604J?checkoutMode=10&sck=recdez25m7||22cobef4||"
+            },
+            {
+              "campaignId": "HP3S9WVDwYHPbNRpZvIl",
+              "sonId": "WAFYDUnRn4veYFMHOK4U",
+              "url": "https://pay.hotmart.com/M99407434F?checkoutMode=10&sck=recdez25m7||5coped5||"
+            },
+            {
+              "campaignId": "YDQFLal3PoaejyrSGKLu",
+              "sonId": "WAFYDUnRn4veYFMHOK4U",
+              "url": "https://pay.hotmart.com/Q96746215X?checkoutMode=10&sck=recdez25m7||2vmpedneo9||"
+            },
+            {
+              "url": "https://pay.hotmart.com/X96745492K?checkoutMode=10&sck=recdez25m7||71ventosaterapia23||",
+              "campaignId": "0nKIEOjRsleeHAL45YAp",
+              "sonId": "WAFYDUnRn4veYFMHOK4U"
+            },
+            {
+              "campaignId": "mnT0nFCp9YuIchxE0S7D",
+              "url": "https://pay.hotmart.com/H96746004P?checkoutMode=10&sck=recdez25m7||31balisticaFA25||",
+              "sonId": "WAFYDUnRn4veYFMHOK4U"
+            },
+            {
+              "url": "https://pay.hotmart.com/P96746483T?checkoutMode=10&sck=recdez25m7||21fisioesportivaFA25||",
+              "sonId": "WAFYDUnRn4veYFMHOK4U",
+              "campaignId": "DJJjIeBhy2N2pI8So1wt"
+            },
+            {
+              "sonId": "WAFYDUnRn4veYFMHOK4U",
+              "campaignId": "p8yqJQtWzs8culpI1YR2",
+              "url": "https://pay.hotmart.com/D96746419A?checkoutMode=10&sck=recdez25m7||21fisiogerontologiaFA25||"
+            },
+            {
+              "sonId": "WAFYDUnRn4veYFMHOK4U",
+              "url": "https://pay.hotmart.com/Y96746375N?checkoutMode=10&sck=recdez25m7||21fisioneuropedFA25||",
+              "campaignId": "aLO3HQXCdpzm2FqgYHgI"
+            },
+            {
+              "sonId": "WAFYDUnRn4veYFMHOK4U",
+              "url": "https://pay.hotmart.com/W96746353P?checkoutMode=10&sck=recdez25m7||21fisiotea10FA25||",
+              "campaignId": "t0YYBOjHJbBkdfDDmbIp"
+            },
+            {
+              "sonId": "WAFYDUnRn4veYFMHOK4U",
+              "campaignId": "IrnKJymeF8HCWQ4JrVY4",
+              "url": "https://pay.hotmart.com/P96746318O?checkoutMode=10&sck=recdez25m7||21fisioped11FA25||"
+            },
+            {
+              "url": "https://pay.hotmart.com/U100398695Q?checkoutMode=10&sck=recdez25m7||b1fonotea2FA25||",
+              "campaignId": "bn4gmfbeZ3uhfNLSNFoX",
+              "sonId": "WAFYDUnRn4veYFMHOK4U"
+            },
+            {
+              "campaignId": "VNv1iA9prb7D5LnOMqo3",
+              "url": "https://pay.hotmart.com/H96744618K?checkoutMode=10&sck=recdez25m7||a1direitopenal17FA25||",
+              "sonId": "WAFYDUnRn4veYFMHOK4U"
+            },
+            {
+              "url": "https://pay.hotmart.com/P96746173G?checkoutMode=10&sck=recdez25m7||4laserodonto9FA25||",
+              "sonId": "WAFYDUnRn4veYFMHOK4U",
+              "campaignId": "nF9zlYgpDmzBEgPplGSb"
+            },
+            {
+              "url": "https://pay.hotmart.com/B96745706H?checkoutMode=10&sck=recdez25m7||71miofascial22FA25||",
+              "campaignId": "V9Qm0o4kqRCAxbR3SKda",
+              "sonId": "WAFYDUnRn4veYFMHOK4U"
+            },
+            {
+              "sonId": "WAFYDUnRn4veYFMHOK4U",
+              "campaignId": "wLLIhGv3xbe8RznvI0Vh",
+              "url": "https://pay.hotmart.com/O96744973K?checkoutMode=10&sck=recdez25m7||2pilates17FA25||"
+            },
+            {
+              "url": "https://pay.hotmart.com/S96744924P?checkoutMode=10&sck=recdez25m7||73microfacial12FA25||",
+              "sonId": "WAFYDUnRn4veYFMHOK4U",
+              "campaignId": "vYZX43g3bS7x4rypUmdO"
+            },
+            {
+              "campaignId": "o3dGsL8hK2bNbQ6sfIRM",
+              "url": "https://pay.hotmart.com/X96745721K?checkoutMode=10&sck=recdez25m7||3microbiologia23FA25||",
+              "sonId": "WAFYDUnRn4veYFMHOK4U"
+            },
+            {
+              "campaignId": "YiYBDvbHuIzfUZQ9fzTo",
+              "url": "https://pay.hotmart.com/V96744524X?checkoutMode=10&sck=recdez25m7||1neuroanatomia18FA25||",
+              "sonId": "WAFYDUnRn4veYFMHOK4U"
+            },
+            {
+              "sonId": "WAFYDUnRn4veYFMHOK4U",
+              "url": "https://pay.hotmart.com/H96744695X?checkoutMode=10&sck=recdez25m7||a1criminologia17FA25||",
+              "campaignId": "z0o40x2WWhpvRIVTigT8"
+            },
+            {
+              "campaignId": "ntJangfCJLxMY6g5KU3R",
+              "url": "https://pay.hotmart.com/X96746748W?checkoutMode=10&sck=recdez25m7||9dermatovet18FA25||",
+              "sonId": "WAFYDUnRn4veYFMHOK4U"
+            },
+            {
+              "url": "https://pay.hotmart.com/F99273509J?checkoutMode=10&sck=recdez25m7||71drenagemlinfgestantes2FA25||",
+              "campaignId": "FfxINQdSQKISsbGSdM3p",
+              "sonId": "WAFYDUnRn4veYFMHOK4U"
+            },
+            {
+              "campaignId": "7ORNGZ5HLMw8LjctQrFM",
+              "url": "https://pay.hotmart.com/S96746150U?checkoutMode=10&sck=recdez25m7||22edftea6FA25||",
+              "sonId": "WAFYDUnRn4veYFMHOK4U"
+            },
+            {
+              "campaignId": "4jAEEIaSdmXngDmfZvfz",
+              "sonId": "WAFYDUnRn4veYFMHOK4U",
+              "url": "https://pay.hotmart.com/S96746150U?checkoutMode=10&sck=recdez25m7||22edfteaFA25||"
+            },
+            {
+              "sonId": "WAFYDUnRn4veYFMHOK4U",
+              "campaignId": "a7q47hJn1GGkcl7URyuw",
+              "url": "https://pay.hotmart.com/Y96745526T?checkoutMode=10&sck=recdez25m7||3embriologiaFA25||"
+            },
+            {
+              "sonId": "WAFYDUnRn4veYFMHOK4U",
+              "campaignId": "I7MuuBdSPRJlyoHcIH0r",
+              "url": "https://pay.hotmart.com/N96743545A?checkoutMode=10&sck=recdez25m7||0enfpedneoFA25||"
+            },
+            {
+              "url": "https://pay.hotmart.com/P98253760B?checkoutMode=10&sck=recdez25m7||8farmaoncologicaFA25||",
+              "campaignId": "y8BpabZHEbaB8l0wJK0m",
+              "sonId": "WAFYDUnRn4veYFMHOK4U"
+            },
+            {
+              "campaignId": "ApZeMmx7pCc4HFKFhUdq",
+              "sonId": "WAFYDUnRn4veYFMHOK4U",
+              "url": "https://pay.hotmart.com/V96746890V?checkoutMode=10&sck=recdez25m7||8farmacologiaclinicaFA25||"
+            },
+            {
+              "sonId": "WAFYDUnRn4veYFMHOK4U",
+              "campaignId": "B4LLfH6t05AKHPmkgL8r",
+              "url": "https://pay.hotmart.com/V96745807S?checkoutMode=10&sck=recdez25m7||5neurocienciaFA25||"
+            },
+            {
+              "url": "https://pay.hotmart.com/V96745807S?checkoutMode=10&sck=recdez25m7||3neurocienciaFA25||",
+              "campaignId": "YIpXHanNl1v5XVBTZkwe",
+              "sonId": "WAFYDUnRn4veYFMHOK4U"
+            },
+            {
+              "campaignId": "FZzptyW0v2iIxJZj1Mx0",
+              "url": "https://pay.hotmart.com/S96745840K?checkoutMode=10&sck=recdez25m7||3neuroplasticidadeFA25||",
+              "sonId": "WAFYDUnRn4veYFMHOK4U"
+            },
+            {
+              "sonId": "WAFYDUnRn4veYFMHOK4U",
+              "campaignId": "7XAh5juIJhqmBStq95W5",
+              "url": "https://pay.hotmart.com/E97047375H?checkoutMode=10&sck=recdez25m7||5educadorsocialFA25||"
+            },
+            {
+              "campaignId": "F5HtENk1DuItEUzmaxeZ",
+              "sonId": "WAFYDUnRn4veYFMHOK4U",
+              "url": "https://pay.hotmart.com/S96745691Y?checkoutMode=10&sck=recdez25m7||3imunologiaFA25||"
+            },
+            {
+              "campaignId": "CGV2UfUnJgu5Y3Dhebb6",
+              "sonId": "WAFYDUnRn4veYFMHOK4U",
+              "url": "https://pay.hotmart.com/P96745855X?checkoutMode=10&sck=recdez25m7||31patologiaforenseFA25||"
+            },
+            {
+              "sonId": "WAFYDUnRn4veYFMHOK4U",
+              "url": "https://pay.hotmart.com/U96746756I?checkoutMode=10&sck=recdez25m7||6examesbioquimicosFA25||",
+              "campaignId": "kO5a5Aq7sxvtitmG5Zup"
+            },
+            {
+              "sonId": "WAFYDUnRn4veYFMHOK4U",
+              "url": "https://pay.hotmart.com/S96746247K?checkoutMode=10&sck=recdez25m7||4periodontiaFA25||",
+              "campaignId": "ME7ZYMdaKiEWt5HuewgV"
+            },
+            {
+              "url": "https://pay.hotmart.com/O96745749R?checkoutMode=10&sck=recdez25m7||3neuroansiedadeFA25||",
+              "campaignId": "Yt0L7YTv4PjFBys7s7OT",
+              "sonId": "WAFYDUnRn4veYFMHOK4U"
+            },
+            {
+              "sonId": "WAFYDUnRn4veYFMHOK4U",
+              "url": "https://pay.hotmart.com/H96746651N?checkoutMode=10&sck=recdez25m7||9nutricaoegatoFA25||",
+              "campaignId": "ViTX2M4gK9GDtgHnkF6K"
+            },
+            {
+              "campaignId": "fveyX3vhgjHcJeJAxqKK",
+              "sonId": "WAFYDUnRn4veYFMHOK4U",
+              "url": "https://pay.hotmart.com/W96746226T?checkoutMode=10&sck=recdez25m7||4ortodontiaatualFA25||"
+            },
+            {
+              "url": "https://pay.hotmart.com/N96744094D?checkoutMode=10&sck=recdez25m7||1anatomiaosseaFA25||",
+              "sonId": "WAFYDUnRn4veYFMHOK4U",
+              "campaignId": "NwB8JR5j032lW7yiZE8T"
+            },
+            {
+              "campaignId": "g3Qky7fQn1eRbHpasNmQ",
+              "sonId": "WAFYDUnRn4veYFMHOK4U",
+              "url": "https://pay.hotmart.com/V100632064R?checkoutMode=10&sck=recdez25m7||5BNCCcompFA25||"
+            },
+            {
+              "campaignId": "za533sxCC3HlWS5S1Vu5",
+              "url": "https://pay.hotmart.com/C96746127B?checkoutMode=10&sck=recdez25m7||4clareamentoFA25||",
+              "sonId": "WAFYDUnRn4veYFMHOK4U"
+            },
+            {
+              "sonId": "WAFYDUnRn4veYFMHOK4U",
+              "campaignId": "INmoVcIqfORnyeuZdXh3",
+              "url": "https://pay.hotmart.com/U97780171D?checkoutMode=10&sck=recdez25m7||0enfprimariaFA25||"
+            },
+            {
+              "sonId": "WAFYDUnRn4veYFMHOK4U",
+              "url": "https://pay.hotmart.com/A96746339B?checkoutMode=10&sck=recdez25m7||21fisioortopedicaFA25||",
+              "campaignId": "nsIJJARV3HZkGHCDD7B9"
+            },
+            {
+              "url": "https://pay.hotmart.com/T96746292Q?checkoutMode=10&sck=recdez25m7||21fisiopelvicaFA25||",
+              "sonId": "WAFYDUnRn4veYFMHOK4U",
+              "campaignId": "AGxQkTNWY59G5gxrlAk7"
+            },
+            {
+              "sonId": "WAFYDUnRn4veYFMHOK4U",
+              "url": "https://pay.hotmart.com/T101256123E?checkoutMode=10&sck=recdez25m7||3imunoterapiaFA25||",
+              "campaignId": "luOulr7710923Q6a9qm3"
+            },
+            {
+              "sonId": "WAFYDUnRn4veYFMHOK4U",
+              "campaignId": "84LmeZndpgxnfMmkhTOh",
+              "url": "https://pay.hotmart.com/R96745688C?checkoutMode=10&sck=recdez25m7||71pedrasquentesFA25||"
+            },
+            {
+              "sonId": "WAFYDUnRn4veYFMHOK4U",
+              "url": "https://pay.hotmart.com/W96745650Y?checkoutMode=10&sck=recdez25m7||71modeladoraFA25||",
+              "campaignId": "qMnQI1tCI0YpP0wQ1fww"
+            },
+            {
+              "sonId": "WAFYDUnRn4veYFMHOK4U",
+              "url": "https://pay.hotmart.com/Y96745912S?checkoutMode=10&sck=recdez25m7||31necropsiaFA25||",
+              "campaignId": "nDgIXula3M2SX8moT6rc"
+            },
+            {
+              "campaignId": "KbHKFpVmBo998nzk9Kp9",
+              "sonId": "WAFYDUnRn4veYFMHOK4U",
+              "url": "https://pay.hotmart.com/D96746674L?checkoutMode=10&sck=recdez25m7||6nutrimaternoinfFA25||"
+            },
+            {
+              "sonId": "WAFYDUnRn4veYFMHOK4U",
+              "campaignId": "DtdIcpAHrDPPmOdtvd2v",
+              "url": "{{LINK_HOTMART_SC_M7_T1}}"
+            }
+          ],
+          "messageType": "interactive-message",
+          "type": "send_message",
+          "interactiveType": "reply-button",
+          "buttonsBodyText": "🚨 ÚLTIMA CHAMADA\n\nVocê estudou, aprendeu, dedicou tempo.\nVai deixar tudo isso sem comprovação oficial?\n\nSeu certificado de {{NOME_CURSO}} expira em 60 MINUTOS.\n\nEmita agora:\n{{LINK_HOTMART_SC_M7_T1}}"
+        },
+        "sonId": "Sx9qFilMB5XyHcVc7WwC",
+        "sequential": true,
+        "lastEditedBy": "cessetembro@gmail.com",
+        "pos": "{\"x\":5442.887147396644,\"y\":1712.7842551338488}",
+        "type": {
+          "icon": "",
+          "id": "message",
+          "color": "transparent",
+          "tag": "message"
+        },
+        "id": "JLtHFK7Tz27nzhxdmg4l"
+      },
+      {
+        "id": "JNlWXNNOYMMdkBC1xZOC",
+        "type": {
+          "id": "delay",
+          "color": "transparent",
+          "icon": "",
+          "tag": "delay"
+        },
+        "lastEditedBy": "cessetembro@gmail.com",
+        "pos": "{\"x\":3964.1596714374064,\"y\":-116.77088669809476}",
+        "sonId": "VCL8fTRLz412TQvgG9Oi",
+        "delay": {
+          "time": 15,
+          "isComercialInterval": false,
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "sendMessagesIntervalRangeType": "minutes",
+          "type": "minutes"
+        }
+      },
+      {
+        "delay": {
+          "type": "seconds",
+          "isComercialInterval": false,
+          "sendMessagesIntervalRangeType": "minutes",
+          "time": 1,
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ]
+        },
+        "lastEditedBy": "cessetembro@gmail.com",
+        "id": "JSbBXHuvSgKCsd4NXSa0",
+        "type": {
+          "tag": "delay",
+          "color": "transparent",
+          "icon": "",
+          "id": "delay"
+        },
+        "pos": "{\"x\":8995.197604103581,\"y\":3.1051811150038304}"
+      },
+      {
+        "sonId": "JNlWXNNOYMMdkBC1xZOC",
+        "message": {
+          "interactiveType": "reply-button",
+          "type": "send_message",
+          "buttonsBodyText": "Certificado de {{NOME_CURSO}} aguardando sua confirmação.\n\n-O curso você já fez.\n-O conhecimento você já tem.\nFalta só o documento oficial\n\n40h certificadas + materiais completos.\n\nEmita seu certificado AGORA MESMO.",
+          "messageType": "interactive-message",
+          "buttons": [
+            {
+              "reply": {
+                "title": "Emitir Certificado",
+                "id": "qu5jNAnScEyur8T0o6wU"
+              },
+              "type": "reply",
+              "sonId": "mx5tLXDeaZWxweDxaeWu"
+            },
+            {
+              "sonId": "nIN5hiqPgruzKbHjNqWx",
+              "reply": {
+                "id": "UAb0SmUpy8Fi7dxwUgcL",
+                "title": "Cancelar Envios"
+              },
+              "type": "reply"
+            }
+          ]
+        },
+        "type": {
+          "id": "message",
+          "icon": "",
+          "tag": "message",
+          "color": "transparent"
+        },
+        "id": "JyGAXysIKHM4VysvXwWK",
+        "lastEditedBy": "cessetembro@gmail.com",
+        "pos": "{\"x\":3536.1242638362014,\"y\":-275.4727456117262}"
+      },
+      {
+        "message": {
+          "type": "send_message",
+          "messageType": "message-media",
+          "file": {
+            "mimeType": "image/png",
+            "originalName": "{{NOME_CURSO}}.png",
+            "uploadedFile": {
+              "name": "{{NOME_CURSO}}.png",
+              "url": "{{LINK_CERTIFICADO_IMG}}",
+              "size": 421583,
+              "extension": "png",
+              "contentType": "image/png"
+            }
+          }
+        },
+        "sequential": true,
+        "id": "KfkFzlb7dsBiMwyZkNqe",
+        "type": {
+          "icon": "",
+          "tag": "message",
+          "color": "transparent",
+          "id": "message"
+        },
+        "pos": "{\"x\":614.1614998742916,\"y\":127.48248993750565}",
+        "sonId": "dBttfEk7SnoPbuKJwd8G"
+      },
+      {
+        "id": "L5uCOjkAHnfQ03oradtL",
+        "sonId": "iMULrReXxT17yvzKrwHp",
+        "type": {
+          "icon": "",
+          "id": "message",
+          "tag": "message",
+          "color": "transparent"
+        },
+        "pos": "{\"x\":592.8149635587761,\"y\":-364.9484808324181}",
+        "lastEditedBy": "cessetembro@gmail.com",
+        "sequentialSonId": "TJcbUP1P5PUBgSDAtx89",
+        "message": {
+          "messageType": "message-text",
+          "type": "send_message",
+          "message": "Este material é um guia prático para você consultar sempre que precisar. \n\nMas lembre-se: conhecimento sem prova oficial é oportunidade perdida no mercado de trabalho."
+        }
+      },
+      {
+        "conditionalV2": {
+          "groupConditions": [
+            {
+              "conditionType": "or",
+              "sonId": "H5GJkhe1HsAMW0oc6mIJ",
+              "conditions": [
+                {
+                  "tags": [],
+                  "type": "conversation-window"
+                }
+              ]
+            }
+          ]
+        },
+        "lastEditedBy": "karloscess7@gmail.com",
+        "pos": "{\"x\":1733.9385624490933,\"y\":107.33702886645636}",
+        "id": "LyF9How7BsSakdWHqSQq",
+        "type": {
+          "id": "conditionalV2",
+          "tag": "conditionalV2",
+          "icon": "",
+          "color": "transparent"
+        }
+      },
+      {
+        "pos": "{\"x\":1575.939456496716,\"y\":1004.5257531628795}",
+        "type": {
+          "id": "delay",
+          "icon": "",
+          "tag": "delay",
+          "color": "transparent"
+        },
+        "lastEditedBy": "gjulioti@gmail.com",
+        "sonId": "dF1LmOLyCRriXKiwku14",
+        "delay": {
+          "type": "seconds",
+          "time": 15,
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "isComercialInterval": false,
+          "sendMessagesIntervalRangeType": "minutes"
+        },
+        "id": "NSzNRMivdAtAQPM0hHCl"
+      },
+      {
+        "lastEditedBy": "cessetembro@gmail.com",
+        "pos": "{\"x\":8597.166053104844,\"y\":-613.8743528348773}",
+        "type": {
+          "tag": "message",
+          "icon": "",
+          "color": "transparent",
+          "id": "message"
+        },
+        "id": "NgMmewG6pHKloi5ThYsa",
+        "message": {
+          "messageType": "message-text",
+          "type": "send_message",
+          "links": [
+            {
+              "campaignId": "RpHOXpgWzHwmgexJgNQI",
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "url": "https://loja.cessetembro.com.br/shop?utm_source=m1mudei"
+            },
+            {
+              "campaignId": "GgPpx02LaDZIueE3SByV",
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "url": "https://pay.hotmart.com/H97868050I?checkoutMode=10&sck=recmudei1||9examesclin4||"
+            },
+            {
+              "url": "https://pay.hotmart.com/C96746026T?checkoutMode=10&sck=recmudei1|31antropoforense12||",
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "campaignId": "DKRhjDLW3tgwTB8qCpCR"
+            },
+            {
+              "url": "https://pay.hotmart.com/C96746026T?checkoutMode=10&sck=recmudei||31antropoforense12||",
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "campaignId": "gtShADNmmKzD0Imhm6mN"
+            },
+            {
+              "url": "https://pay.hotmart.com/I96746497H?checkoutMode=10&sck=recmudei1||21fisiodomiciliar13||",
+              "campaignId": "bKuNZRzAo9slaDvDsNeD",
+              "sonId": "nnsXSQjTrFKTbuSWOObR"
+            },
+            {
+              "url": "https://pay.hotmart.com/Q96744939H?checkoutMode=10&sck=recmudei1||21neuropsicomotor11||",
+              "campaignId": "YZFTSTiTgPfIt99BIe9h",
+              "sonId": "nnsXSQjTrFKTbuSWOObR"
+            },
+            {
+              "campaignId": "RdnyJlc0nxhXGW76aUcU",
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "url": "https://pay.hotmart.com/M96745617G?checkoutMode=10&sck=recmudei1||71terapeutica22||"
+            },
+            {
+              "url": "https://pay.hotmart.com/K96744623A?checkoutMode=10&sck=recmudei1||2bandagem20||",
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "campaignId": "BOXqYMQA48ybVfm3Oqvp"
+            },
+            {
+              "campaignId": "tWjLQJlcxEnYJUWfdLJr",
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "url": "https://pay.hotmart.com/E97047375H?checkoutMode=10&sck=recmudei1||5educadorsocial7||"
+            },
+            {
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "campaignId": "GNzNOYdRVimbzERswYS1",
+              "url": "https://pay.hotmart.com/E97047375H?checkoutMode=10&sck=recdez25mudei1||5educadorsocial7||"
+            },
+            {
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "campaignId": "KKBb2mZWfeLazvwJpY9m",
+              "url": "https://pay.hotmart.com/G101059433Q?checkoutMode=10&sck=recdez25mudei1||b1cbfonor3||"
+            },
+            {
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "campaignId": "RbOklIqX2E8rd9csW0jw",
+              "url": "https://pay.hotmart.com/A101144907W?checkoutMode=10&sck=recdez25mudei1||3cbps||"
+            },
+            {
+              "url": "https://pay.hotmart.com/V98839726S?checkoutMode=10&sck=recdez25mudei1||a1cod||",
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "campaignId": "wIp1fHVaHFP8D06xvGJw"
+            },
+            {
+              "url": "https://pay.hotmart.com/U101143280W?checkoutMode=10&sck=recdez25mudei1||a2copsico2||",
+              "campaignId": "YLwY61ojWRJ7JLFRMTs2",
+              "sonId": "nnsXSQjTrFKTbuSWOObR"
+            },
+            {
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "url": "https://pay.hotmart.com/Y98839842N?checkoutMode=10&sck=recdez25mudei1||a2cotea2||",
+              "campaignId": "H349x6dRzWo0qENTxifu"
+            },
+            {
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "campaignId": "CVegJcdgp3lrrJXGVxRr",
+              "url": "https://pay.hotmart.com/T99750758V?checkoutMode=10&sck=recdez25mudei1||31cbforense3||"
+            },
+            {
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "campaignId": "xA95sqgND9slEHaF8rgX",
+              "url": "https://pay.hotmart.com/G98839790Q?checkoutMode=10&sck=recdez25mudei1||6conutri3||"
+            },
+            {
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "url": "https://pay.hotmart.com/Q98942604J?checkoutMode=10&sck=recdez25mudei1||22cobef4||",
+              "campaignId": "1ZKwQaxfbzcQkLyGoIMc"
+            },
+            {
+              "url": "https://pay.hotmart.com/M99407434F?checkoutMode=10&sck=recdez25mudei1||5coped5||",
+              "campaignId": "rC8ARPOc6jjYmRpMaceH",
+              "sonId": "nnsXSQjTrFKTbuSWOObR"
+            },
+            {
+              "campaignId": "FBhPCfU9kZ2Ig3s60bNJ",
+              "url": "https://pay.hotmart.com/W98861668E?checkoutMode=10&sck=recdez25mudei1||21coifisio7||",
+              "sonId": "nnsXSQjTrFKTbuSWOObR"
+            },
+            {
+              "campaignId": "E1nJkwkRGnn5Lr0yYuRI",
+              "url": "https://pay.hotmart.com/Q96746215X?checkoutMode=10&sck=recdez25mudei1||2vmpedneo9||",
+              "sonId": "nnsXSQjTrFKTbuSWOObR"
+            },
+            {
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "url": "https://pay.hotmart.com/X96745492K?checkoutMode=10&sck=recdez25mudei1||71ventosaterapia23||",
+              "campaignId": "veoQCuzx7ltPhmarryIB"
+            },
+            {
+              "campaignId": "MjP0kvZcGqEMuBAP8gcz",
+              "url": "https://pay.hotmart.com/J96746186M?checkoutMode=10&sck=recdez25mudei1||22avaliacaofisica15||",
+              "sonId": "nnsXSQjTrFKTbuSWOObR"
+            },
+            {
+              "url": "https://pay.hotmart.com/H96746004P?checkoutMode=10&sck=recdez25mudei1||31balisticaFA25||",
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "campaignId": "cvs48TdQmw2sF2nXyBtc"
+            },
+            {
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "url": "https://pay.hotmart.com/P96746483T?checkoutMode=10&sck=recdez25mudei1||21fisioesportivaFA25||",
+              "campaignId": "09ANbkWAYRcSFeBQMv0U"
+            },
+            {
+              "url": "https://pay.hotmart.com/D96746419A?checkoutMode=10&sck=recdez25mudei1||21fisiogerontologiaFA25||",
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "campaignId": "oWUER2Y34IOzOmHFwPQg"
+            },
+            {
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "url": "https://pay.hotmart.com/Y96746375N?checkoutMode=10&sck=recdez25mudei1||21fisioneuropedFA25||",
+              "campaignId": "gdVfRqrrDvFyJKHbEQKo"
+            },
+            {
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "url": "https://pay.hotmart.com/W96746353P?checkoutMode=10&sck=recdez25mudei1||21fisiotea10FA25||",
+              "campaignId": "nbb9JeUQYb09hpR9l4gp"
+            },
+            {
+              "campaignId": "k3TMejSkUb6gXifmda5L",
+              "url": "https://pay.hotmart.com/P96746318O?checkoutMode=10&sck=recdez25mudei1||21fisioped11FA25||",
+              "sonId": "nnsXSQjTrFKTbuSWOObR"
+            },
+            {
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "url": "https://pay.hotmart.com/U100398695Q?checkoutMode=10&sck=recdez25mudei1||b1fonotea2FA25||",
+              "campaignId": "4MjITdNjaXqD4o7eCbdD"
+            },
+            {
+              "campaignId": "gKvvYdLUjrpHykc9WxLt",
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "url": "https://pay.hotmart.com/H96744618K?checkoutMode=10&sck=recdez25mudei1||a1direitopenal17FA25||"
+            },
+            {
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "url": "https://pay.hotmart.com/P96746173G?checkoutMode=10&sck=recdez25mudei1||4laserodonto9FA25||",
+              "campaignId": "ZBNcsVoFMOiKgSKxMnSO"
+            },
+            {
+              "campaignId": "iI1U0qcxfWPZ0BJxuYs2",
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "url": "https://pay.hotmart.com/B96745706H?checkoutMode=10&sck=recdez25mudei1||71miofascial22FA25||"
+            },
+            {
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "url": "https://pay.hotmart.com/O96744973K?checkoutMode=10&sck=recdez25mudei1||2pilates17FA25||",
+              "campaignId": "D6Bcuf4bYdrTKJn9xEYn"
+            },
+            {
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "campaignId": "YwbJfEHXGW896LODVFIs",
+              "url": "https://pay.hotmart.com/S96744924P?checkoutMode=10&sck=recdez25mudei1||73microfacial12FA25||"
+            },
+            {
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "url": "https://pay.hotmart.com/X96745721K?checkoutMode=10&sck=recdez25mudei1||3microbiologia23FA25||",
+              "campaignId": "UW74QLJYeYlzOPIUUmii"
+            },
+            {
+              "campaignId": "UXmSV2DmhxVIvF6EI37B",
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "url": "https://pay.hotmart.com/V96744524X?checkoutMode=10&sck=recdez25mudei1||1neuroanatomia18FA25||"
+            },
+            {
+              "campaignId": "wsima4I6kMTa0GwiGfE2",
+              "url": "https://pay.hotmart.com/H96744695X?checkoutMode=10&sck=recdez25mudei1||a1criminologia17FA25||",
+              "sonId": "nnsXSQjTrFKTbuSWOObR"
+            },
+            {
+              "url": "https://pay.hotmart.com/X96746748W?checkoutMode=10&sck=recdez25mudei1||9dermatovet18FA25||",
+              "campaignId": "W66IjnmYkBdRcCG3rxJL",
+              "sonId": "nnsXSQjTrFKTbuSWOObR"
+            },
+            {
+              "campaignId": "IWVeBbxOW63HDOEFqS9E",
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "url": "https://pay.hotmart.com/F99273509J?checkoutMode=10&sck=recdez25mudei1||71drenagemlinfgestantes2FA25||"
+            },
+            {
+              "campaignId": "AmUoDzoZYwr4j2XzmsH2",
+              "url": "https://pay.hotmart.com/S96746150U?checkoutMode=10&sck=recdez25mudei1||22edftea6FA25||",
+              "sonId": "nnsXSQjTrFKTbuSWOObR"
+            },
+            {
+              "campaignId": "MqZz88ISNpyOalCIIiiP",
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "url": "https://pay.hotmart.com/S96746150U?checkoutMode=10&sck=recdez25mudei1||22edfteaFA25||"
+            },
+            {
+              "campaignId": "1V9XRJIfPxdixvwAisqP",
+              "url": "https://pay.hotmart.com/Y96745526T?checkoutMode=10&sck=recdez25mudei1||3embriologiaFA25||",
+              "sonId": "nnsXSQjTrFKTbuSWOObR"
+            },
+            {
+              "campaignId": "fnLfW0vm0ONSvGV1srti",
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "url": "https://pay.hotmart.com/N96743545A?checkoutMode=10&sck=recdez25mudei1||0enfpedneoFA25||"
+            },
+            {
+              "campaignId": "z7JsbuKJ81SCJ646zDlY",
+              "url": "https://pay.hotmart.com/P98253760B?checkoutMode=10&sck=recdez25mudei1||8farmaoncologicaFA25||",
+              "sonId": "nnsXSQjTrFKTbuSWOObR"
+            },
+            {
+              "campaignId": "ficgyy8GDfYkH8bhfIbr",
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "url": "https://pay.hotmart.com/V96746890V?checkoutMode=10&sck=recdez25mudei1||8farmacologiaclinicaFA25||"
+            },
+            {
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "url": "https://pay.hotmart.com/V96745807S?checkoutMode=10&sck=recdez25mudei1||5neurocienciaFA25||",
+              "campaignId": "UOF0tI3yhtYT9R3ASn5g"
+            },
+            {
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "campaignId": "tmt0MGlIYvlDqDsGGu11",
+              "url": "https://pay.hotmart.com/V96745807S?checkoutMode=10&sck=recdez25mudei1||3neurocienciaFA25||"
+            },
+            {
+              "campaignId": "6OAR1w6AfzziiVr6ukbl",
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "url": "https://pay.hotmart.com/S96745840K?checkoutMode=10&sck=recdez25mudei1||3neuroplasticidadeFA25||"
+            },
+            {
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "url": "https://pay.hotmart.com/A96744070Y?checkoutMode=10&sck=recdez25mudei1||a2neuropsicologiaFA25||",
+              "campaignId": "rHSVay4Y8TPz6HhCIZGX"
+            },
+            {
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "campaignId": "Hfv28El0yOnx2VWeCFBd",
+              "url": "https://pay.hotmart.com/N96746764O?checkoutMode=10&sck=recdez25mudei1||a2neuropsicologiaFA25||"
+            },
+            {
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "url": "https://pay.hotmart.com/N96746764O?checkoutMode=10&sck=recdez25mudei1||9dorcaoegatoFA25||",
+              "campaignId": "uxdOkOxjjbIgaf3uFAzL"
+            },
+            {
+              "campaignId": "ma3PUMtVrXEnVqeqirVm",
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "url": "https://pay.hotmart.com/E97047375H?checkoutMode=10&sck=recdez25mudei1||5educadorsocialFA25||"
+            },
+            {
+              "campaignId": "Bfhs6WfeDJDJAdUMzWVZ",
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "url": "https://pay.hotmart.com/R96746230W?checkoutMode=10&sck=recdez25mudei1||21vmiFA25||"
+            },
+            {
+              "url": "https://pay.hotmart.com/W98124199C?checkoutMode=10&sck=recdez25mudei1||a1combodireitotrabFA25||",
+              "campaignId": "BmbIBTZCcdevnsFvKlIX",
+              "sonId": "nnsXSQjTrFKTbuSWOObR"
+            },
+            {
+              "campaignId": "R8HegiQcygqmJHR6hlGu",
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "url": "https://pay.hotmart.com/X96746628U?checkoutMode=10&sck=recdez25mudei1||9primeirossocorrosFA25||"
+            },
+            {
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "campaignId": "aEGDmHm8oeMhlDDDwRLb",
+              "url": "https://pay.hotmart.com/S96745691Y?checkoutMode=10&sck=recdez25mudei1||3imunologiaFA25||"
+            },
+            {
+              "campaignId": "r5frulk9iphwOTmamkNH",
+              "url": "https://pay.hotmart.com/W96745924Q?checkoutMode=10&sck=recdez25mudei1||0socorrosFA25||",
+              "sonId": "nnsXSQjTrFKTbuSWOObR"
+            },
+            {
+              "url": "https://pay.hotmart.com/P96745855X?checkoutMode=10&sck=recdez25mudei1||31patologiaforenseFA25||",
+              "campaignId": "FmRzTUEyRnWuEOOg774V",
+              "sonId": "nnsXSQjTrFKTbuSWOObR"
+            },
+            {
+              "campaignId": "4gQzqbgvwJ2duY88vT6X",
+              "url": "https://pay.hotmart.com/U96746756I?checkoutMode=10&sck=recdez25mudei1||6examesbioquimicosFA25||",
+              "sonId": "nnsXSQjTrFKTbuSWOObR"
+            },
+            {
+              "url": "https://pay.hotmart.com/S96746247K?checkoutMode=10&sck=recdez25mudei1||4periodontiaFA25||",
+              "campaignId": "YVF5q7b79hORhyz1pb2a",
+              "sonId": "nnsXSQjTrFKTbuSWOObR"
+            },
+            {
+              "url": "https://pay.hotmart.com/O96745749R?checkoutMode=10&sck=recdez25mudei1||3neuroansiedadeFA25||",
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "campaignId": "F121cpCSzJOYjHZB8cNE"
+            },
+            {
+              "url": "https://pay.hotmart.com/H96746651N?checkoutMode=10&sck=recdez25mudei1||9nutricaoegatoFA25||",
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "campaignId": "WLIOpu1xq75XXl2RVwf0"
+            },
+            {
+              "url": "https://pay.hotmart.com/W96746226T?checkoutMode=10&sck=recdez25mudei1||4ortodontiaatualFA25||",
+              "campaignId": "RjntDvD0yTLm3DX3u6Sn",
+              "sonId": "nnsXSQjTrFKTbuSWOObR"
+            },
+            {
+              "campaignId": "VTc2wUBvzReVPBc5KlBb",
+              "url": "https://pay.hotmart.com/N96744094D?checkoutMode=10&sck=recdez25mudei1||1anatomiaosseaFA25||",
+              "sonId": "nnsXSQjTrFKTbuSWOObR"
+            },
+            {
+              "url": "https://pay.hotmart.com/V100632064R?checkoutMode=10&sck=recdez25mudei1||5BNCCcompFA25||",
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "campaignId": "Zw3ZZ5Emp5kkq3ozzcPR"
+            },
+            {
+              "campaignId": "XoVAwcwUd8uWpffmhZ5v",
+              "url": "https://pay.hotmart.com/C96746127B?checkoutMode=10&sck=recdez25mudei1||4clareamentoFA25||",
+              "sonId": "nnsXSQjTrFKTbuSWOObR"
+            },
+            {
+              "campaignId": "hVcL92z6loPmE1uWMx2U",
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "url": "https://pay.hotmart.com/U97780171D?checkoutMode=10&sck=recdez25mudei1||0enfprimariaFA25||"
+            },
+            {
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "campaignId": "Rym7RMMAtviHjchnsILI",
+              "url": "https://pay.hotmart.com/A96746339B?checkoutMode=10&sck=recdez25mudei1||21fisioortopedicaFA25||"
+            },
+            {
+              "url": "https://pay.hotmart.com/T96746292Q?checkoutMode=10&sck=recdez25mudei1||21fisiopelvicaFA25||",
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "campaignId": "vfs5UbEzoDmcgWMJg00d"
+            },
+            {
+              "campaignId": "3MSsoPPIWJSLzZWKEeHR",
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "url": "https://pay.hotmart.com/T101256123E?checkoutMode=10&sck=recdez25mudei1||3imunoterapiaFA25||"
+            },
+            {
+              "campaignId": "3hyMkDHtrsLYVWm3OuBF",
+              "url": "https://pay.hotmart.com/R96745688C?checkoutMode=10&sck=recdez25mudei1||71pedrasquentesFA25||",
+              "sonId": "nnsXSQjTrFKTbuSWOObR"
+            },
+            {
+              "campaignId": "ThpzZov7Hqzg3PjLkgTu",
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "url": "https://pay.hotmart.com/W96745650Y?checkoutMode=10&sck=recdez25mudei1||71modeladoraFA25||"
+            },
+            {
+              "campaignId": "KSrjpJVm4hJV1FsykVbR",
+              "url": "https://pay.hotmart.com/Y96745912S?checkoutMode=10&sck=recdez25mudei1||31necropsiaFA25||",
+              "sonId": "nnsXSQjTrFKTbuSWOObR"
+            },
+            {
+              "url": "https://pay.hotmart.com/D96746674L?checkoutMode=10&sck=recdez25mudei1||6nutrimaternoinfFA25||",
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "campaignId": "whnbQBMkJthpp3tfSVyc"
+            },
+            {
+              "url": "https://pay.hotmart.com/D96746674L?checkoutMode=10&sck=SC2|mudei1||6nutrimaternoinf13||",
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "campaignId": "3ltY0m9nrb9stkUDg17u"
+            },
+            {
+              "sonId": "nnsXSQjTrFKTbuSWOObR",
+              "campaignId": "wTKDnWevaNgTSby9MUxp",
+              "url": "{{LINK_HOTMART_SC_mudei1_T1}}"
+            }
+          ],
+          "message": "Que ótimo! O certificado é o documento que comprova todo seu esforço 🎓😁\n\nAqui está o link:\n👉 {{LINK_HOTMART_SC_mudei1_T1}}"
+        }
+      },
+      {
+        "delay": {
+          "sendMessagesIntervalRangeType": "minutes",
+          "type": "seconds",
+          "isComercialInterval": false,
+          "time": 1,
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ]
+        },
+        "lastEditedBy": "karloscess7@gmail.com",
+        "type": {
+          "color": "transparent",
+          "id": "delay",
+          "tag": "delay",
+          "icon": ""
+        },
+        "id": "OWi8J1lUp59Vfd82jwTO",
+        "pos": "{\"x\":4312.190619401511,\"y\":-616.2595805891242}"
+      },
+      {
+        "pos": "{\"x\":3196.031466132308,\"y\":30.84393485593624}",
+        "type": {
+          "tag": "conditionalV2",
+          "icon": "",
+          "id": "conditionalV2",
+          "color": "transparent"
+        },
+        "lastEditedBy": "karloscess7@gmail.com",
+        "id": "Pv4J0MPIOlZuVuU4XMqb",
+        "conditionalV2": {
+          "groupConditions": [
+            {
+              "sonId": "JyGAXysIKHM4VysvXwWK",
+              "conditions": [
+                {
+                  "tags": [],
+                  "type": "conversation-window"
+                }
+              ],
+              "conditionType": "or"
+            }
+          ]
+        }
+      },
+      {
+        "pos": "{\"x\":8417.189824646142,\"y\":1546.832838183952}",
+        "type": {
+          "id": "delay",
+          "color": "transparent",
+          "tag": "delay",
+          "icon": ""
+        },
+        "delay": {
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "type": "seconds",
+          "isComercialInterval": false,
+          "sendMessagesIntervalRangeType": "minutes",
+          "time": 1
+        },
+        "id": "QIPlHA8LOzIdwE6HcAV3",
+        "lastEditedBy": "karloscess7@gmail.com"
+      },
+      {
+        "pos": "{\"x\":614.1614998742916,\"y\":127.48248993750565}",
+        "sonId": "0Ax9kDEBAL3dt27H83x6",
+        "type": {
+          "tag": "message",
+          "color": "transparent",
+          "id": "message",
+          "icon": ""
+        },
+        "sequential": true,
+        "message": {
+          "type": "send_message",
+          "messageType": "message-media",
+          "file": {
+            "mimeType": "image/png",
+            "uploadedFile": {
+              "extension": "png",
+              "size": 209316,
+              "name": "{{NOME_CURSO}}.png",
+              "url": "{{LINK_CERTIFICADO_IMG}}",
+              "contentType": "image/png"
+            },
+            "originalName": "{{NOME_CURSO}}.png"
+          }
+        },
+        "id": "QJUcm5sWcevIHwGShTSN"
+      },
+      {
+        "delay": {
+          "sendMessagesIntervalRangeType": "minutes",
+          "isComercialInterval": false,
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "type": "seconds",
+          "time": 1
+        },
+        "lastEditedBy": "karloscess7@gmail.com",
+        "id": "QkDVzAZcKFZgpOFMbOfp",
+        "type": {
+          "icon": "",
+          "id": "delay",
+          "tag": "delay",
+          "color": "transparent"
+        },
+        "pos": "{\"x\":3271.905604766539,\"y\":2352.9660387510858}"
+      },
+      {
+        "lastEditedBy": "cessetembro@gmail.com",
+        "message": {
+          "messageType": "message-media",
+          "type": "send_message",
+          "file": {
+            "mimeType": "image/png",
+            "uploadedFile": {
+              "url": "{{LINK_CERTIFICADO_IMG}}",
+              "extension": "png",
+              "name": "{{NOME_CURSO}}.png",
+              "size": 209316,
+              "contentType": "image/png"
+            },
+            "originalName": "{{NOME_CURSO}}.png"
+          }
+        },
+        "type": {
+          "id": "message",
+          "color": "transparent",
+          "tag": "message",
+          "icon": ""
+        },
+        "sonId": "JLtHFK7Tz27nzhxdmg4l",
+        "pos": "{\"x\":6989.695392622743,\"y\":931.9393084802105}",
+        "id": "Qopr6YKsEukCauTXV1oz"
+      },
+      {
+        "lastEditedBy": "alycecess7@gmail.com",
+        "pos": "{\"x\":8174.401467600008,\"y\":37.38687304514758}",
+        "sonId": "jpTf0cVSh4ZqSwRRnwfK",
+        "action": {
+          "type": "remove_tag",
+          "unniiaAtributionOnly": false,
+          "forceAttribution": false,
+          "keepChatActive": false,
+          "userResourceGroupSendRandomic": false,
+          "tags": [
+            "Bloquear Envios"
+          ]
+        },
+        "id": "RO8yN0HrzetWIEOVAXFT",
+        "type": {
+          "icon": "",
+          "color": "transparent",
+          "id": "action",
+          "tag": "action"
+        }
+      },
+      {
+        "id": "S3OViOcmCxYwyVcTCtFf",
+        "lastEditedBy": "cessetembro@gmail.com",
+        "delay": {
+          "isComercialInterval": false,
+          "time": 1,
+          "type": "seconds",
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "sendMessagesIntervalRangeType": "minutes"
+        },
+        "pos": "{\"x\":4033.209428017935,\"y\":694.7413596748788}",
+        "sonId": "T3zQT681E9X1XEkft1IO",
+        "type": {
+          "id": "delay",
+          "tag": "delay",
+          "icon": "",
+          "color": "transparent"
+        }
+      },
+      {
+        "lastEditedBy": "karloscess7@gmail.com",
+        "sonId": "NgMmewG6pHKloi5ThYsa",
+        "id": "SMgPbDMUgHzpEp35H9pU",
+        "type": {
+          "id": "action",
+          "color": "transparent",
+          "icon": "",
+          "tag": "action"
+        },
+        "pos": "{\"x\":8204.782755318794,\"y\":-565.6392754575145}",
+        "action": {
+          "userResourceGroupSendRandomic": false,
+          "forceAttribution": false,
+          "type": "remove_tag",
+          "unniiaAtributionOnly": false,
+          "keepChatActive": false,
+          "tags": [
+            "{TAG_CANCELAR_ENVIOS_SC}"
+          ]
+        }
+      },
+      {
+        "lastEditedBy": "karloscess7@gmail.com",
+        "pos": "{\"x\":-490.5400779671092,\"y\":115.09527851374611}",
+        "delay": {
+          "time": 1,
+          "type": "seconds",
+          "isComercialInterval": false,
+          "sendMessagesIntervalRangeType": "minutes",
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ]
+        },
+        "type": {
+          "id": "delay",
+          "tag": "delay",
+          "icon": "",
+          "color": "transparent"
+        },
+        "id": "SZm5aNAn873TTMvXBHZR"
+      },
+      {
+        "sonId": "g3j2qoJ6THjRhoJ0zpix",
+        "id": "Sx9qFilMB5XyHcVc7WwC",
+        "pos": "{\"x\":7417.324701837247,\"y\":962.6026634427931}",
+        "lastEditedBy": "karloscess7@gmail.com",
+        "delay": {
+          "sendMessagesIntervalRangeType": "minutes",
+          "type": "shipping-date",
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "sendAt": {
+            "seconds": {{DT_SC2_DS_0800_VARIA}},
+            "nanoseconds": 0
+          },
+          "isComercialInterval": false
+        },
+        "type": {
+          "icon": "",
+          "id": "delay",
+          "color": "transparent",
+          "tag": "delay"
+        }
+      },
+      {
+        "pos": "{\"x\":-1780.5969406749523,\"y\":99.73199317970708}",
+        "type": {
+          "tag": "randomizer",
+          "color": "transparent",
+          "icon": "",
+          "id": "randomizer"
+        },
+        "id": "SyPo7yOB0eEJWYMZm9N6",
+        "randomizer": {
+          "variations": [
+            {
+              "id": "Pd9hwsVV2soGetRanLlY",
+              "sonId": "jRuXjY79OK1fPiN11GZv",
+              "value": 25
+            },
+            {
+              "sonId": "v6Awu8nCIhKhztTmVczY",
+              "value": 25,
+              "id": "2HJv5K2LAQdpGWwqLoB1"
+            },
+            {
+              "sonId": "bwMHARkBZCBMi3Gf6VoW",
+              "value": 25,
+              "id": "TiGNKNRXFCH3L1uPjUVG"
+            },
+            {
+              "value": 25,
+              "id": "J579LMwE2ezQuJyEMW9l",
+              "sonId": "FVUuHes1h1xSH1CYOUVZ"
+            }
+          ],
+          "randomPathAlways": true
+        },
+        "lastEditedBy": "cessetembro@gmail.com"
+      },
+      {
+        "type": {
+          "color": "transparent",
+          "id": "message",
+          "icon": "",
+          "tag": "message"
+        },
+        "pos": "{\"x\":4432.839645099624,\"y\":1035.8795306027778}",
+        "message": {
+          "buttonsBodyText": "⏰ Restam poucas horas\n\nSeu certificado de {{NOME_CURSO}} expira hoje às 23h.\n\nNão deixe expirar algo que você tem DIREITO de receber.\n\nVocê merece esse reconhecimento! 💪\n\nVocê já fez a parte difícil (estudar!).\nFalta só oficializar.\n\nNão deixa pra última hora!",
+          "type": "send_message",
+          "ctaUrl": {
+            "sonId": "rnPbvNdSizVnhIonDcjc",
+            "campaignId": "lbXUgxQVHgxp6EJRqEAN",
+            "parameters": {
+              "url": "{{LINK_HOTMART_SC_M6_T1}}",
+              "display_text": "Garantir Certificado"
+            }
+          },
+          "interactiveType": "cta-url",
+          "messageType": "interactive-message"
+        },
+        "lastEditedBy": "karloscess7@gmail.com",
+        "id": "T3zQT681E9X1XEkft1IO",
+        "sonId": "31UhPEKlWd9qOFDX5U88"
+      },
+      {
+        "type": {
+          "id": "message",
+          "icon": "",
+          "tag": "message",
+          "color": "transparent"
+        },
+        "pos": "{\"x\":714.1614998742916,\"y\":27.482489937505648}",
+        "message": {
+          "type": "send_message",
+          "ctaUrl": {
+            "campaignId": "pc3B5i72ibR0CuUQbv0F",
+            "parameters": {
+              "display_text": "Garantir Certificado",
+              "url": "{{LINK_HOTMART_SC_M1_T1}}"
+            },
+            "sonId": "ya2CZrlcpuZGYYIcTjEM"
+          },
+          "buttonsBodyText": "Você já concluiu as aulas e seu Certificado Oficial (40h) + Apostilas já estão liberados por apenas R$ 29,90.\n\nNão deixe seu esforço sem validação. Emita seu certificado agora mesmo ",
+          "interactiveType": "cta-url",
+          "messageType": "interactive-message"
+        },
+        "lastEditedBy": "karloscess7@gmail.com",
+        "sequential": true,
+        "id": "TJcbUP1P5PUBgSDAtx89",
+        "sonId": "3MAP5V9P8ayAWfO6Ph6H",
+        "sequentialFatherId": "gC34nhB48qM3dUib9hsw"
+      },
+      {
+        "type": {
+          "icon": "",
+          "color": "transparent",
+          "tag": "conditionalV2",
+          "id": "conditionalV2"
+        },
+        "id": "U5JH7271OB2NzF4rvwgY",
+        "lastEditedBy": "cessetembro@gmail.com",
+        "pos": "{\"x\":-776.3780584869369,\"y\":583.098380476064}",
+        "conditionalV2": {
+          "falseId": "FuSDV1aWvLueRPFVYL62",
+          "groupConditions": [
+            {
+              "sonId": "SZm5aNAn873TTMvXBHZR",
+              "conditionType": "or",
+              "conditions": [
+                {
+                  "tags": [
+                    "{TAG_INSC_SEMANA1}",
+                    "{TAG_INSC_SEMANA2}",
+                    "{TAG_INSC_SEMANA3}"
+                  ],
+                  "type": "contains-some-tag"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "lastEditedBy": "karloscess7@gmail.com",
+        "id": "UpxMg9vJ8GwcA65IMQ7r",
+        "type": {
+          "tag": "conditionalV2",
+          "icon": "",
+          "id": "conditionalV2",
+          "color": "transparent"
+        },
+        "conditionalV2": {
+          "groupConditions": [
+            {
+              "conditions": [
+                {
+                  "tags": [
+                    "Bloquear Envios",
+                    "{{TAG_CERT_CURSO}}",
+                    "{TAG_CANCELAR_ENVIOS_SC}"
+                  ],
+                  "type": "contains-some-tag"
+                }
+              ],
+              "conditionType": "or",
+              "name": ""
+            }
+          ],
+          "falseId": "4D4oT4zISJzdmAVDZQWg"
+        },
+        "pos": "{\"x\":3617.2345377004776,\"y\":2763.188494042339}"
+      },
+      {
+        "lastEditedBy": "karloscess7@gmail.com",
+        "conditionalV2": {
+          "groupConditions": [
+            {
+              "conditions": [
+                {
+                  "type": "contains-some-tag",
+                  "tags": [
+                    "Bloquear Envios",
+                    "{{TAG_CERT_CURSO}}",
+                    "{TAG_CANCELAR_ENVIOS_SC}"
+                  ]
+                }
+              ],
+              "name": "",
+              "conditionType": "or"
+            }
+          ],
+          "falseId": "a9urnFOiCYXrojrdNUb0"
+        },
+        "pos": "{\"x\":4326.724747717286,\"y\":-150.92199584683772}",
+        "id": "VCL8fTRLz412TQvgG9Oi",
+        "type": {
+          "id": "conditionalV2",
+          "icon": "",
+          "tag": "conditionalV2",
+          "color": "transparent"
+        }
+      },
+      {
+        "type": {
+          "icon": "",
+          "color": "transparent",
+          "tag": "conditionalV2",
+          "id": "conditionalV2"
+        },
+        "pos": "{\"x\":5342.0970166264015,\"y\":1062.6430890633405}",
+        "conditionalV2": {
+          "groupConditions": [
+            {
+              "conditionType": "or",
+              "name": "",
+              "conditions": [
+                {
+                  "tags": [
+                    "Bloquear Envios",
+                    "{{TAG_CERT_CURSO}}",
+                    "{TAG_CANCELAR_ENVIOS_SC}"
+                  ],
+                  "type": "contains-some-tag"
+                }
+              ]
+            }
+          ],
+          "falseId": "rmbtpl15AOwmkGfy4aez"
+        },
+        "lastEditedBy": "karloscess7@gmail.com",
+        "id": "VRIGeuVuUQsSMn8Q7Plo"
+      },
+      {
+        "lastEditedBy": "cessetembro@gmail.com",
+        "id": "Vl5b8jKm5jgJbLfRChOY",
+        "randomizer": {
+          "randomPathAlways": true,
+          "variations": [
+            {
+              "id": "5sDCoJsNtsAcgFO8LMSZ",
+              "value": 25,
+              "sonId": "S3OViOcmCxYwyVcTCtFf"
+            },
+            {
+              "value": 25,
+              "id": "HYkJPgzaHqygof4Jg1J8",
+              "sonId": "G3Vlvi2rJr5xDtTGt5YA"
+            },
+            {
+              "id": "fPiXYADdoneB8Z2tBXFf",
+              "sonId": "19H1kWzZvcUa7jmZFQ1Q",
+              "value": 25
+            },
+            {
+              "sonId": "hj0C7zvhjpSL8SEr4sL9",
+              "value": 25,
+              "id": "s3s7lFCwAsTk5f4fp7Vd"
+            }
+          ]
+        },
+        "type": {
+          "id": "randomizer",
+          "icon": "",
+          "tag": "randomizer",
+          "color": "transparent"
+        },
+        "pos": "{\"x\":3698.8211669430348,\"y\":1047.0523534610438}"
+      },
+      {
+        "sonId": "xb9ux2tEr1cQYbozeEJo",
+        "type": {
+          "id": "delay",
+          "color": "transparent",
+          "tag": "delay",
+          "icon": ""
+        },
+        "id": "WAFYDUnRn4veYFMHOK4U",
+        "lastEditedBy": "karloscess7@gmail.com",
+        "pos": "{\"x\":7395.3019321657475,\"y\":1536.81921608219}",
+        "delay": {
+          "type": "seconds",
+          "sendMessagesIntervalRangeType": "minutes",
+          "time": 1,
+          "isComercialInterval": false,
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ]
+        }
+      },
+      {
+        "lastEditedBy": "gjulioti@gmail.com",
+        "delay": {
+          "type": "seconds",
+          "isComercialInterval": false,
+          "time": 45,
+          "sendMessagesIntervalRangeType": "minutes",
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ]
+        },
+        "type": {
+          "color": "transparent",
+          "tag": "delay",
+          "icon": "",
+          "id": "delay"
+        },
+        "id": "WCO0rUF6n4ijdifB1rnt",
+        "pos": "{\"x\":8927.81898423528,\"y\":1545.8509503036125}",
+        "sonId": "hIb3cYc7gDtnCRd9Z7l1"
+      },
+      {
+        "pos": "{\"x\":6509.883396065998,\"y\":1369.1532291340313}",
+        "sonId": "Qopr6YKsEukCauTXV1oz",
+        "lastEditedBy": "gjulioti@gmail.com",
+        "id": "WJckuNwQBvRvnxcBj2R1",
+        "delay": {
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "sendMessagesIntervalRangeType": "minutes",
+          "isComercialInterval": false,
+          "time": 30,
+          "type": "seconds"
+        },
+        "type": {
+          "id": "delay",
+          "tag": "delay",
+          "color": "transparent",
+          "icon": ""
+        }
+      },
+      {
+        "type": {
+          "icon": "",
+          "tag": "conditionalV2",
+          "color": "transparent",
+          "id": "conditionalV2"
+        },
+        "lastEditedBy": "karloscess7@gmail.com",
+        "conditionalV2": {
+          "groupConditions": [
+            {
+              "sonId": "ugu7pQEeN34RKKbZfZvp",
+              "conditionType": "or",
+              "conditions": [
+                {
+                  "type": "conversation-window",
+                  "tags": []
+                }
+              ]
+            }
+          ],
+          "falseId": "mpcAlpDlGRLO06bMqTaj"
+        },
+        "id": "XViGgkxxAWgHQvJWAbnu",
+        "pos": "{\"x\":705.0931049084495,\"y\":1028.3941526058504}"
+      },
+      {
+        "id": "XWmkCqyhMbewvXQ97bKP",
+        "action": {
+          "userResourceGroupSendRandomic": false,
+          "unniiaAtributionOnly": false,
+          "type": "add_tag",
+          "forceAttribution": false,
+          "keepChatActive": false,
+          "tags": [
+            "{TAG_CLICOU_SC}"
+          ]
+        },
+        "type": {
+          "color": "transparent",
+          "icon": "",
+          "tag": "action",
+          "id": "action"
+        },
+        "pos": "{\"x\":252.50388803742214,\"y\":-64.23845925409375}",
+        "lastEditedBy": "karloscess7@gmail.com",
+        "sonId": "L5uCOjkAHnfQ03oradtL"
+      },
+      {
+        "delay": {
+          "type": "seconds",
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "time": 1,
+          "isComercialInterval": false,
+          "sendMessagesIntervalRangeType": "minutes"
+        },
+        "lastEditedBy": "cessetembro@gmail.com",
+        "type": {
+          "tag": "delay",
+          "color": "transparent",
+          "icon": "",
+          "id": "delay"
+        },
+        "pos": "{\"x\":6519.183523358419,\"y\":707.5557062178063}",
+        "id": "YuAVt1EmobmZMqniX6i5",
+        "sonId": "Qopr6YKsEukCauTXV1oz"
+      },
+      {
+        "conditionalV2": {
+          "falseId": "Pv4J0MPIOlZuVuU4XMqb",
+          "groupConditions": [
+            {
+              "name": "",
+              "conditionType": "or",
+              "conditions": [
+                {
+                  "type": "contains-some-tag",
+                  "tags": [
+                    "Bloquear Envios",
+                    "{{TAG_CERT_CURSO}}",
+                    "{TAG_CANCELAR_ENVIOS_SC}"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "pos": "{\"x\":2839.8424846992075,\"y\":-6.828050080708778}",
+        "id": "ZasrYvbbgX7XOi5GSUS4",
+        "lastEditedBy": "karloscess7@gmail.com",
+        "type": {
+          "id": "conditionalV2",
+          "color": "transparent",
+          "icon": "",
+          "tag": "conditionalV2"
+        }
+      },
+      {
+        "conditionalV2": {
+          "groupConditions": [
+            {
+              "conditions": [
+                {
+                  "type": "conversation-window",
+                  "tags": []
+                }
+              ],
+              "sonId": "o958I8lqnBAgeqqRF15e",
+              "conditionType": "or"
+            }
+          ]
+        },
+        "pos": "{\"x\":4674.101881783582,\"y\":-175.89692474034658}",
+        "id": "a9urnFOiCYXrojrdNUb0",
+        "lastEditedBy": "karloscess7@gmail.com",
+        "type": {
+          "tag": "conditionalV2",
+          "id": "conditionalV2",
+          "color": "transparent",
+          "icon": ""
+        }
+      },
+      {
+        "pos": "{\"x\":-1239.5691886462996,\"y\":629.4974877450603}",
+        "id": "bwMHARkBZCBMi3Gf6VoW",
+        "lastEditedBy": "gjulioti@gmail.com",
+        "delay": {
+          "time": 30,
+          "isComercialInterval": false,
+          "sendMessagesIntervalRangeType": "minutes",
+          "type": "seconds",
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ]
+        },
+        "sonId": "U5JH7271OB2NzF4rvwgY",
+        "type": {
+          "id": "delay",
+          "tag": "delay",
+          "color": "transparent",
+          "icon": ""
+        }
+      },
+      {
+        "type": {
+          "color": "transparent",
+          "tag": "delay",
+          "icon": "",
+          "id": "delay"
+        },
+        "id": "d1cECSjxMCZIeXkLIUco",
+        "lastEditedBy": "karloscess7@gmail.com",
+        "delay": {
+          "time": 1,
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "isComercialInterval": false,
+          "sendMessagesIntervalRangeType": "minutes",
+          "type": "seconds"
+        },
+        "pos": "{\"x\":5838.9988651599415,\"y\":-330.7191910009634}"
+      },
+      {
+        "lastEditedBy": "karloscess7@gmail.com",
+        "id": "dBttfEk7SnoPbuKJwd8G",
+        "type": {
+          "color": "transparent",
+          "icon": "",
+          "id": "message",
+          "tag": "message"
+        },
+        "sequential": true,
+        "pos": "{\"x\":614.1614998742916,\"y\":127.48248993750565}",
+        "message": {
+          "interactiveType": "cta-url",
+          "messageType": "interactive-message",
+          "type": "send_message",
+          "buttonsBodyText": "📋 O que você recebe:\n- Certificado de 40 horas reconhecido nacionalmente\n- Ebook completo do curso\n- Apostila exclusiva\n- Acesso vitalício aos materiais",
+          "ctaUrl": {
+            "campaignId": "IA0mKvN6oFRSD2WThUwj",
+            "sonId": "weZc7eFMtdstHL6KfCOe",
+            "parameters": {
+              "display_text": "Garantir Agora!",
+              "url": "https://cessetembro.com.br/certificado5educadorsocial/?utm_source=recm11"
+            }
+          }
+        }
+      },
+      {
+        "type": {
+          "icon": "",
+          "color": "transparent",
+          "tag": "message",
+          "id": "message"
+        },
+        "lastEditedBy": "gjulioti@gmail.com",
+        "message": {
+          "buttonsBodyText": "Tive um pesadelo com você essa noite 😅\n\nSonhei que você perdia de novo o seu certificado de {{NOME_CURSO}}...\n\nJunto com ele:\n❌ Todos os seus materiais complementares\n❌ A chance de melhorar o seu currículo\n\nEntão, só por garantia, já deixei tudo pronto aqui pra você.\n\nClica aqui pra eu ter certeza que você não vai perder 👇",
+          "type": "send_message",
+          "messageType": "interactive-message",
+          "buttons": [
+            {
+              "reply": {
+                "id": "QltPqO7rkTbJNscKO6eI",
+                "title": "Garantir Certificado"
+              },
+              "sonId": "Hpw6zx9xQNIE4dvHrw2i",
+              "type": "reply"
+            },
+            {
+              "reply": {
+                "title": "Cancelar Envios",
+                "id": "SNRWaXpgplt2yhhjURrQ"
+              },
+              "type": "reply",
+              "sonId": "nIN5hiqPgruzKbHjNqWx"
+            }
+          ],
+          "interactiveType": "reply-button"
+        },
+        "pos": "{\"x\":1943.6595361609016,\"y\":1055.0396542770402}",
+        "id": "dF1LmOLyCRriXKiwku14",
+        "sonId": "mpcAlpDlGRLO06bMqTaj"
+      },
+      {
+        "type": {
+          "icon": "",
+          "tag": "note",
+          "color": "transparent",
+          "id": "note"
+        },
+        "id": "dLObyCkr9CrD1T7QwGMP",
+        "pos": "{\"x\":589.8048775595927,\"y\":-283.26032833862314}",
+        "note": {
+          "color": "#fdf1cc",
+          "size": [
+            272,
+            160
+          ],
+          "text": ""
+        }
+      },
+      {
+        "sonId": "iVrAKCY5aGP6haw2k9zc",
+        "id": "eKP0G5LEaRqsjbF6fzuo",
+        "type": {
+          "color": "transparent",
+          "tag": "message",
+          "icon": "",
+          "id": "message"
+        },
+        "pos": "{\"x\":2894.992002641367,\"y\":2210.12107546655}",
+        "message": {
+          "ctaUrl": {
+            "sonId": "QkDVzAZcKFZgpOFMbOfp",
+            "campaignId": "IA0mKvN6oFRSD2WThUwj",
+            "parameters": {
+              "display_text": "Garantir Agora!",
+              "url": "{{LINK_HOTMART_SC_rep1_T1}}"
+            }
+          },
+          "messageType": "interactive-message",
+          "buttonsBodyText": "⚠️ Janela de emissão encerrando\n\nCertificado de {{NOME_CURSO}} - prazo até 22h.\n\nEste não é um \"curso novo\" que você precisa fazer.\n\nÉ o DOCUMENTO do curso que você JÁ COMPLETOU.\n\nEbook + apostila + certificado 40h.",
+          "type": "send_message",
+          "interactiveType": "cta-url"
+        },
+        "lastEditedBy": "karloscess7@gmail.com"
+      },
+      {
+        "lastEditedBy": "karloscess7@gmail.com",
+        "type": {
+          "color": "transparent",
+          "id": "conditionalV2",
+          "icon": "",
+          "tag": "conditionalV2"
+        },
+        "conditionalV2": {
+          "falseId": "31UhPEKlWd9qOFDX5U88",
+          "groupConditions": [
+            {
+              "sonId": "Vl5b8jKm5jgJbLfRChOY",
+              "conditions": [
+                {
+                  "tags": [],
+                  "type": "conversation-window"
+                }
+              ],
+              "conditionType": "or"
+            }
+          ]
+        },
+        "pos": "{\"x\":3309.893653930599,\"y\":1075.6760376041073}",
+        "id": "fCN2gogWzGPwhalOo9lq"
+      },
+      {
+        "id": "g3j2qoJ6THjRhoJ0zpix",
+        "type": {
+          "icon": "",
+          "color": "transparent",
+          "tag": "conditionalV2",
+          "id": "conditionalV2"
+        },
+        "lastEditedBy": "karloscess7@gmail.com",
+        "conditionalV2": {
+          "groupConditions": [
+            {
+              "name": "",
+              "conditionType": "or",
+              "conditions": [
+                {
+                  "tags": [
+                    "Bloquear Envios",
+                    "{{TAG_CERT_CURSO}}",
+                    "{TAG_CANCELAR_ENVIOS_SC}"
+                  ],
+                  "type": "contains-some-tag"
+                }
+              ]
+            }
+          ],
+          "falseId": "wFqCIV0P1WKR88zyBjLD"
+        },
+        "pos": "{\"x\":7775.024668839696,\"y\":960.6686967125615}"
+      },
+      {
+        "lastEditedBy": "karloscess7@gmail.com",
+        "id": "gJsqGUTkiLQMaLxL1bbe",
+        "delay": {
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "time": 1,
+          "type": "seconds",
+          "sendMessagesIntervalRangeType": "minutes",
+          "isComercialInterval": false
+        },
+        "pos": "{\"x\":9809.936587707398,\"y\":939.1395983194011}",
+        "type": {
+          "id": "delay",
+          "color": "transparent",
+          "tag": "delay",
+          "icon": ""
+        }
+      },
+      {
+        "pos": "{\"x\":1574.541272862501,\"y\":697.6508379924185}",
+        "sonId": "dF1LmOLyCRriXKiwku14",
+        "delay": {
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "isComercialInterval": false,
+          "sendMessagesIntervalRangeType": "minutes",
+          "type": "seconds",
+          "time": 1
+        },
+        "id": "gNMPy5oU5k0KUER20ExK",
+        "type": {
+          "color": "transparent",
+          "icon": "",
+          "tag": "delay",
+          "id": "delay"
+        },
+        "lastEditedBy": "cessetembro@gmail.com"
+      },
+      {
+        "message": {
+          "buttonsBodyText": "Sem problemas! Não vou te enviar mais mensagens.\n\nMas vou deixar um botão aqui. Caso mude de ideia, é só clicar 👇",
+          "messageType": "interactive-message",
+          "type": "send_message",
+          "buttons": [
+            {
+              "sonId": "RO8yN0HrzetWIEOVAXFT",
+              "reply": {
+                "title": "Mudei de ideia!",
+                "id": "EYPAG0rxA436I1gZZxyz"
+              },
+              "type": "reply"
+            }
+          ],
+          "interactiveType": "reply-button"
+        },
+        "id": "gtUAxffDLT7zTquQmvzQ",
+        "type": {
+          "color": "transparent",
+          "icon": "",
+          "id": "message",
+          "tag": "message"
+        },
+        "lastEditedBy": "karloscess7@gmail.com",
+        "pos": "{\"x\":7844.5909050292685,\"y\":32.20152206413047}"
+      },
+      {
+        "delay": {
+          "time": 1,
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "sendMessagesIntervalRangeType": "minutes",
+          "isComercialInterval": false,
+          "type": "seconds"
+        },
+        "pos": "{\"x\":2404.811591136351,\"y\":-273.6739419515932}",
+        "id": "h79HTUySZA80m4lVlDrd",
+        "lastEditedBy": "karloscess7@gmail.com",
+        "type": {
+          "tag": "delay",
+          "id": "delay",
+          "color": "transparent",
+          "icon": ""
+        }
+      },
+      {
+        "lastEditedBy": "karloscess7@gmail.com",
+        "pos": "{\"x\":9393.051844448864,\"y\":530.4729599190312}",
+        "message": {
+          "buttons": [
+            {
+              "sonId": "yqiV5rnR6OPQ16lcr4p6",
+              "type": "reply",
+              "reply": {
+                "title": "Ver outros cursos",
+                "id": "DtoNZMKph7LgJshsVGlt"
+              }
+            },
+            {
+              "type": "reply",
+              "sonId": "nIN5hiqPgruzKbHjNqWx",
+              "reply": {
+                "title": "Não quero",
+                "id": "JSRwyk88TUJll3dRY2o3"
+              }
+            },
+            {
+              "type": "reply",
+              "sonId": "pPw44EoNKYohxmjDMAKR",
+              "reply": {
+                "title": "Bloquear contato",
+                "id": "imd5blbzjXoi4ZAX8YOE"
+              }
+            }
+          ],
+          "buttonsBodyText": "🎓 Sua primeira conquista do ano ainda está te esperando\n\nVocê estudou, se dedicou e concluiu seu curso — faltou só transformar todo esse esforço no certificado que comprova sua conquista.\n\nA janela de solicitação praticamente fechou ontem… mas a sua ainda está aberta por alguns minutos.\nSe quiser começar o ano com tudo, ainda dá tempo de garantir o seu.\n\n👉 Solicitar certificado agora\n{{LINK_HOTMART_SC_M8_T1}}\nComece seu ano com o certificado que você conquistou.",
+          "interactiveType": "reply-button",
+          "messageType": "interactive-message",
+          "type": "send_message",
+          "links": [
+            {
+              "campaignId": "fjHwmeCmJg9sMoaldxw2",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe",
+              "url": "https://cessetembro.com.br/certificado"
+            },
+            {
+              "campaignId": "QxXkqiPXNCD8bxSeAwjE",
+              "url": "https://pay.hotmart.com/E97047375H?checkoutMode=10&sck=recdez25m8||5educadorsocial7||",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe"
+            },
+            {
+              "url": "https://pay.hotmart.com/G101059433Q?checkoutMode=10&sck=recdez25m8||b1cbfonor3||",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe",
+              "campaignId": "4iyDaaCz4DQAPDc5ZtZZ"
+            },
+            {
+              "sonId": "gJsqGUTkiLQMaLxL1bbe",
+              "campaignId": "kPkKfwdYvQzqu2sLgLRO",
+              "url": "https://pay.hotmart.com/V98839726S?checkoutMode=10&sck=recdez25m8||a1cod||"
+            },
+            {
+              "sonId": "gJsqGUTkiLQMaLxL1bbe",
+              "campaignId": "rOc3PdlkSDec6pm3aKlg",
+              "url": "https://pay.hotmart.com/U101143280W?checkoutMode=10&sck=recdez25m8||a2copsico2||"
+            },
+            {
+              "campaignId": "60IToabOhVHMWJumPhQ1",
+              "url": "https://pay.hotmart.com/Y98839842N?checkoutMode=10&sck=recdez25m8||a2cotea2||",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe"
+            },
+            {
+              "url": "https://pay.hotmart.com/T99750758V?checkoutMode=10&sck=recdez25m8||cc||",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe",
+              "campaignId": "I6wBF2jpFO1zo18gBPu0"
+            },
+            {
+              "campaignId": "C5hsYkiRgEDLZNCktYbw",
+              "url": "https://pay.hotmart.com/G98839790Q?checkoutMode=10&sck=recdez25m8||6conutri3||",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe"
+            },
+            {
+              "sonId": "gJsqGUTkiLQMaLxL1bbe",
+              "url": "https://pay.hotmart.com/Q98942604J?checkoutMode=10&sck=recdez25m8||22cobef4||",
+              "campaignId": "WjsUL7W8xQcoTgWaHW26"
+            },
+            {
+              "sonId": "gJsqGUTkiLQMaLxL1bbe",
+              "url": "https://pay.hotmart.com/M99407434F?checkoutMode=10&sck=recdez25m8||5coped5||",
+              "campaignId": "OujRRUZSqUKGlORmkwQi"
+            },
+            {
+              "sonId": "gJsqGUTkiLQMaLxL1bbe",
+              "url": "https://pay.hotmart.com/W98861668E?checkoutMode=10&sck=recdez25m8||21coifisio7||",
+              "campaignId": "NTOHY0wcDTYUulZeop6f"
+            },
+            {
+              "sonId": "gJsqGUTkiLQMaLxL1bbe",
+              "url": "https://pay.hotmart.com/Q96746215X?checkoutMode=10&sck=recdez25m8||2vmpedneo9||",
+              "campaignId": "nOQWaGHSQvBOnCkTmPVE"
+            },
+            {
+              "url": "https://pay.hotmart.com/X96745492K?checkoutMode=10&sck=recdez25m8||71ventosaterapia23||",
+              "campaignId": "lM32ggez0ACm4JFtakrU",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe"
+            },
+            {
+              "sonId": "gJsqGUTkiLQMaLxL1bbe",
+              "campaignId": "MCHxkRzeELDgj6lS2k4o",
+              "url": "https://pay.hotmart.com/J96746186M?checkoutMode=10&sck=recdez25m8||22avaliacaofisica15||"
+            },
+            {
+              "sonId": "gJsqGUTkiLQMaLxL1bbe",
+              "campaignId": "OjWvXSTiyr7F2CyVgNUf",
+              "url": "https://pay.hotmart.com/H96746004P?checkoutMode=10&sck=recdez25m8||31balisticaFA25||"
+            },
+            {
+              "url": "https://pay.hotmart.com/P96746483T?checkoutMode=10&sck=recdez25m8||21fisioesportivaFA25||",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe",
+              "campaignId": "ET6hPFZAjd59Y1jaCWsH"
+            },
+            {
+              "url": "https://pay.hotmart.com/D96746419A?checkoutMode=10&sck=recdez25m8||21fisiogerontologiaFA25||",
+              "campaignId": "5kQbRQa1gTup9QwCmg92",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe"
+            },
+            {
+              "url": "https://pay.hotmart.com/Y96746375N?checkoutMode=10&sck=recdez25m8||21fisioneuropedFA25||",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe",
+              "campaignId": "1S5pUvmWy0Etbxd9mdif"
+            },
+            {
+              "sonId": "gJsqGUTkiLQMaLxL1bbe",
+              "campaignId": "06TKv5FRlPdxeHCw9MnT",
+              "url": "https://pay.hotmart.com/W96746353P?checkoutMode=10&sck=recdez25m8||21fisiotea10FA25||"
+            },
+            {
+              "sonId": "gJsqGUTkiLQMaLxL1bbe",
+              "url": "https://pay.hotmart.com/P96746318O?checkoutMode=10&sck=recdez25m8||21fisioped11FA25||",
+              "campaignId": "HkFSBEQNJuW4YOh6vyH6"
+            },
+            {
+              "url": "https://pay.hotmart.com/U100398695Q?checkoutMode=10&sck=recdez25m8||b1fonotea2FA25||",
+              "campaignId": "jqDoMNxrzfdXoYzb9AFh",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe"
+            },
+            {
+              "url": "https://pay.hotmart.com/H96744618K?checkoutMode=10&sck=recdez25m8||a1direitopenal17FA25||",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe",
+              "campaignId": "rbDYPdaKjERwNAFG67CR"
+            },
+            {
+              "url": "https://pay.hotmart.com/P96746173G?checkoutMode=10&sck=recdez25m8||4laserodonto9FA25||",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe",
+              "campaignId": "6n8quk1nKhPl02YiE7cz"
+            },
+            {
+              "url": "https://pay.hotmart.com/B96745706H?checkoutMode=10&sck=recdez25m8||71miofascial22FA25||",
+              "campaignId": "dtYZpMYixA9DM5dhDDDM",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe"
+            },
+            {
+              "campaignId": "79LHOkdxywJYM852e6Ii",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe",
+              "url": "https://pay.hotmart.com/O96744973K?checkoutMode=10&sck=recdez25m8||2pilates17FA25||"
+            },
+            {
+              "url": "https://pay.hotmart.com/S96744924P?checkoutMode=10&sck=recdez25m8||73microfacial12FA25||",
+              "campaignId": "GYT8qdxBOIwfetcAvgpB",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe"
+            },
+            {
+              "url": "https://pay.hotmart.com/X96745721K?checkoutMode=10&sck=recdez25m8||3microbiologia23FA25||",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe",
+              "campaignId": "AyihOtqIjjDg0fDZ3y4k"
+            },
+            {
+              "url": "https://pay.hotmart.com/V96744524X?checkoutMode=10&sck=recdez25m8||1neuroanatomia18FA25||",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe",
+              "campaignId": "C4wvP9TBw1OwzyWmS6WN"
+            },
+            {
+              "campaignId": "6kzmEsSqDRYP5nh8T6nU",
+              "url": "https://pay.hotmart.com/H96744695X?checkoutMode=10&sck=recdez25m8||a1criminologia17FA25||",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe"
+            },
+            {
+              "sonId": "gJsqGUTkiLQMaLxL1bbe",
+              "campaignId": "wn2ah6a8g0JBNjQwJOJJ",
+              "url": "https://pay.hotmart.com/X96746748W?checkoutMode=10&sck=recdez25m8||9dermatovet18FA25||"
+            },
+            {
+              "campaignId": "Y5UbuPU9lGBm4YwMoW6M",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe",
+              "url": "https://pay.hotmart.com/F99273509J?checkoutMode=10&sck=recdez25m8||71drenagemlinfgestantes2FA25||"
+            },
+            {
+              "campaignId": "0AaAt7q6SUM9Wjdu8fQk",
+              "url": "https://pay.hotmart.com/S96746150U?checkoutMode=10&sck=recdez25m8||22edftea6FA25||",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe"
+            },
+            {
+              "sonId": "gJsqGUTkiLQMaLxL1bbe",
+              "campaignId": "lHXbzTgWI9o4ojZGu96d",
+              "url": "https://pay.hotmart.com/S96746150U?checkoutMode=10&sck=recdez25m8||22edfteaFA25||"
+            },
+            {
+              "url": "https://pay.hotmart.com/Y96745526T?checkoutMode=10&sck=recdez25m8||3embriologiaFA25||",
+              "campaignId": "WwcsReigVZRW4HdTTZrr",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe"
+            },
+            {
+              "sonId": "gJsqGUTkiLQMaLxL1bbe",
+              "campaignId": "CxjWEr3dMbWLT9TMmOr3",
+              "url": "https://pay.hotmart.com/N96743545A?checkoutMode=10&sck=recdez25m8||0enfpedneoFA25||"
+            },
+            {
+              "url": "https://pay.hotmart.com/P98253760B?checkoutMode=10&sck=recdez25m8||8farmaoncologicaFA25||",
+              "campaignId": "bCv43cINKqwEX3gItvwU",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe"
+            },
+            {
+              "sonId": "gJsqGUTkiLQMaLxL1bbe",
+              "url": "https://pay.hotmart.com/V96746890V?checkoutMode=10&sck=recdez25m8||8farmacologiaclinicaFA25||",
+              "campaignId": "blgTpYXbmVQI3TGpiYAV"
+            },
+            {
+              "url": "https://pay.hotmart.com/V96745807S?checkoutMode=10&sck=recdez25m8||5neurocienciaFA25||",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe",
+              "campaignId": "7KVohANB9dKQ4qK4HAVY"
+            },
+            {
+              "campaignId": "aavX212CPVbBtEzC4yNP",
+              "url": "https://pay.hotmart.com/V96745807S?checkoutMode=10&sck=recdez25m8||3neurocienciaFA25||",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe"
+            },
+            {
+              "sonId": "gJsqGUTkiLQMaLxL1bbe",
+              "campaignId": "J96vcu2WmXPIS2xEpmdl",
+              "url": "https://pay.hotmart.com/S96745840K?checkoutMode=10&sck=recdez25m8||3neuroplasticidadeFA25||"
+            },
+            {
+              "campaignId": "74PddUVOTMHhcYirvF53",
+              "url": "https://pay.hotmart.com/A96744070Y?checkoutMode=10&sck=recdez25m8||a2neuropsicologiaFA25||",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe"
+            },
+            {
+              "campaignId": "7CPJl7EDUz2zbwb1zmpy",
+              "url": "https://pay.hotmart.com/N96746764O?checkoutMode=10&sck=recdez25m8||a2neuropsicologiaFA25||",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe"
+            },
+            {
+              "campaignId": "3MyCs3vJHbJ26TjhuBlY",
+              "url": "https://pay.hotmart.com/N96746764O?checkoutMode=10&sck=recdez25m8||9dorcaoegatoFA25||",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe"
+            },
+            {
+              "url": "https://pay.hotmart.com/E97047375H?checkoutMode=10&sck=recdez25m8||9dorcaoegatoFA25||",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe",
+              "campaignId": "deFlx9wGEiHBZuseIZoy"
+            },
+            {
+              "url": "https://pay.hotmart.com/E97047375H?checkoutMode=10&sck=recdez25m8||5educadorsocialFA25||",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe",
+              "campaignId": "cm0NZALJtfwsIlMAt02W"
+            },
+            {
+              "campaignId": "SO9sVjkpDrsVkXhkjDhW",
+              "url": "https://pay.hotmart.com/R96746230W?checkoutMode=10&sck=recdez25m8||21vmiFA25||",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe"
+            },
+            {
+              "campaignId": "otXpXEOJr3N7Qs7aEbra",
+              "url": "https://pay.hotmart.com/W98124199C?checkoutMode=10&sck=recdez25m8||a1combodireitotrabFA25||",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe"
+            },
+            {
+              "url": "https://pay.hotmart.com/S96745691Y?checkoutMode=10&sck=recdez25m8||3imunologiaFA25||",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe",
+              "campaignId": "txWT4WmJCpldkt8mCQMJ"
+            },
+            {
+              "sonId": "gJsqGUTkiLQMaLxL1bbe",
+              "campaignId": "bQkFYUvv3nSj0pyKeL2d",
+              "url": "https://pay.hotmart.com/P96745855X?checkoutMode=10&sck=recdez25m8||31patologiaforenseFA25||"
+            },
+            {
+              "url": "https://pay.hotmart.com/U96746756I?checkoutMode=10&sck=recdez25m8||6examesbioquimicosFA25||",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe",
+              "campaignId": "EPXRLhDAZTz7VT1XNUqz"
+            },
+            {
+              "url": "https://pay.hotmart.com/S96746247K?checkoutMode=10&sck=recdez25m8||4periodontiaFA25||",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe",
+              "campaignId": "aQ3huPNqP9N9qjDmwvHI"
+            },
+            {
+              "url": "https://pay.hotmart.com/O96745749R?checkoutMode=10&sck=recdez25m8||3neuroansiedadeFA25||",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe",
+              "campaignId": "O6BwQXTFX5EarS7or3pC"
+            },
+            {
+              "url": "https://pay.hotmart.com/N96744094D?checkoutMode=10&sck=recdez25m8||1anatomiaosseaFA25||",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe",
+              "campaignId": "CKah6SUNExf07ODZhusE"
+            },
+            {
+              "campaignId": "r85InyZN4AxJMRuhBa5O",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe",
+              "url": "https://pay.hotmart.com/V100632064R?checkoutMode=10&sck=recdez25m8||5BNCCcompFA25||"
+            },
+            {
+              "campaignId": "Y1kWl89YP3p1GOchIRz2",
+              "url": "https://pay.hotmart.com/C96746127B?checkoutMode=10&sck=recdez25m8||4clareamentoFA25||",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe"
+            },
+            {
+              "url": "https://pay.hotmart.com/U97780171D?checkoutMode=10&sck=recdez25m8||0enfprimariaFA25||",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe",
+              "campaignId": "LcXUns33SBcK2z80NdqS"
+            },
+            {
+              "url": "https://pay.hotmart.com/A96746339B?checkoutMode=10&sck=recdez25m8||21fisioortopedicaFA25||",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe",
+              "campaignId": "CgbYaXVt3HSYWG5V7wbT"
+            },
+            {
+              "url": "https://pay.hotmart.com/T96746292Q?checkoutMode=10&sck=recdez25m8||21fisiopelvicaFA25||",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe",
+              "campaignId": "VlhyZjC9svSYUWJammF0"
+            },
+            {
+              "campaignId": "N6HwSZE0rjFQo8PPj5cI",
+              "url": "https://pay.hotmart.com/T101256123E?checkoutMode=10&sck=recdez25m8||3imunoterapiaFA25||",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe"
+            },
+            {
+              "sonId": "gJsqGUTkiLQMaLxL1bbe",
+              "campaignId": "B5IHjTTTS7Zvxw43utQc",
+              "url": "https://pay.hotmart.com/R96745688C?checkoutMode=10&sck=recdez25m8||71pedrasquentesFA25||"
+            },
+            {
+              "campaignId": "AoUpIP9BzNH22DE9gPPw",
+              "url": "https://pay.hotmart.com/W96745650Y?checkoutMode=10&sck=recdez25m8||71modeladoraFA25||",
+              "sonId": "gJsqGUTkiLQMaLxL1bbe"
+            },
+            {
+              "sonId": "gJsqGUTkiLQMaLxL1bbe",
+              "campaignId": "2a4DnEbGBfuOw9JN9XsX",
+              "url": "https://pay.hotmart.com/Y96745912S?checkoutMode=10&sck=recdez25m8||31necropsiaFA25||"
+            },
+            {
+              "sonId": "gJsqGUTkiLQMaLxL1bbe",
+              "url": "https://pay.hotmart.com/D96746674L?checkoutMode=10&sck=recdez25m8||6nutrimaternoinfFA25||",
+              "campaignId": "s8E4cA0EPemQda6eIU3T"
+            },
+            {
+              "sonId": "gJsqGUTkiLQMaLxL1bbe",
+              "campaignId": "nPORDMMUmRBwtgIuUFKh",
+              "url": "{{LINK_HOTMART_SC_M8_T1}}"
+            }
+          ]
+        },
+        "id": "hIb3cYc7gDtnCRd9Z7l1",
+        "type": {
+          "icon": "",
+          "color": "transparent",
+          "id": "message",
+          "tag": "message"
+        }
+      },
+      {
+        "type": {
+          "id": "conditionalV2",
+          "tag": "conditionalV2",
+          "color": "transparent",
+          "icon": ""
+        },
+        "conditionalV2": {
+          "falseId": "XViGgkxxAWgHQvJWAbnu",
+          "groupConditions": [
+            {
+              "name": "",
+              "conditions": [
+                {
+                  "type": "contains-some-tag",
+                  "tags": [
+                    "Bloquear Envios",
+                    "{{TAG_CERT_CURSO}}",
+                    "{TAG_CANCELAR_ENVIOS_SC}"
+                  ]
+                }
+              ],
+              "conditionType": "or"
+            }
+          ]
+        },
+        "lastEditedBy": "karloscess7@gmail.com",
+        "id": "hUriRInPk7FV2fJlczfR",
+        "pos": "{\"x\":366.4145517383381,\"y\":1026.2400677242106}"
+      },
+      {
+        "id": "hj0C7zvhjpSL8SEr4sL9",
+        "type": {
+          "icon": "",
+          "id": "delay",
+          "tag": "delay",
+          "color": "transparent"
+        },
+        "delay": {
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "time": 45,
+          "sendMessagesIntervalRangeType": "minutes",
+          "isComercialInterval": false,
+          "type": "seconds"
+        },
+        "pos": "{\"x\":4031.544308508049,\"y\":1700.3676988990978}",
+        "sonId": "T3zQT681E9X1XEkft1IO",
+        "lastEditedBy": "gjulioti@gmail.com"
+      },
+      {
+        "type": {
+          "tag": "message",
+          "color": "transparent",
+          "id": "message",
+          "icon": ""
+        },
+        "sequential": true,
+        "pos": "{\"x\":49.29417525600911,\"y\":-285.65641410884655}",
+        "lastEditedBy": "cessetembro@gmail.com",
+        "message": {
+          "type": "send_message",
+          "messageType": "message-media",
+          "file": {
+            "caption": "",
+            "originalName": "{{VOL_PDF_3}}.pdf",
+            "mimeType": "application/pdf",
+            "uploadedFile": {
+              "contentType": "application/pdf",
+              "url": "{{LINK_PDF_VOL_3}}",
+              "extension": "pdf",
+              "size": 1344613,
+              "name": "{{VOL_PDF_3}}.pdf"
+            }
+          }
+        },
+        "sequentialFatherId": "gC34nhB48qM3dUib9hsw",
+        "sequentialSonId": "TJcbUP1P5PUBgSDAtx89",
+        "sonId": "TJcbUP1P5PUBgSDAtx89",
+        "id": "iMULrReXxT17yvzKrwHp"
+      },
+      {
+        "sonId": "UpxMg9vJ8GwcA65IMQ7r",
+        "id": "iVrAKCY5aGP6haw2k9zc",
+        "pos": "{\"x\":3276.250343091859,\"y\":2915.453846792317}",
+        "lastEditedBy": "karloscess7@gmail.com",
+        "type": {
+          "id": "delay",
+          "tag": "delay",
+          "color": "transparent",
+          "icon": ""
+        },
+        "delay": {
+          "type": "minutes",
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "time": 10,
+          "sendMessagesIntervalRangeType": "minutes",
+          "isComercialInterval": false
+        }
+      },
+      {
+        "delay": {
+          "isComercialInterval": false,
+          "time": 1,
+          "sendMessagesIntervalRangeType": "minutes",
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "type": "seconds"
+        },
+        "type": {
+          "color": "transparent",
+          "icon": "",
+          "id": "delay",
+          "tag": "delay"
+        },
+        "lastEditedBy": "karloscess7@gmail.com",
+        "sonId": "xb9ux2tEr1cQYbozeEJo",
+        "id": "j23wUqAN512nwV131v8L",
+        "pos": "{\"x\":2612.463847133376,\"y\":1467.9967190792293}"
+      },
+      {
+        "delay": {
+          "time": 1,
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "sendMessagesIntervalRangeType": "minutes",
+          "isComercialInterval": false,
+          "type": "seconds"
+        },
+        "pos": "{\"x\":-1258.986520228804,\"y\":-104.2185234970639}",
+        "id": "jRuXjY79OK1fPiN11GZv",
+        "lastEditedBy": "cessetembro@gmail.com",
+        "sonId": "U5JH7271OB2NzF4rvwgY",
+        "type": {
+          "tag": "delay",
+          "icon": "",
+          "color": "transparent",
+          "id": "delay"
+        }
+      },
+      {
+        "lastEditedBy": "cessetembro@gmail.com",
+        "type": {
+          "tag": "message",
+          "icon": "",
+          "id": "message",
+          "color": "transparent"
+        },
+        "pos": "{\"x\":8574.038040383017,\"y\":-73.98142201099898}",
+        "id": "jpTf0cVSh4ZqSwRRnwfK",
+        "message": {
+          "message": "Que ótimo! O certificado é o documento que comprova todo seu esforço 🎓😁\n\nAqui está o link\n👉 {{LINK_HOTMART_SC_mudei2_T1}}",
+          "type": "send_message",
+          "links": [
+            {
+              "url": "https://pay.hotmart.com/P96746318O?checkoutMode=10&sck=recdez25mudei2||21fisioped11FA25||",
+              "sonId": "JSbBXHuvSgKCsd4NXSa0",
+              "campaignId": "fP8V4wkZnHrptLOv3hjQ"
+            },
+            {
+              "campaignId": "dDXYDqIcOlCpAFucIxbW",
+              "url": "https://pay.hotmart.com/U100398695Q?checkoutMode=10&sck=recdez25mudei2||b1fonotea2FA25||",
+              "sonId": "JSbBXHuvSgKCsd4NXSa0"
+            },
+            {
+              "campaignId": "anf73cu6g3nMVnS7cUsb",
+              "sonId": "JSbBXHuvSgKCsd4NXSa0",
+              "url": "https://pay.hotmart.com/H96744618K?checkoutMode=10&sck=recdez25mudei2||a1direitopenal17FA25||"
+            },
+            {
+              "campaignId": "GpyUhD0v0uMrUtiwxMbN",
+              "sonId": "JSbBXHuvSgKCsd4NXSa0",
+              "url": "https://pay.hotmart.com/P96746173G?checkoutMode=10&sck=recdez25mudei2||4laserodonto9FA25||"
+            },
+            {
+              "campaignId": "ugMXr58V8NMJpWCBS08t",
+              "sonId": "JSbBXHuvSgKCsd4NXSa0",
+              "url": "https://pay.hotmart.com/B96745706H?checkoutMode=10&sck=recdez25mudei2||71miofascial22FA25||"
+            },
+            {
+              "sonId": "JSbBXHuvSgKCsd4NXSa0",
+              "campaignId": "e1giTr2I53C37eex8XKA",
+              "url": "https://pay.hotmart.com/O96744973K?checkoutMode=10&sck=recdez25mudei2||2pilates17FA25||"
+            },
+            {
+              "campaignId": "JQu6no2MqSiwViPquixE",
+              "sonId": "JSbBXHuvSgKCsd4NXSa0",
+              "url": "https://pay.hotmart.com/S96744924P?checkoutMode=10&sck=recdez25mudei2||73microfacial12FA25||"
+            },
+            {
+              "sonId": "JSbBXHuvSgKCsd4NXSa0",
+              "campaignId": "1iuBpiHQMOZPGOtCwlas",
+              "url": "https://pay.hotmart.com/X96745721K?checkoutMode=10&sck=recdez25mudei2||3microbiologia23FA25||"
+            },
+            {
+              "url": "https://pay.hotmart.com/V96744524X?checkoutMode=10&sck=recdez25mudei2||1neuroanatomia18FA25||",
+              "campaignId": "ZMIKXmPDSu12OQvoZtI0",
+              "sonId": "JSbBXHuvSgKCsd4NXSa0"
+            },
+            {
+              "sonId": "JSbBXHuvSgKCsd4NXSa0",
+              "url": "https://pay.hotmart.com/H96744695X?checkoutMode=10&sck=recdez25mudei2||a1criminologia17FA25||",
+              "campaignId": "dBBwT0K14mdFmgdjmIB8"
+            },
+            {
+              "sonId": "JSbBXHuvSgKCsd4NXSa0",
+              "campaignId": "eJbrVTTPiJh6bx0j7Kig",
+              "url": "https://pay.hotmart.com/X96746748W?checkoutMode=10&sck=recdez25mudei2||9dermatovet18FA25||"
+            },
+            {
+              "url": "https://pay.hotmart.com/F99273509J?checkoutMode=10&sck=recdez25mudei2||71drenagemlinfgestantes2FA25||",
+              "sonId": "JSbBXHuvSgKCsd4NXSa0",
+              "campaignId": "S5FVrDua7kcvs9vNT2Z0"
+            },
+            {
+              "campaignId": "B4MgLwPHCmNd37I0kPwJ",
+              "sonId": "JSbBXHuvSgKCsd4NXSa0",
+              "url": "https://pay.hotmart.com/S96746150U?checkoutMode=10&sck=recdez25mudei2||22edftea6FA25||"
+            },
+            {
+              "sonId": "JSbBXHuvSgKCsd4NXSa0",
+              "campaignId": "QrZghxZgfvFrUIzST1jA",
+              "url": "https://pay.hotmart.com/S96746150U?checkoutMode=10&sck=recdez25mudei2||22edfteaFA25||"
+            },
+            {
+              "campaignId": "V5xQVBLsVP2swcX344ys",
+              "url": "https://pay.hotmart.com/Y96745526T?checkoutMode=10&sck=recdez25mudei2||3embriologiaFA25||",
+              "sonId": "JSbBXHuvSgKCsd4NXSa0"
+            },
+            {
+              "campaignId": "rPEJ2tggl2cqlmScFVbb",
+              "sonId": "JSbBXHuvSgKCsd4NXSa0",
+              "url": "https://pay.hotmart.com/N96743545A?checkoutMode=10&sck=recdez25mudei2||0enfpedneoFA25||"
+            },
+            {
+              "sonId": "JSbBXHuvSgKCsd4NXSa0",
+              "campaignId": "cRESQ31aK6qdBdWaETJp",
+              "url": "https://pay.hotmart.com/P98253760B?checkoutMode=10&sck=recdez25mudei2||8farmaoncologicaFA25||"
+            },
+            {
+              "campaignId": "3Tg9QYMNohyidU7H4ZSK",
+              "sonId": "JSbBXHuvSgKCsd4NXSa0",
+              "url": "https://pay.hotmart.com/V96746890V?checkoutMode=10&sck=recdez25mudei2||8farmacologiaclinicaFA25||"
+            },
+            {
+              "url": "https://pay.hotmart.com/V96745807S?checkoutMode=10&sck=recdez25mudei2||5neurocienciaFA25||",
+              "campaignId": "C65nCbFjev9DX6Sh4uwR",
+              "sonId": "JSbBXHuvSgKCsd4NXSa0"
+            },
+            {
+              "sonId": "JSbBXHuvSgKCsd4NXSa0",
+              "url": "https://pay.hotmart.com/V96745807S?checkoutMode=10&sck=recdez25mudei2||3neurocienciaFA25||",
+              "campaignId": "RRhh2ch0omIlRu3nSkuW"
+            },
+            {
+              "sonId": "JSbBXHuvSgKCsd4NXSa0",
+              "campaignId": "cLSCLKjUAGNWGHAXkvHr",
+              "url": "https://pay.hotmart.com/S96745840K?checkoutMode=10&sck=recdez25mudei2||3neuroplasticidadeFA25||"
+            },
+            {
+              "sonId": "JSbBXHuvSgKCsd4NXSa0",
+              "campaignId": "hM11uWbFcGOTFjDauGut",
+              "url": "https://pay.hotmart.com/A96744070Y?checkoutMode=10&sck=recdez25mudei2||a2neuropsicologiaFA25||"
+            },
+            {
+              "sonId": "JSbBXHuvSgKCsd4NXSa0",
+              "url": "https://pay.hotmart.com/N96746764O?checkoutMode=10&sck=recdez25mudei2||a2neuropsicologiaFA25||",
+              "campaignId": "N5KbPY1YvFo2EL9iUzjK"
+            },
+            {
+              "sonId": "JSbBXHuvSgKCsd4NXSa0",
+              "campaignId": "CseOvmNX7mRj9pbveDjE",
+              "url": "https://pay.hotmart.com/N96746764O?checkoutMode=10&sck=recdez25mudei2||9dorcaoegatoFA25||"
+            },
+            {
+              "sonId": "JSbBXHuvSgKCsd4NXSa0",
+              "url": "https://pay.hotmart.com/E97047375H?checkoutMode=10&sck=recdez25mudei2||5educadorsocialFA25||",
+              "campaignId": "pZxCxxpsdx3reDJebd6m"
+            },
+            {
+              "sonId": "JSbBXHuvSgKCsd4NXSa0",
+              "campaignId": "yFa7tNhPm2EhXH4cs0Yw",
+              "url": "https://pay.hotmart.com/R96746230W?checkoutMode=10&sck=recdez25mudei2||21vmiFA25||"
+            },
+            {
+              "url": "https://pay.hotmart.com/W98124199C?checkoutMode=10&sck=recdez25mudei2||a1combodireitotrabFA25||",
+              "campaignId": "xirF7rko7PH63XydKbxc",
+              "sonId": "JSbBXHuvSgKCsd4NXSa0"
+            },
+            {
+              "campaignId": "JrhFjqUem7RGay61zw81",
+              "sonId": "JSbBXHuvSgKCsd4NXSa0",
+              "url": "https://pay.hotmart.com/X96746628U?checkoutMode=10&sck=recdez25mudei2||9primeirossocorrosFA25||"
+            },
+            {
+              "campaignId": "brwSqC68CVkQvNGUtsxN",
+              "sonId": "JSbBXHuvSgKCsd4NXSa0",
+              "url": "https://pay.hotmart.com/S96745691Y?checkoutMode=10&sck=recdez25mudei2||3imunologiaFA25||"
+            },
+            {
+              "sonId": "JSbBXHuvSgKCsd4NXSa0",
+              "campaignId": "rZfisTtugjxo6RsK4OWt",
+              "url": "https://pay.hotmart.com/W96745924Q?checkoutMode=10&sck=recdez25mudei2||0socorrosFA25||"
+            },
+            {
+              "campaignId": "ZmFNOobDlbjjHG3wcSD7",
+              "url": "https://pay.hotmart.com/P96745855X?checkoutMode=10&sck=recdez25mudei2||31patologiaforenseFA25||",
+              "sonId": "JSbBXHuvSgKCsd4NXSa0"
+            },
+            {
+              "campaignId": "3braV5Oy6Sswk82ufCOx",
+              "url": "https://pay.hotmart.com/U96746756I?checkoutMode=10&sck=recdez25mudei2||6examesbioquimicosFA25||",
+              "sonId": "JSbBXHuvSgKCsd4NXSa0"
+            },
+            {
+              "url": "https://pay.hotmart.com/S96746247K?checkoutMode=10&sck=recdez25mudei2||4periodontiaFA25||",
+              "campaignId": "jMTpHpO2tPajAGP1nsuY",
+              "sonId": "JSbBXHuvSgKCsd4NXSa0"
+            },
+            {
+              "sonId": "JSbBXHuvSgKCsd4NXSa0",
+              "campaignId": "pdre4whfKOlVRCon5GXi",
+              "url": "https://pay.hotmart.com/O96745749R?checkoutMode=10&sck=recdez25mudei2||3neuroansiedadeFA25||"
+            },
+            {
+              "url": "https://pay.hotmart.com/H96746651N?checkoutMode=10&sck=recdez25mudei2||9nutricaoegatoFA25||",
+              "campaignId": "zc9qgXJIJxeST2WlbF5Q",
+              "sonId": "JSbBXHuvSgKCsd4NXSa0"
+            },
+            {
+              "campaignId": "d3bPMyiD0pCrrmxr0xbF",
+              "url": "https://pay.hotmart.com/W96746226T?checkoutMode=10&sck=recdez25mudei2||4ortodontiaatualFA25||",
+              "sonId": "JSbBXHuvSgKCsd4NXSa0"
+            },
+            {
+              "url": "https://pay.hotmart.com/N96744094D?checkoutMode=10&sck=recdez25mudei2||1anatomiaosseaFA25||",
+              "sonId": "JSbBXHuvSgKCsd4NXSa0",
+              "campaignId": "ECGQHnwTiprEjRiMa3gh"
+            },
+            {
+              "sonId": "JSbBXHuvSgKCsd4NXSa0",
+              "campaignId": "DG5bXPteaEVHEA569imy",
+              "url": "https://pay.hotmart.com/V100632064R?checkoutMode=10&sck=recdez25mudei2||5BNCCcompFA25||"
+            },
+            {
+              "sonId": "JSbBXHuvSgKCsd4NXSa0",
+              "url": "https://pay.hotmart.com/C96746127B?checkoutMode=10&sck=recdez25mudei2||4clareamentoFA25||",
+              "campaignId": "BN3JNfp0jTuFf3Letqss"
+            },
+            {
+              "url": "https://pay.hotmart.com/U97780171D?checkoutMode=10&sck=recdez25mudei2||0enfprimariaFA25||",
+              "campaignId": "fMf6BZLlZRV4RmWgv4ZW",
+              "sonId": "JSbBXHuvSgKCsd4NXSa0"
+            },
+            {
+              "campaignId": "Uzx3EdKH6WfoQt0H5bFc",
+              "url": "https://pay.hotmart.com/A96746339B?checkoutMode=10&sck=recdez25mudei2||21fisioortopedicaFA25||",
+              "sonId": "JSbBXHuvSgKCsd4NXSa0"
+            },
+            {
+              "url": "https://pay.hotmart.com/T96746292Q?checkoutMode=10&sck=recdez25mudei2||21fisiopelvicaFA25||",
+              "campaignId": "Qmd14Pao7gqsnDXeLTeD",
+              "sonId": "JSbBXHuvSgKCsd4NXSa0"
+            },
+            {
+              "sonId": "JSbBXHuvSgKCsd4NXSa0",
+              "url": "https://pay.hotmart.com/T101256123E?checkoutMode=10&sck=recdez25mudei2||3imunoterapiaFA25||",
+              "campaignId": "sexLjS0HG3woYmksH676"
+            },
+            {
+              "campaignId": "XFdlYT3Gb6wgHMekzOhz",
+              "url": "https://pay.hotmart.com/R96745688C?checkoutMode=10&sck=recdez25mudei2||71pedrasquentesFA25||",
+              "sonId": "JSbBXHuvSgKCsd4NXSa0"
+            },
+            {
+              "campaignId": "tcNHkLQxSA4bdxHGfuDm",
+              "url": "https://pay.hotmart.com/W96745650Y?checkoutMode=10&sck=recdez25mudei2||71modeladoraFA25||",
+              "sonId": "JSbBXHuvSgKCsd4NXSa0"
+            },
+            {
+              "sonId": "JSbBXHuvSgKCsd4NXSa0",
+              "campaignId": "2W8Sm6GAy8s2BGQWAZtZ",
+              "url": "https://pay.hotmart.com/Y96745912S?checkoutMode=10&sck=recdez25mudei2||31necropsiaFA25||"
+            },
+            {
+              "sonId": "JSbBXHuvSgKCsd4NXSa0",
+              "url": "https://pay.hotmart.com/D96746674L?checkoutMode=10&sck=recdez25mudei2||6nutrimaternoinfFA25||",
+              "campaignId": "XMhnSTNRVCvMXjatAj0v"
+            },
+            {
+              "campaignId": "EtnUpnVEMPwJ7b52SZ8j",
+              "url": "https://pay.hotmart.com/D96746674L?checkoutMode=10&sck=SC2|mudei2||6nutrimaternoinf13||",
+              "sonId": "JSbBXHuvSgKCsd4NXSa0"
+            },
+            {
+              "campaignId": "ihD5Nehogj77r54HXJZD",
+              "sonId": "JSbBXHuvSgKCsd4NXSa0",
+              "url": "{{LINK_HOTMART_SC_mudei2_T1}}"
+            }
+          ],
+          "messageType": "message-text"
+        }
+      },
+      {
+        "pos": "{\"x\":1572.8761533526153,\"y\":1709.0206689916226}",
+        "lastEditedBy": "gjulioti@gmail.com",
+        "delay": {
+          "type": "seconds",
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "sendMessagesIntervalRangeType": "minutes",
+          "time": 45,
+          "isComercialInterval": false
+        },
+        "id": "l5rt6PNYQi1JS3YLKiZ6",
+        "type": {
+          "tag": "delay",
+          "icon": "",
+          "id": "delay",
+          "color": "transparent"
+        },
+        "sonId": "dF1LmOLyCRriXKiwku14"
+      },
+      {
+        "pos": "{\"x\":2343.6657278508615,\"y\":1086.3492208216408}",
+        "lastEditedBy": "karloscess7@gmail.com",
+        "delay": {
+          "sendMessagesIntervalRangeType": "minutes",
+          "type": "shipping-date",
+          "sendAt": {
+            "seconds": {{DT_SC2_1930_VARIA}},
+            "nanoseconds": 0
+          },
+          "isComercialInterval": false,
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ]
+        },
+        "id": "mpcAlpDlGRLO06bMqTaj",
+        "type": {
+          "tag": "delay",
+          "id": "delay",
+          "color": "transparent",
+          "icon": ""
+        },
+        "sonId": "rZQQxj1KI2SNPy3u92MN"
+      },
+      {
+        "pos": "{\"x\":3941.2668856104856,\"y\":-629.1795598250523}",
+        "type": {
+          "tag": "message",
+          "icon": "",
+          "id": "message",
+          "color": "transparent"
+        },
+        "lastEditedBy": "karloscess7@gmail.com",
+        "message": {
+          "buttonsBodyText": "Boa! Para garantir seu certificado, clique no botão abaixo👇",
+          "messageType": "interactive-message",
+          "type": "send_message",
+          "ctaUrl": {
+            "parameters": {
+              "url": "{{LINK_HOTMART_SC_M3_T1}}",
+              "display_text": "Clique Aqui"
+            },
+            "campaignId": "z1giCSCnBdbfPcYeWlLe",
+            "sonId": "OWi8J1lUp59Vfd82jwTO"
+          },
+          "links": [
+            {
+              "url": "https://gemini.google.com/app",
+              "campaignId": "dmJIgpNa9SFYounDJAdk",
+              "sonId": "vAdzLTS0fevZNlqKv33f"
+            },
+            {
+              "url": "https://cessetembro.com.br/certificado21fisiodomiciliar",
+              "campaignId": "aeb66NDqnkDdrdyjQfLy",
+              "sonId": "vAdzLTS0fevZNlqKv33f"
+            },
+            {
+              "sonId": "vAdzLTS0fevZNlqKv33f",
+              "url": "https://cessetembro.com.br/certificado21fisiodomiciliar",
+              "campaignId": "pdLndAu5aN6umP2vpCR6"
+            }
+          ],
+          "interactiveType": "cta-url"
+        },
+        "id": "mx5tLXDeaZWxweDxaeWu"
+      },
+      {
+        "id": "nGViIYKnrPcQrUyjJNkA",
+        "lastEditedBy": "karloscess7@gmail.com",
+        "type": {
+          "id": "message",
+          "icon": "",
+          "tag": "message",
+          "color": "transparent"
+        },
+        "message": {
+          "interactiveType": "cta-url",
+          "ctaUrl": {
+            "sonId": "d1cECSjxMCZIeXkLIUco",
+            "parameters": {
+              "url": "{{LINK_HOTMART_SC_M4_T1}}",
+              "display_text": "Clique aqui"
+            },
+            "campaignId": "cWASt7iQwwpDuiCji9Ng"
+          },
+          "buttonsBodyText": "Boa! Para garantir seu certificado, clique no botão abaixo👇",
+          "messageType": "interactive-message",
+          "type": "send_message"
+        },
+        "pos": "{\"x\":5491.474133506459,\"y\":-379.7516881238118}"
+      },
+      {
+        "pos": "{\"x\":7494.357862296616,\"y\":-556.0710869218275}",
+        "lastEditedBy": "karloscess7@gmail.com",
+        "action": {
+          "type": "add_tag",
+          "userResourceGroupSendRandomic": false,
+          "forceAttribution": false,
+          "unniiaAtributionOnly": false,
+          "keepChatActive": false,
+          "tags": [
+            "{TAG_CANCELAR_ENVIOS_SC}"
+          ]
+        },
+        "sonId": "71ECyyqEifyAe02JRMow",
+        "id": "nIN5hiqPgruzKbHjNqWx",
+        "type": {
+          "tag": "action",
+          "icon": "",
+          "color": "transparent",
+          "id": "action"
+        }
+      },
+      {
+        "delay": {
+          "sendMessagesIntervalRangeType": "minutes",
+          "type": "seconds",
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "isComercialInterval": false,
+          "time": 1
+        },
+        "type": {
+          "id": "delay",
+          "icon": "",
+          "tag": "delay",
+          "color": "transparent"
+        },
+        "id": "nnsXSQjTrFKTbuSWOObR",
+        "lastEditedBy": "cessetembro@gmail.com",
+        "pos": "{\"x\":8947.744911066566,\"y\":-527.8747755674548}"
+      },
+      {
+        "id": "o958I8lqnBAgeqqRF15e",
+        "message": {
+          "messageType": "interactive-message",
+          "interactiveType": "reply-button",
+          "buttons": [
+            {
+              "type": "reply",
+              "sonId": "nGViIYKnrPcQrUyjJNkA",
+              "reply": {
+                "title": "Garantir Certificado",
+                "id": "qOrVNRwQWhjEGLdXXaAz"
+              }
+            },
+            {
+              "type": "reply",
+              "reply": {
+                "id": "jp3v7tHtE3cy4TZ8IaVp",
+                "title": "Cancelar Envios"
+              },
+              "sonId": "nIN5hiqPgruzKbHjNqWx"
+            }
+          ],
+          "type": "send_message",
+          "buttonsBodyText": "Certificado de {{NOME_CURSO}}\n\nDocumento oficial válido para:\n- Comprovação de horas complementares\n- Processos seletivos e concursos\n- Enriquecimento de currículo profissional\n- Apresentação em instituições de ensino\n\nGaranta Já! Materiais completos + acesso vitalício inclusos."
+        },
+        "pos": "{\"x\":5036.960437994462,\"y\":-462.2519141328128}",
+        "lastEditedBy": "cessetembro@gmail.com",
+        "type": {
+          "color": "transparent",
+          "icon": "",
+          "id": "message",
+          "tag": "message"
+        }
+      },
+      {
+        "pos": "{\"x\":7510.229521184561,\"y\":39.47139383049108}",
+        "lastEditedBy": "alycecess7@gmail.com",
+        "action": {
+          "unniiaAtributionOnly": false,
+          "type": "add_tag",
+          "userResourceGroupSendRandomic": false,
+          "forceAttribution": false,
+          "keepChatActive": false,
+          "tags": [
+            "Bloquear Envios"
+          ]
+        },
+        "id": "pPw44EoNKYohxmjDMAKR",
+        "sonId": "gtUAxffDLT7zTquQmvzQ",
+        "type": {
+          "icon": "",
+          "color": "transparent",
+          "tag": "action",
+          "id": "action"
+        }
+      },
+      {
+        "type": {
+          "icon": "",
+          "tag": "message",
+          "id": "message",
+          "color": "transparent"
+        },
+        "pos": "{\"x\":4429.185965109196,\"y\":2638.1940197121735}",
+        "lastEditedBy": "cessetembro@gmail.com",
+        "message": {
+          "buttons": [
+            {
+              "sonId": "5YMBPdIhy5WPJn5xgCob",
+              "type": "reply",
+              "reply": {
+                "title": "Sim! Emitir Certific",
+                "id": "2bTDoIDsUS4q7trBElYP"
+              }
+            },
+            {
+              "reply": {
+                "id": "4mDAJIdjIfwHuz18P13j",
+                "title": "Não"
+              },
+              "sonId": "nIN5hiqPgruzKbHjNqWx",
+              "type": "reply"
+            }
+          ],
+          "type": "send_message",
+          "messageType": "interactive-message",
+          "interactiveType": "reply-button",
+          "buttonsBodyText": "Ainda faz sentido para você ter acesso ao certificado?\n\n- Horas complementares\n- Currículo mais forte\n- Processos seletivos\n\nPorque se fizer…\nSeu documento oficial está literalmente a 1 clique de você."
+        },
+        "id": "r1BzUxjsaaJBeWW34DxZ"
+      },
+      {
+        "delay": {
+          "time": 1,
+          "type": "seconds",
+          "isComercialInterval": false,
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "sendMessagesIntervalRangeType": "minutes"
+        },
+        "lastEditedBy": "karloscess7@gmail.com",
+        "id": "r5w1pApmgzgJ8MsbR13A",
+        "type": {
+          "id": "delay",
+          "icon": "",
+          "color": "transparent",
+          "tag": "delay"
+        },
+        "pos": "{\"x\":4370.320513731891,\"y\":3333.2147885730824}"
+      },
+      {
+        "pos": "{\"x\":4870.037910026971,\"y\":2465.9591206037003}",
+        "type": {
+          "id": "message",
+          "icon": "",
+          "tag": "message",
+          "color": "transparent"
+        },
+        "sequential": true,
+        "id": "rQz2Px2JIISjvMY0DU2z",
+        "sonId": "2bLGFK3pqTCz89ctUgCB",
+        "message": {
+          "type": "send_message",
+          "messageType": "message-media",
+          "file": {
+            "originalName": "{{NOME_CURSO}}.png",
+            "uploadedFile": {
+              "contentType": "image/png",
+              "name": "{{NOME_CURSO}}.png",
+              "size": 193661,
+              "extension": "png",
+              "url": "{{LINK_CERTIFICADO_IMG}}"
+            },
+            "mimeType": "image/png"
+          }
+        }
+      },
+      {
+        "type": {
+          "tag": "conditionalV2",
+          "icon": "",
+          "id": "conditionalV2",
+          "color": "transparent"
+        },
+        "id": "rZQQxj1KI2SNPy3u92MN",
+        "pos": "{\"x\":2918.1040069368564,\"y\":1072.0124018559402}",
+        "conditionalV2": {
+          "groupConditions": [
+            {
+              "conditions": [
+                {
+                  "type": "contains-some-tag",
+                  "tags": [
+                    "Bloquear Envios",
+                    "{{TAG_CERT_CURSO}}",
+                    "{TAG_CANCELAR_ENVIOS_SC}"
+                  ]
+                }
+              ],
+              "name": "",
+              "conditionType": "or"
+            }
+          ],
+          "falseId": "fCN2gogWzGPwhalOo9lq"
+        },
+        "lastEditedBy": "karloscess7@gmail.com"
+      },
+      {
+        "type": {
+          "id": "conditionalV2",
+          "color": "transparent",
+          "icon": "",
+          "tag": "conditionalV2"
+        },
+        "id": "rmbtpl15AOwmkGfy4aez",
+        "pos": "{\"x\":5760.716854233345,\"y\":1081.8476040359205}",
+        "conditionalV2": {
+          "falseId": "Sx9qFilMB5XyHcVc7WwC",
+          "groupConditions": [
+            {
+              "conditions": [
+                {
+                  "type": "conversation-window",
+                  "tags": []
+                }
+              ],
+              "conditionType": "or",
+              "sonId": "H5FBshstPcAGccWHzqag"
+            }
+          ]
+        },
+        "lastEditedBy": "karloscess7@gmail.com"
+      },
+      {
+        "sonId": "xb9ux2tEr1cQYbozeEJo",
+        "lastEditedBy": "karloscess7@gmail.com",
+        "type": {
+          "color": "transparent",
+          "id": "delay",
+          "tag": "delay",
+          "icon": ""
+        },
+        "pos": "{\"x\":4885.856475346518,\"y\":1449.7840028657115}",
+        "id": "rnPbvNdSizVnhIonDcjc",
+        "delay": {
+          "time": 1,
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "sendMessagesIntervalRangeType": "minutes",
+          "isComercialInterval": false,
+          "type": "seconds"
+        }
+      },
+      {
+        "delay": {
+          "sendMessagesIntervalRangeType": "minutes",
+          "type": "seconds",
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "time": 1,
+          "isComercialInterval": false
+        },
+        "id": "sJTiiGdrXqYjdpRBWNkE",
+        "type": {
+          "tag": "delay",
+          "color": "transparent",
+          "icon": "",
+          "id": "delay"
+        },
+        "pos": "{\"x\":8929.484103745166,\"y\":534.4811193044084}",
+        "sonId": "hIb3cYc7gDtnCRd9Z7l1",
+        "lastEditedBy": "cessetembro@gmail.com"
+      },
+      {
+        "type": {
+          "id": "delay",
+          "tag": "delay",
+          "color": "transparent",
+          "icon": ""
+        },
+        "pos": "{\"x\":8552.094417048373,\"y\":-972.3359227505582}",
+        "lastEditedBy": "cessetembro@gmail.com",
+        "delay": {
+          "type": "seconds",
+          "isComercialInterval": false,
+          "time": 1,
+          "sendMessagesIntervalRangeType": "minutes",
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ]
+        },
+        "id": "srAO2pTigINopTkILjW3"
+      },
+      {
+        "lastEditedBy": "gjulioti@gmail.com",
+        "id": "toOCzmPzX5I7ZIe7FuW8",
+        "type": {
+          "color": "transparent",
+          "id": "delay",
+          "icon": "",
+          "tag": "delay"
+        },
+        "pos": "{\"x\":8920.183976452743,\"y\":1196.0786422206334}",
+        "delay": {
+          "sendMessagesIntervalRangeType": "minutes",
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "isComercialInterval": false,
+          "time": 30,
+          "type": "seconds"
+        },
+        "sonId": "hIb3cYc7gDtnCRd9Z7l1"
+      },
+      {
+        "type": {
+          "id": "randomizer",
+          "color": "transparent",
+          "icon": "",
+          "tag": "randomizer"
+        },
+        "id": "ugu7pQEeN34RKKbZfZvp",
+        "pos": "{\"x\":1174.669203813926,\"y\":1055.7053235535686}",
+        "randomizer": {
+          "variations": [
+            {
+              "value": 25,
+              "id": "vsoeSxr2SI2Jz4BdaEeZ",
+              "sonId": "gNMPy5oU5k0KUER20ExK"
+            },
+            {
+              "id": "M2jVGG8ZYYdGSXGxJEgU",
+              "sonId": "NSzNRMivdAtAQPM0hHCl",
+              "value": 25
+            },
+            {
+              "id": "FvPBGvj7PsTglyVXEiNF",
+              "value": 25,
+              "sonId": "FLZh9WYoGWnzu00lUrgf"
+            },
+            {
+              "id": "3bnRhAKDqEEKtBAtr07X",
+              "value": 25,
+              "sonId": "l5rt6PNYQi1JS3YLKiZ6"
+            }
+          ],
+          "randomPathAlways": true
+        },
+        "lastEditedBy": "cessetembro@gmail.com"
+      },
+      {
+        "sonId": "U5JH7271OB2NzF4rvwgY",
+        "id": "v6Awu8nCIhKhztTmVczY",
+        "delay": {
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "time": 15,
+          "isComercialInterval": false,
+          "type": "seconds",
+          "sendMessagesIntervalRangeType": "minutes"
+        },
+        "type": {
+          "tag": "delay",
+          "color": "transparent",
+          "id": "delay",
+          "icon": ""
+        },
+        "pos": "{\"x\":-1228.870877719663,\"y\":274.7748799992963}",
+        "lastEditedBy": "gjulioti@gmail.com"
+      },
+      {
+        "lastEditedBy": "karloscess7@gmail.com",
+        "conditionalV2": {
+          "falseId": "QIPlHA8LOzIdwE6HcAV3",
+          "groupConditions": [
+            {
+              "conditions": [
+                {
+                  "tags": [],
+                  "type": "conversation-window"
+                }
+              ],
+              "sonId": "yohMFQQUqil4dRTBghLu",
+              "conditionType": "or"
+            }
+          ]
+        },
+        "id": "wFqCIV0P1WKR88zyBjLD",
+        "type": {
+          "tag": "conditionalV2",
+          "icon": "",
+          "id": "conditionalV2",
+          "color": "transparent"
+        },
+        "pos": "{\"x\":8129.421284087946,\"y\":965.0616200685488}"
+      },
+      {
+        "id": "xb9ux2tEr1cQYbozeEJo",
+        "type": {
+          "id": "delay",
+          "icon": "",
+          "color": "transparent",
+          "tag": "delay"
+        },
+        "sonId": "eKP0G5LEaRqsjbF6fzuo",
+        "pos": "{\"x\":2561.5111249934466,\"y\":2218.9352059906505}",
+        "lastEditedBy": "cessetembro@gmail.com",
+        "delay": {
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "isComercialInterval": false,
+          "sendMessagesIntervalRangeType": "minutes",
+          "type": "minutes",
+          "time": 5
+        }
+      },
+      {
+        "delay": {
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "time": 1,
+          "sendMessagesIntervalRangeType": "minutes",
+          "type": "seconds",
+          "isComercialInterval": false
+        },
+        "type": {
+          "color": "transparent",
+          "id": "delay",
+          "icon": "",
+          "tag": "delay"
+        },
+        "lastEditedBy": "karloscess7@gmail.com",
+        "id": "ya2CZrlcpuZGYYIcTjEM",
+        "pos": "{\"x\":1002.7840358265489,\"y\":-334.222449777183}"
+      },
+      {
+        "id": "yohMFQQUqil4dRTBghLu",
+        "lastEditedBy": "cessetembro@gmail.com",
+        "type": {
+          "icon": "",
+          "id": "randomizer",
+          "tag": "randomizer",
+          "color": "transparent"
+        },
+        "pos": "{\"x\":8595.095842670265,\"y\":892.5356048655585}",
+        "randomizer": {
+          "randomPathAlways": true,
+          "variations": [
+            {
+              "value": 25,
+              "sonId": "sJTiiGdrXqYjdpRBWNkE",
+              "id": "6bR9Qjlnv6eQZH7sUp1I"
+            },
+            {
+              "sonId": "5zJqm84qSK3S9E7MALHM",
+              "id": "2fb0u44MLaUcFd30jbK7",
+              "value": 25
+            },
+            {
+              "value": 25,
+              "id": "rB6xSCeDVusJ3TE8a3lT",
+              "sonId": "toOCzmPzX5I7ZIe7FuW8"
+            },
+            {
+              "id": "6JGzjlA31DBdxYAqxzIc",
+              "sonId": "WCO0rUF6n4ijdifB1rnt",
+              "value": 25
+            }
+          ]
+        }
+      },
+      {
+        "lastEditedBy": "karloscess7@gmail.com",
+        "message": {
+          "links": [
+            {
+              "url": "https://pay.hotmart.com/E97047375H?checkoutMode=10&sck=recdez25mudei1||5educadorsocial7||",
+              "sonId": "srAO2pTigINopTkILjW3",
+              "campaignId": "bshZhP9O6iIh6wAc4mpi"
+            },
+            {
+              "url": "https://loja.cessetembro.com.br/shop/?utm_source=recdez25",
+              "campaignId": "tq83wzrIEq1ShWF004c4",
+              "sonId": "srAO2pTigINopTkILjW3"
+            },
+            {
+              "campaignId": "5vj0nuwfHZEKIRbEoQYx",
+              "url": "https://loja.cessetembro.com.br/shop/?{{UTM_SC_LOJA}}",
+              "sonId": "srAO2pTigINopTkILjW3"
+            }
+          ],
+          "type": "send_message",
+          "messageType": "message-text",
+          "message": "Ótima escolha! Temos vários outros cursos e apostilas da sua área.\n\nAqui está o link:\n👉 https://loja.cessetembro.com.br/shop/?{{UTM_SC_LOJA}}"
+        },
+        "type": {
+          "tag": "message",
+          "color": "transparent",
+          "id": "message",
+          "icon": ""
+        },
+        "pos": "{\"x\":8204.668346334583,\"y\":-986.6052864597133}",
+        "id": "yqiV5rnR6OPQ16lcr4p6"
+      },
+      {
+        "type": {
+          "icon": "",
+          "id": "delay",
+          "tag": "delay",
+          "color": "transparent"
+        },
+        "pos": "{\"x\":5189.850245681009,\"y\":2908.6384175701724}",
+        "id": "zljsg3ZExKrkuVjrd0Fi",
+        "delay": {
+          "sendMessagesIntervalRangeType": "minutes",
+          "isComercialInterval": false,
+          "type": "minutes",
+          "sendMessagesIntervalRange": [
+            10,
+            201
+          ],
+          "time": 15
+        },
+        "lastEditedBy": "karloscess7@gmail.com"
+      },
+      {
+        "sequential": true,
+        "pos": "{\"x\":614.1614998742916,\"y\":127.48248993750565}",
+        "id": "zvNI1RtcDycNw1fucRsz",
+        "type": {
+          "icon": "",
+          "id": "message",
+          "color": "transparent",
+          "tag": "message"
+        },
+        "sonId": "96eboknl0tOdKWCgmRcB",
+        "message": {
+          "type": "send_message",
+          "messageType": "message-media",
+          "file": {
+            "originalName": "{{NOME_CURSO}}.png",
+            "mimeType": "image/png",
+            "uploadedFile": {
+              "url": "{{LINK_CERTIFICADO_IMG}}",
+              "size": 421583,
+              "contentType": "image/png",
+              "extension": "png",
+              "name": "{{NOME_CURSO}}.png"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

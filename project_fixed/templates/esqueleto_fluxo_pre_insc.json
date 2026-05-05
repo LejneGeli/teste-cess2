@@ -1,0 +1,82 @@
+{
+  "name": "{{DT_INICIO_CURSO_FORMAT}} Pré Inscrição - {{NOME_CURSO}}",
+  "category": "automation",
+  "status": "idle",
+  "connectionType": "whatsapp",
+  "folderId": "muwqmIdsyhi98t1idHnm",
+  "node": {
+    "type": {
+      "id": "w3rKJzWC82Rpa7CoxvEK",
+      "tag": "init",
+      "color": "transparent",
+      "icon": "init"
+    },
+    "pos": "{\"x\":-361.3324011716746,\"y\":3.294824326793389}",
+    "id": "IfJSgBGkk1nzDDqs0Vtg",
+    "sonId": "AYQApkpOBp4ulQhvNKi2",
+    "nodes": [
+      {
+        "type": {
+          "icon": "",
+          "color": "transparent",
+          "id": "action",
+          "tag": "action"
+        },
+        "sonId": "LiIY2Qx1iNkO5ovyMglC",
+        "pos": "{\"x\":-31.88563237448909,\"y\":175.67000882448193}",
+        "action": {
+          "userResourceGroupSendRandomic": false,
+          "type": "add_tag",
+          "forceAttribution": false,
+          "unniiaAtributionOnly": false,
+          "keepChatActive": false,
+          "tags": [
+            "{{TAG_INSC_GERAL}}"
+          ]
+        },
+        "lastEditedBy": "karloscess7@gmail.com",
+        "id": "AYQApkpOBp4ulQhvNKi2"
+      },
+      {
+        "lastEditedBy": "carolinelejnecess7@gmail.com",
+        "sonId": "TglA1XTirJCeXihfnE9Y",
+        "action": {
+          "keepChatActive": false,
+          "userResourceGroupSendRandomic": false,
+          "unniiaAtributionOnly": false,
+          "type": "add_tag",
+          "forceAttribution": false,
+          "tags": [
+            "{{TAG_FOI_PLANILHA}}"
+          ]
+        },
+        "id": "LiIY2Qx1iNkO5ovyMglC",
+        "type": {
+          "color": "transparent",
+          "tag": "action",
+          "id": "action",
+          "icon": ""
+        },
+        "pos": "{\"x\":325.7411714785469,\"y\":186.50000000000006}"
+      },
+      {
+        "id": "TglA1XTirJCeXihfnE9Y",
+        "pos": "{\"x\":733.1028688701741,\"y\":104.4375930515138}",
+        "lastEditedBy": "carolinelejnecess7@gmail.com",
+        "type": {
+          "tag": "httpRequest",
+          "icon": "",
+          "id": "httpRequest",
+          "color": "transparent"
+        },
+        "httpRequest": {
+          "hasCustomBody": false,
+          "headerFields": [],
+          "customBody": "",
+          "link": "{{LINK_WEBHOOK_PLANILHA}}",
+          "method": "post"
+        }
+      }
+    ]
+  }
+}
