@@ -20,15 +20,12 @@
         "id": "1O7me7Jwm1RtQcFaplhB",
         "pos": "{\"x\":4131.54430850805,\"y\":1800.3676988990978}",
         "delay": {
-          "type": "shipping-date",
+          "type": "seconds",
           "sendMessagesIntervalRange": [
             10,
             201
           ],
-          "sendAt": {
-            "seconds": {{DT_RETOMADA_INICIO_VARIA}},
-            "nanoseconds": 0
-          },
+          "time": 45,
           "isComercialInterval": false,
           "sendMessagesIntervalRangeType": "minutes"
         },

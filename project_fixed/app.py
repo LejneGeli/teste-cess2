@@ -142,7 +142,7 @@ if 'cursos' in st.session_state:
                 contador_delay = 0
                 nome_fluxo_ativo = config['nome'] if any(x in config['nome'] for x in ["SC", "Docs", "F2.1", "F5.1", "RETOMADA"]) else "F1"
 
-                # Para RETOMADA: calcula o total de cursos da semana ANTES do loop
+                # Para RETOMADA: conta o total de cursos ANTES do loop para calcular o delay certo
                 total_cursos_semana = None
                 if nome_fluxo_ativo == "RETOMADA":
                     total_cursos_semana = 0
