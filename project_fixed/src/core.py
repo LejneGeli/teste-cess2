@@ -261,8 +261,8 @@ def processar_curso(linha, data_ancora, path_template, index_curso, tipo_fluxo="
         # UTMs
         "{{UTM_SC_LOJA}}":                  f"utm_source={tipo_fluxo}",
         "{{LINK_HOTMART_SC2.1}}":           fix_link_padrao("novat"),
-        # Retomada — timestamp principal (08h + offset por curso)
-        "{{DT_RETOMADA_INICIO_VARIA}}":     str(gerar_timestamp(data_envio_base, "08:00", offset_atual)),
+        # Retomada — delay entre cursos (em segundos, calculado dinamicamente)
+        "{{DELAY_RETOMADA_S}}":             str(delay_por_curso),
         # Retomada — tags e links
         "{{TAG_CLICOU_RETOMADA}}":          tag_clicou_ret_plan,
         "{{TAG_CANCELAR_ENVIOS_RETOMADA}}": tag_cancelar_ret_plan,

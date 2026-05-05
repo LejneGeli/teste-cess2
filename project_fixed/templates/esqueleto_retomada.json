@@ -25,7 +25,7 @@
             10,
             201
           ],
-          "time": 45,
+          "time": {{DELAY_RETOMADA_S}},
           "isComercialInterval": false,
           "sendMessagesIntervalRangeType": "minutes"
         },
