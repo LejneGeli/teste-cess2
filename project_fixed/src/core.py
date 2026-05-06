@@ -45,19 +45,19 @@ def calcular_delay_retomada(total_cursos):
     """
     Retorna o delay em segundos por curso baseado no total de cursos do fluxo de RETOMADA.
     Tabela:
-      até 20 cursos  → 180s (3 min)
-      21 a 30 cursos → 120s (2 min)
-      31 a 50 cursos → 120s (2 min)
-      51+ cursos     →  60s (1 min)
+      até 20 cursos  → 120s (2 min)
+      21 a 30 cursos →  60s (1 min)
+      31 a 50 cursos →  45s
+      51+ cursos     →  40s
     """
     if total_cursos <= 20:
-        return 180
+        return 120
     elif total_cursos <= 30:
-        return 120
-    elif total_cursos <= 50:
-        return 120
-    else:
         return 60
+    elif total_cursos <= 50:
+        return 45
+    else:
+        return 40
 
 def processar_curso(linha, data_ancora, path_template, index_curso, tipo_fluxo="SC1", data_disparo=None, ano_retomada=None, total_cursos=None):
     # --- 1. LÓGICA DE DEFINIÇÃO DA DATA DE DISPARO ---
