@@ -5288,7 +5288,7 @@
         "pos": "{\"x\":132.3310898152322,\"y\":1139.7001544831514}",
         "delay": {
           "sendAt": {
-            "seconds": {{DT_SC3_1400_VARIA}},
+            "seconds": {{DT_RETOMADA_0800_VARIA}},
             "nanoseconds": 0
           },
           "sendMessagesIntervalRangeType": "minutes",

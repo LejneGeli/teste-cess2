@@ -144,8 +144,11 @@ def processar_curso(linha, data_ancora, path_template, index_curso, tipo_fluxo="
     tag_sem3 = f"Inscritos {calcular_data_especifica(segunda_referencia_tags, 14)}"
 
     # --- 4. DELAY: dinâmico para RETOMADA, fixo 2min para os demais ---
-    if tipo_fluxo == "RETOMADA" and total_cursos is not None:
-        delay_por_curso = calcular_delay_retomada(total_cursos)
+    if tipo_fluxo == "RETOMADA":
+        if total_cursos is not None and total_cursos > 0:
+            delay_por_curso = calcular_delay_retomada(total_cursos)
+        else:
+            delay_por_curso = 120  # fallback se total_cursos não vier
     else:
         delay_por_curso = 120  # 2min padrão para todos os outros fluxos
 
@@ -242,6 +245,7 @@ def processar_curso(linha, data_ancora, path_template, index_curso, tipo_fluxo="
         "{{DT_SC2_DS_0800_VARIA}}":         str(gerar_timestamp(data_envio_ds, "08:00", offset_atual)),
         # Timestamps SC3
         "{{DT_SC3_1400_VARIA}}":            str(gerar_timestamp(data_envio_base, "14:00", offset_atual)),
+        "{{DT_RETOMADA_0800_VARIA}}":       str(gerar_timestamp(data_envio_base, "08:00", offset_atual)),
         "{{DT_SC3_1900_VARIA}}":            str(gerar_timestamp(data_envio_base, "19:00", offset_atual)),
         "{{DT_SC3_2100_VARIA}}":            str(gerar_timestamp(data_envio_base, "21:00", offset_atual)),
         "{{DT_SC3_DS_0740_VARIA}}":         str(gerar_timestamp(data_envio_ds, "07:40", offset_atual)),
