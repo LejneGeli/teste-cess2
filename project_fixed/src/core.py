@@ -59,7 +59,230 @@ def calcular_delay_retomada(total_cursos):
     else:
         return 40
 
-def processar_curso(linha, data_ancora, path_template, index_curso, tipo_fluxo="SC1", data_disparo=None, ano_retomada=None, total_cursos=None):
+
+def obter_template_whatsapp(conta, fluxo):
+    return TEMPLATES_WHATSAPP.get(conta, {}).get(fluxo)
+
+
+def aplicar_template_whatsapp(json_data, dados_template):
+    if not dados_template:
+        return json_data
+
+    def percorrer(obj):
+        if isinstance(obj, dict):
+            if obj.get("type") == "send_template" or "templateDataJson" in obj:
+                obj["templateId"] = dados_template["id"]
+
+                if "template" in obj and isinstance(obj["template"], dict):
+                    obj["template"]["name"] = dados_template["nome"]
+                    obj["template"]["connectionId"] = dados_template["connectionId"]
+                    obj["template"]["wabaId"] = dados_template["wabaId"]
+                    obj["template"]["userId"] = dados_template["userId"]
+                    obj["template"]["id"] = dados_template["id"]
+
+                if "templateDataJson" in obj:
+                    try:
+                        template_json = json.loads(obj["templateDataJson"])
+                        template_json["name"] = dados_template["nome"]
+                        template_json["id"] = dados_template["id"]
+                        template_json["connectionId"] = dados_template["connectionId"]
+                        template_json["wabaId"] = dados_template["wabaId"]
+                        template_json["userId"] = dados_template["userId"]
+                        obj["templateDataJson"] = json.dumps(template_json, ensure_ascii=False)
+                    except Exception:
+                        pass
+
+            for valor in obj.values():
+                percorrer(valor)
+
+        elif isinstance(obj, list):
+            for item in obj:
+                percorrer(item)
+
+    percorrer(json_data)
+    return json_data
+
+TEMPLATES_WHATSAPP = {
+    "Conta_1": {
+        "Fluxo 1": {
+            "nome": "m1_segunda_gratuito_curso_c1",
+            "connectionId": "ouLDZiM3pEddrZuTGJVw",
+            "wabaId": "551316877339100",
+            "userId": "3jNt3SinWzW08N7iqGhu473b7M53",
+            "id": "2351281792011799"
+        },
+        "Fluxo 2": {
+            "nome": "m1_terca_gratuito_curso_c1",
+            "connectionId": "ouLDZiM3pEddrZuTGJVw",
+            "wabaId": "551316877339100",
+            "userId": "3jNt3SinWzW08N7iqGhu473b7M53",
+            "id": "1224032236224575"
+        },
+        "Fluxo 7": {
+            "nome": "m1_quarta_gratuito_curso_c1",
+            "connectionId": "ouLDZiM3pEddrZuTGJVw",
+            "wabaId": "551316877339100",
+            "userId": "3jNt3SinWzW08N7iqGhu473b7M53" ,
+            "id": "3877399019065544"
+        }, 
+        "SC1": {
+            "nome": "m1_terca_sc1_curso_c1",
+            "connectionId": "ouLDZiM3pEddrZuTGJVw",
+            "wabaId": "551316877339100",
+            "userId": "3jNt3SinWzW08N7iqGhu473b7M53",
+            "id": "2204131727075346"
+        }, 
+        "SC2":{
+            "nome": "m1_quinta_sc2_curso_c1",
+            "connectionId": "ouLDZiM3pEddrZuTGJVw",
+            "wabaId": "551316877339100",
+            "userId": "3jNt3SinWzW08N7iqGhu473b7M53" ,
+            "id": "939470922406268"
+        }, 
+        "SC3": {
+            "nome": "m1_quinta_sc3_curso_c1",
+            "connectionId": "ouLDZiM3pEddrZuTGJVw" ,
+            "wabaId": "551316877339100",
+            "userId": "3jNt3SinWzW08N7iqGhu473b7M53",
+            "id": "1263805545421820"
+        }
+    },
+    "Conta_2": {
+        "Fluxo 1": {
+            "nome": "m1_segunda_gratuito_curso_c2",
+            "connectionId": "OXU0Zg19Qgu5G4HauCdC",
+            "wabaId": "643489112180162",
+            "userId": "3jNt3SinWzW08N7iqGhu473b7M53",
+            "id": "1543760574427026"
+        },
+        "Fluxo 2": {
+            "nome": "m1_terca_gratuito_curso_c2",
+            "connectionId": "OXU0Zg19Qgu5G4HauCdC",
+            "wabaId": "643489112180162",
+            "userId": "3jNt3SinWzW08N7iqGhu473b7M53",
+            "id": "4432723350280208"
+        },
+        "Fluxo 7": {
+            "nome": "m1_quarta_gratuito_curso_c2",
+            "connectionId": "OXU0Zg19Qgu5G4HauCdC",
+            "wabaId": "643489112180162",
+            "userId": "3jNt3SinWzW08N7iqGhu473b7M53" ,
+            "id": "26688921900744732"
+        }, 
+        "SC1": {
+            "nome": "m1_terca_sc1_curso_c2",
+            "connectionId": "OXU0Zg19Qgu5G4HauCdC",
+            "wabaId": "643489112180162",
+            "userId": "3jNt3SinWzW08N7iqGhu473b7M53",
+            "id": "4404558556458070"
+        }, 
+        "SC2":{
+            "nome": "m1_quinta_sc2_curso_c2",
+            "connectionId": "OXU0Zg19Qgu5G4HauCdC",
+            "wabaId": "643489112180162",
+            "userId": "3jNt3SinWzW08N7iqGhu473b7M53" ,
+            "id": "1561244302678164"
+        }, 
+        "SC3": {
+            "nome": "m1_quinta_sc3_curso_c2",
+            "connectionId": "OXU0Zg19Qgu5G4HauCdC" ,
+            "wabaId": "643489112180162",
+            "userId": "3jNt3SinWzW08N7iqGhu473b7M53",
+            "id": "1351355953500204" 
+        } 
+    },
+    "Conta_3": {
+            "Fluxo 1": {
+            "nome": "m1_segunda_gratuito_curso_c3",
+            "connectionId": "KeL8BkXcV3WWwW6j7MHc",
+            "wabaId": "1488880795714059",
+            "userId": "3jNt3SinWzW08N7iqGhu473b7M53",
+            "id": "2853631534991765"
+        },
+        "Fluxo 2": {
+            "nome": "m1_terca_gratuito_curso_c3",
+            "connectionId": "KeL8BkXcV3WWwW6j7MHc",
+            "wabaId": "1488880795714059",
+            "userId": "3jNt3SinWzW08N7iqGhu473b7M53",
+            "id": "823556080800952"
+        },
+        "Fluxo 7": {
+            "nome": "m1_quarta_gratuito_curso_c3",
+            "connectionId": "KeL8BkXcV3WWwW6j7MHc",
+            "wabaId": "1488880795714059",
+            "userId": "3jNt3SinWzW08N7iqGhu473b7M53" ,
+            "id": "1267302135598246"
+        }, 
+        "SC1": {
+            "nome": "m1_terca_sc1_curso_c3",
+            "connectionId": "KeL8BkXcV3WWwW6j7MHc",
+            "wabaId": "1488880795714059",
+            "userId": "3jNt3SinWzW08N7iqGhu473b7M53",
+            "id": "1455864015527736"
+        }, 
+        "SC2":{
+            "nome": "m1_quinta_sc2_curso_c3",
+            "connectionId": "KeL8BkXcV3WWwW6j7MHc",
+            "wabaId": "1488880795714059",
+            "userId": "3jNt3SinWzW08N7iqGhu473b7M53" ,
+            "id": "3517092801775768"
+        }, 
+        "SC3": {
+            "nome": "m1_quinta_sc3_congresso_c3",
+            "connectionId": "KeL8BkXcV3WWwW6j7MHc" ,
+            "wabaId": "1488880795714059",
+            "userId": "3jNt3SinWzW08N7iqGhu473b7M53",
+            "id": "1494247202091960" 
+        }
+    },
+    "Conta_4": {
+        "Fluxo 1": {
+            "nome": "m1_segunda_gratuito_curso_c4",
+            "connectionId": "tOgoXMt8I9a21Pj1BiJx",
+            "wabaId": "4237462246578095",
+            "userId": "3jNt3SinWzW08N7iqGhu473b7M53",
+            "id": "2853631534991765"
+        },
+        "Fluxo 2": {
+            "nome": "m1_terca_gratuito_curso_c4",
+            "connectionId": "tOgoXMt8I9a21Pj1BiJx",
+            "wabaId": "4237462246578095",
+            "userId": "3jNt3SinWzW08N7iqGhu473b7M53",
+            "id": "1671339140859416"
+        },
+        "Fluxo 7": {
+            "nome": "m1_quarta_gratuito_curso_c4",
+            "connectionId": "tOgoXMt8I9a21Pj1BiJx",
+            "wabaId": "4237462246578095",
+            "userId": "3jNt3SinWzW08N7iqGhu473b7M53" ,
+            "id": "3096299253905186"
+        }, 
+        "SC1": {
+            "nome": "m1_terca_sc1_curso_c4",
+            "connectionId": "tOgoXMt8I9a21Pj1BiJx",
+            "wabaId": "4237462246578095",
+            "userId": "3jNt3SinWzW08N7iqGhu473b7M53",
+            "id": "1956234691946131"
+        }, 
+        "SC2":{
+            "nome": "m1_quinta_sc2_curso_c4",
+            "connectionId": "tOgoXMt8I9a21Pj1BiJx",
+            "wabaId": "4237462246578095",
+            "userId": "3jNt3SinWzW08N7iqGhu473b7M53" ,
+            "id": "1265321088710437"
+        }, 
+        "SC3": {
+            "nome": "m1_quinta_sc3_curso_c4",
+            "connectionId": "tOgoXMt8I9a21Pj1BiJx" ,
+            "wabaId": "4237462246578095",
+            "userId": "3jNt3SinWzW08N7iqGhu473b7M53",
+            "id": "828526586972488"
+        }
+    },
+}
+
+
+def processar_curso(linha, data_ancora, path_template, index_curso, tipo_fluxo="SC1", data_disparo=None, ano_retomada=None, total_cursos=None, dados_template_whatsapp=None):
     # --- 1. LÓGICA DE DEFINIÇÃO DA DATA DE DISPARO ---
     if data_disparo:
         data_envio_base = data_disparo
@@ -288,4 +511,6 @@ def processar_curso(linha, data_ancora, path_template, index_curso, tipo_fluxo="
     for tag, valor in substituicoes.items():
         conteudo = conteudo.replace(tag, str(valor))
 
-    return json.loads(conteudo)
+    json_data = json.loads(conteudo)
+    json_data = aplicar_template_whatsapp(json_data, dados_template_whatsapp)
+    return json_data

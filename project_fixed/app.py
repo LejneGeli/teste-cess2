@@ -5,6 +5,7 @@ import zipfile
 import re
 import os
 import sys
+from src.core import processar_curso, obter_template_whatsapp
 
 # Garante que o Python encontra src/ independente de onde o Streamlit é iniciado
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -188,11 +189,8 @@ if 'cursos' in st.session_state:
         with zipfile.ZipFile(zip_buffer, "w", zipfile.ZIP_DEFLATED) as zip_file:
             for config in fluxos_alvo:
                 contadores_por_conta = {}
-                nome_fluxo_ativo = (
-                    config['nome']
-                    if any(x in config['nome'] for x in ["SC", "Docs", "F2.1", "F5.1", "RETOMADA"])
-                    else "F1"
-                )
+                
+                nome_fluxo_ativo = config['nome']
 
                 total_cursos_semana = None
                 if nome_fluxo_ativo == "RETOMADA":
@@ -219,7 +217,8 @@ if 'cursos' in st.session_state:
                         contadores_por_conta[conta_pasta] = 0
 
                     contador_delay_conta = contadores_por_conta[conta_pasta]
-
+                    dados_template_whatsapp = obter_template_whatsapp(conta_pasta, config["nome"])
+                    
                     try:
                         json_data = processar_curso(
                             linha,
@@ -229,7 +228,8 @@ if 'cursos' in st.session_state:
                             tipo_fluxo=nome_fluxo_ativo,
                             data_disparo=data_disparo_manual,
                             ano_retomada=ano_retomada,
-                            total_cursos=total_cursos_semana
+                            total_cursos=total_cursos_semana,
+                            dados_template_whatsapp=dados_template_whatsapp
                         )
 
                         nome_limpo = nome_curso.replace(" ", "_").replace("/", "-").replace(":", "")
