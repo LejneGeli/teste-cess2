@@ -218,7 +218,7 @@ if 'cursos' in st.session_state:
                     if conta_pasta not in contadores_por_conta:
                         contadores_por_conta[conta_pasta] = 0
 
-                        contador_delay_conta = contadores_por_conta[conta_pasta]
+                    contador_delay_conta = contadores_por_conta[conta_pasta]
 
                     try:
                         json_data = processar_curso(
