@@ -63,7 +63,7 @@ def _buscar_cores_api(client, spreadsheet_id: str, range_str: str) -> list:
     a lista de rowData para o range especificado.
     """
     url = f"{_SHEETS_API_BASE}/{spreadsheet_id}"
-    response = client.request(
+    response = client.http_client.request(
         "GET",
         url,
         params={
