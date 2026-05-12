@@ -11,13 +11,16 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 if BASE_DIR not in sys.path:
     sys.path.insert(0, BASE_DIR)
 
-from src.drive_sync import conectar_planilha
+from src.drive_sync import (
+    conectar_planilha,
+    buscar_mapeamento_contas,
+    buscar_cores_linhas,
+)
 from src.core import processar_curso
 
 # Configuração da Interface
 st.set_page_config(page_title="CESS Automation Web", page_icon="🚀", layout="centered")
 
-# Diretório base sempre relativo ao próprio app.py (resolve problema de cwd)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 def template_path(nome_arquivo):
@@ -52,13 +55,14 @@ with st.container():
     col1, col2 = st.columns(2)
     with col1:
         fluxo_label = st.selectbox(
-            "Selecione o Fluxo:", 
-            ["Inscrição", "Pré-Inscrição", "F1", "F2", "F2.1", "F3", "F4", "F5", "F5.1", "F6", "F7", "F8", "SC1", "SC2", "SC3", "RETOMADA", "Docs (Em breve) 🔒", "GERAR TODOS"]
+            "Selecione o Fluxo:",
+            ["Inscrição", "Pré-Inscrição", "F1", "F2", "F2.1", "F3", "F4", "F5", "F5.1",
+             "F6", "F7", "F8", "SC1", "SC2", "SC3", "RETOMADA", "Docs (Em breve) 🔒", "GERAR TODOS"]
         )
         map_labels = {
-            "Inscrição":"1", "Pré-Inscrição":"2", "F1":"3", "F2":"4", "F2.1":"15", "F3":"5", 
-            "F4":"6", "F5":"7", "F5.1":"17", "F6":"8", "F7":"9", "F8":"10", "SC1":"11", "SC2":"12", 
-            "SC3":"13", "RETOMADA":"16", "Docs (Em breve) 🔒": "14", "GERAR TODOS":"99"
+            "Inscrição":"1", "Pré-Inscrição":"2", "F1":"3", "F2":"4", "F2.1":"15", "F3":"5",
+            "F4":"6", "F5":"7", "F5.1":"17", "F6":"8", "F7":"9", "F8":"10", "SC1":"11",
+            "SC2":"12", "SC3":"13", "RETOMADA":"16", "Docs (Em breve) 🔒": "14", "GERAR TODOS":"99"
         }
         id_fluxo = map_labels[fluxo_label]
 
@@ -99,9 +103,12 @@ if st.button("🔍 Buscar Cursos na Planilha", use_container_width=True):
             try:
                 aba = client.open("Informações Webhook").worksheet("Cursos 2026")
                 dados = aba.get_all_values(value_render_option='FORMATTED_VALUE')
-                
-                inicio = next((i + 2 for i, l in enumerate(dados) if len(l) > 1 and data_semana in str(l[1])), None)
-                
+
+                inicio = next(
+                    (i + 2 for i, l in enumerate(dados) if len(l) > 1 and data_semana in str(l[1])),
+                    None
+                )
+
                 if inicio:
                     cursos_encontrados = []
                     for i in range(inicio, len(dados)):
@@ -109,11 +116,42 @@ if st.button("🔍 Buscar Cursos na Planilha", use_container_width=True):
                         if not linha or not linha[0].strip() or (len(linha) > 1 and "Semana" in str(linha[1])):
                             break
                         cursos_encontrados.append(linha[0].strip())
-                    
-                    st.session_state['cursos'] = cursos_encontrados
-                    st.session_state['dados_planilha'] = dados
-                    st.session_state['index_inicio'] = inicio
+
+                    # ── NOVIDADE: busca cores e mapeamento de contas ──────────────
+                    with st.spinner("Lendo cores das contas na planilha..."):
+                        mapeamento_contas = buscar_mapeamento_contas(client, "Informações Webhook")
+
+                        cores_lista = buscar_cores_linhas(
+                            client,
+                            "Informações Webhook",
+                            "Cursos 2026",
+                            inicio + 1,          # converte índice Python (base 0) para linha real (base 1)
+                            len(cursos_encontrados),
+                        )
+
+                    # Mapeia: índice dentro de 'dados' -> cor hex do curso
+                    cores_por_indice = {
+                        inicio + j: cor
+                        for j, cor in enumerate(cores_lista)
+                    }
+                    # ─────────────────────────────────────────────────────────────
+
+                    st.session_state['cursos']           = cursos_encontrados
+                    st.session_state['dados_planilha']   = dados
+                    st.session_state['index_inicio']     = inicio
+                    st.session_state['mapeamento_contas']= mapeamento_contas
+                    st.session_state['cores_por_indice'] = cores_por_indice
+
                     st.success(f"✅ {len(cursos_encontrados)} cursos encontrados!")
+
+                    # Exibe preview do mapeamento detectado
+                    if mapeamento_contas:
+                        itens = " · ".join(
+                            [f"**{conta}** `{hex_cor}`" for hex_cor, conta in mapeamento_contas.items()]
+                        )
+                        st.info(f"🎨 Contas detectadas: {itens}")
+                    else:
+                        st.warning("⚠️ Não foi possível detectar as cores das contas. Verifique a aba 'Como funciona?'.")
                 else:
                     st.error(f"❌ A data '{data_semana}' não foi encontrada na Coluna B da planilha.")
             except Exception as e:
@@ -123,9 +161,9 @@ if st.button("🔍 Buscar Cursos na Planilha", use_container_width=True):
 if 'cursos' in st.session_state:
     st.divider()
     st.subheader("Configuração da Geração")
-    
+
     curso_filtro = st.multiselect(
-        "Selecione cursos específicos (ou deixe vazio para todos):", 
+        "Selecione cursos específicos (ou deixe vazio para todos):",
         st.session_state['cursos']
     )
 
@@ -137,19 +175,25 @@ if 'cursos' in st.session_state:
 
     if st.button("🏗️ Gerar Arquivos e Preparar ZIP", use_container_width=True, disabled=btn_disabled):
         zip_buffer = io.BytesIO()
+
         if id_fluxo == "99":
             fluxos_alvo = [v for k, v in TEMPLATES.items() if k != "14"]
         else:
             fluxos_alvo = [TEMPLATES[id_fluxo]]
-        
+
         arquivos_criados = 0
-        
+        mapeamento_contas  = st.session_state.get('mapeamento_contas', {})
+        cores_por_indice   = st.session_state.get('cores_por_indice', {})
+
         with zipfile.ZipFile(zip_buffer, "w", zipfile.ZIP_DEFLATED) as zip_file:
             for config in fluxos_alvo:
                 contador_delay = 0
-                nome_fluxo_ativo = config['nome'] if any(x in config['nome'] for x in ["SC", "Docs", "F2.1", "F5.1", "RETOMADA"]) else "F1"
+                nome_fluxo_ativo = (
+                    config['nome']
+                    if any(x in config['nome'] for x in ["SC", "Docs", "F2.1", "F5.1", "RETOMADA"])
+                    else "F1"
+                )
 
-                # Para RETOMADA: conta o total de cursos ANTES do loop para calcular o delay certo
                 total_cursos_semana = None
                 if nome_fluxo_ativo == "RETOMADA":
                     total_cursos_semana = 0
@@ -158,37 +202,43 @@ if 'cursos' in st.session_state:
                         if not linha_aux or not linha_aux[0].strip() or (len(linha_aux) > 1 and "Semana" in str(linha_aux[1])):
                             break
                         total_cursos_semana += 1
-                
+
                 for i in range(st.session_state['index_inicio'], len(st.session_state['dados_planilha'])):
                     linha = st.session_state['dados_planilha'][i]
                     if not linha or not linha[0].strip() or (len(linha) > 1 and "Semana" in str(linha[1])):
                         break
-                    
+
                     nome_curso = linha[0].strip()
                     if curso_filtro and nome_curso not in curso_filtro:
                         continue
-                    
+
                     try:
                         json_data = processar_curso(
-                            linha, 
-                            data_semana, 
-                            config['path'], 
-                            contador_delay, 
+                            linha,
+                            data_semana,
+                            config['path'],
+                            contador_delay,
                             tipo_fluxo=nome_fluxo_ativo,
                             data_disparo=data_disparo_manual,
                             ano_retomada=ano_retomada,
                             total_cursos=total_cursos_semana
                         )
-                        
+
                         nome_limpo = nome_curso.replace(" ", "_").replace("/", "-").replace(":", "")
-                        caminho_zip = f"{config['subpasta']}/{nome_limpo}.json"
-                        
+
+                        # ── NOVIDADE: determina a subpasta da conta pela cor ──────
+                        cor_curso   = cores_por_indice.get(i, "#FFFFFF")
+                        conta_pasta = mapeamento_contas.get(cor_curso, "Sem_Conta")
+                        # ─────────────────────────────────────────────────────────
+
+                        caminho_zip = f"{config['subpasta']}/{conta_pasta}/{nome_limpo}.json"
+
                         zip_file.writestr(caminho_zip, json.dumps(json_data, indent=2, ensure_ascii=False))
                         arquivos_criados += 1
                         contador_delay += 1
                     except Exception as e:
                         st.error(f"Erro no curso '{nome_curso}': {e}")
-        
+
         if arquivos_criados > 0:
             st.success(f"🚀 {arquivos_criados} arquivos processados!")
             st.download_button(
