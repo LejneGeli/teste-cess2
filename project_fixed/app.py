@@ -261,3 +261,4 @@ if 'cursos' in st.session_state:
 
 st.divider()
 st.caption("CESS Automation System 2026 - Versão Web Estável")
+# redeploy 
