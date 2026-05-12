@@ -187,7 +187,7 @@ if 'cursos' in st.session_state:
 
         with zipfile.ZipFile(zip_buffer, "w", zipfile.ZIP_DEFLATED) as zip_file:
             for config in fluxos_alvo:
-                contador_delay = 0
+                contadores_por_conta = {}
                 nome_fluxo_ativo = (
                     config['nome']
                     if any(x in config['nome'] for x in ["SC", "Docs", "F2.1", "F5.1", "RETOMADA"])
@@ -212,12 +212,20 @@ if 'cursos' in st.session_state:
                     if curso_filtro and nome_curso not in curso_filtro:
                         continue
 
+                    cor_curso = cores_por_indice.get(i, "#FFFFFF")
+                    conta_pasta = mapeamento_contas.get(cor_curso, "Sem_Conta")
+
+                    if conta_pasta not in contadores_por_conta:
+                        contadores_por_conta[conta_pasta] = 0
+
+                        contador_delay_conta = contadores_por_conta[conta_pasta]
+
                     try:
                         json_data = processar_curso(
                             linha,
                             data_semana,
                             config['path'],
-                            contador_delay,
+                            contador_delay_conta,
                             tipo_fluxo=nome_fluxo_ativo,
                             data_disparo=data_disparo_manual,
                             ano_retomada=ano_retomada,
@@ -235,7 +243,7 @@ if 'cursos' in st.session_state:
 
                         zip_file.writestr(caminho_zip, json.dumps(json_data, indent=2, ensure_ascii=False))
                         arquivos_criados += 1
-                        contador_delay += 1
+                        contadores_por_conta[conta_pasta] += 1
                     except Exception as e:
                         st.error(f"Erro no curso '{nome_curso}': {e}")
 
